@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script>
+    
+        function test_Auto_PhatHanh(){
+
+            var t = 0;
+
+            let myHeaders1 = new Headers();
+            myHeaders1.append('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
+            myHeaders1.append('Token', '0d01141f-240f-45e8-a53a-bca63e491e07');
+            // 2019-03-31 00:00:00.000
+            let str2 = "filter.keys=NgayHoaDonAuto&filter.vals=2018-10-06&more=true";
+            
+            let str4 = "filter.keys=AutoPhatHanh%7CNgayHoaDonAuto%7CMaDonVi%7CLoaiGiaoDich&filter.vals=true%7C2018-10-06%7C0%7C0";
+            //localhost:54444
+            let reques3 = new Request("http://localhost:54444/api/phathanhtudonghoadon/PhatHanhTuDongHisFico?more=true&"+str4,{
+                method:'GET',
+                // mode: 'no-cors', -> ko thể bỏ body, vì thể bỏ config dòng này
+                headers: myHeaders1
+            });
+
+            fetch(reques3)
+            .then( (res) => { 
+                return res.json(); 
+            })
+            .then( (resTxt) => { 
+                console.log(resTxt); 
+            })
+            .catch((ex) => {
+                console.log(ex);
+            });
+
+        }
+
+        function Run_Update_HDDT_HIS_ONL(){
+            var r = `
+        void Update_HDDT_HIS()
+        {
+            using(DpsConnection cnn = new DpsConnection("HDDTConnectionString", true))
+            {
+                IDictionary<string, HDDT_HIS> v_dicHDDT_HIS = new Dictionary<string, HDDT_HIS>();
+
+                string sqlHDDT_HIS = @"
+                    SELECT [InvoiceNo]
+      ,[SoHoaDon]
+      ,[HoTenNguoiMuaHang]
+  FROM [dbo].[HDDT_HIS]
+                ";
+                DataTable dtHDDT_HIS = cnn.CreateDataTable(sqlHDDT_HIS);
+
+                v_dicHDDT_HIS = dtHDDT_HIS.AsEnumerable().ToDictionary(
+                    row => row["InvoiceNo"] + "|" + row["SoHoaDon"], 
+                    q => new HDDT_HIS {
+                        InvoiceNo = q["InvoiceNo"].ToString(),
+                        SoHoaDon = q["SoHoaDon"].ToString(),
+                        TenBenhNhan = q["HoTenNguoiMuaHang"].ToString()
+                    });
+
+
+                string sqlHDDT = @"SELECT [IdHDDT],[InvoiceNo],[SoHoaDon],[HoTenNguoiMuaHang] FROM HOA_DON_DIEN_TU WHERE ( TrangThai = 1 or TrangThai = 6 OR TrangThai = 8 OR TrangThai = 3)
+";
+                DataTable dtHDDT = cnn.CreateDataTable(sqlHDDT);
+                string key = "";
+                cnn.BeginTransaction();
+                foreach(DataRow dr in dtHDDT.Rows)
+                {
+                    var lst = dr["SoHoaDon"].ToString().Split(',').ToList();
+
+                    foreach(string shd in lst)
+                    {
+                        //break;
+                        key = dr["InvoiceNo"].ToString().Trim() + "|" + shd.Trim();
+                        if(v_dicHDDT_HIS.ContainsKey(key))
+                            continue;
+                        else
+                        {
+                            Hashtable htb = new Hashtable();
+                            htb.Add("InvoiceNo", dr["InvoiceNo"]);
+                            htb.Add("SoHoaDon", shd.Trim());
+                            htb.Add("HoTenNguoiMuaHang", dr["HoTenNguoiMuaHang"]);
+
+                            if(cnn.Insert(htb, "HDDT_HIS") < 0)
+                            {
+                                cnn.RollbackTransaction();
+                                break;
+                            }
+                            else
+                            {
+                                v_dicHDDT_HIS.Add(key, new HDDT_HIS
+                                {
+                                    InvoiceNo = htb["InvoiceNo"].ToString(),
+                                    SoHoaDon = htb["SoHoaDon"].ToString(),
+                                    TenBenhNhan = htb["HoTenNguoiMuaHang"].ToString(),
+                                });
+                            }
+                        }
+
+                        if (cnn.LastError != null)
+                            break;
+                    }                   
+
+                }
+
+                cnn.EndTransaction();
+
+                int t = 0;
+
+            }
+        }
+
+        class HDDT_HIS
+        {
+            public string InvoiceNo { get; set; } = "";
+            public string SoHoaDon { get; set; } = "";
+            public string TenBenhNhan { get; set; } = "";
+        }
+
+        class HDDT
+        {
+            public string IdHDDT { get; set; } = "";
+            public string InvoiceNo { get; set; } = "";
+            public string HoTenNguoiMuaHang { get; set; } = "";
+            public string SoHoaDon { get; set; } = "";
+        }
+
+        `;
+
+        }
+
+    </script>
+
+</head>
+<body>
+
+    <button onclick="test_Auto_PhatHanh()">Phát hành</button>
+    
+</body>
+</html>
