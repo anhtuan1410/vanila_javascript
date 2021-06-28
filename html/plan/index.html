@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+    <style type="text/css">
+        
+    </style>
+    <script>
+        function preparePlane(){
+            var t = document.getElementById("id-plane");
+            t.classList.add("take-off");
+        }
+        function readyPlane(){
+            var t = document.getElementById("id-plane");
+            t.classList.remove("take-off");
+        }
+
+        function f_animation(){
+            var t = document.getElementById("id-plane");
+            t.addEventListener("animationend", function(){
+                readyPlane();
+            });
+        }
+
+        function f_randomRain(){
+            var tongmua = 100;
+            var v_index, v_style, v_div, v_duration;
+            for(var i = 0;i<tongmua;i++){
+                v_index = Math.floor( Math.random() * (window.innerWidth - 0) + 1);
+                v_duration =  Math.floor(v_index / 100) + 1;
+
+                v_style =  `animation-duration: ${v_duration}s;
+                background: linear-gradient(to bottom, transparent,black 400%);`;
+                v_div = `<div class='stem' style='left:${v_index}px;'><div class='stem-child-1' style='${v_style}'></div></div>`;
+
+                document.getElementById("rain-frame").innerHTML+=v_div;
+
+            }
+        }
+
+        function f_symbol(){
+            let t = {
+                _lastName:''
+            };
+            let v = Symbol("extra");
+            t[v] = "sdsd";
+            console.log(t[v]);
+        }
+
+        f_symbol();
+        
+    </script>
+</head>
+<body>   
+    
+    <div class="container">
+
+        <!-- <div class="layer-rain" id="rain-frame">
+            <div class="stem">
+                <div class="stem-child"></div>
+            </div>
+        </div> -->
+
+        <div class="layer-rain" id="rain-frame">
+            <!-- <div class="stem">
+                <div class="stem-child"></div>
+            </div> -->
+        </div>
+
+        <div class="div-cloud">
+            <img src="img/cartoon-cloud-png-4.png" class="img-cloud" width="100%" />
+            <img src="img/cartoon-cloud-png-4.png" class="img-cloud" width="100%" />
+            <img src="img/cartoon-cloud-png-4.png" class="img-cloud" width="100%" />
+            <img src="img/cartoon-cloud-png-4.png" class="img-cloud" width="100%" />
+            <img src="img/cartoon-cloud-png-4.png" class="img-cloud" width="100%" />
+
+            <img src="img/cartoon-cloud-png-4.png" class="img-cloud" width="100%" />
+            <img src="img/cartoon-cloud-png-4.png" class="img-cloud" width="100%" />
+            <img src="img/cartoon-cloud-png-4.png" class="img-cloud" width="100%" />
+            <img src="img/cartoon-cloud-png-4.png" class="img-cloud" width="100%" />
+        </div>       
+
+        <img id="id-plane" src="img/British-airways_icon.png" style="z-index:1;" width="15%" />
+    </div>
+    <div class="btn">
+        <button class="btn-take-off" onclick="preparePlane()">Take Off</button>
+        <button class="btn-take-off" onclick="readyPlane()">Ready</button>
+    </div>
+
+    <!-- <div class="div-test">
+
+    </div> -->
+
+    <script>
+
+
+        f_animation();
+        //f_randomRain();
+
+        // number of drops created.
+        var nbDrop = 858; 
+
+        // function to generate a random number range.
+        function randRange( minNum, maxNum) {
+            return (Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum);
+        }
+
+        // function to generate drops
+        function createRain() {
+
+            for( i=1;i<nbDrop;i++) {
+                var dropLeft = randRange(0,1600);
+                var dropTop = randRange(-1000,1400);
+
+                document.getElementById("rain-frame").innerHTML += `<div class="drop" id="drop${i}" style="left:${dropLeft}px;top:${dropTop}px;"></div>`;
+                // $('#rain-frame').append('<div class="drop" id="drop'+i+'"></div>');
+                // $('#drop'+i).css('left',dropLeft);
+                // $('#drop'+i).css('top',dropTop);
+            }
+
+        }
+        // Make it rain
+        createRain();
+
+
+    </script>
+
+</body>
+</html>

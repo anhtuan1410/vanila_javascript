@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+    <script src="js/three.min.js" type="text/javascript"></script>
+</head>
+<body>
+    
+<script>
+    (function(){
+
+            var scene = new THREE.Scene();
+var camera = new THREE.PerspectiveCamera( 75, window.innerWidth/window.innerHeight, 0.1, 1000 );
+
+var renderer = new THREE.WebGLRenderer();
+renderer.setSize( window.innerWidth, window.innerHeight );
+document.body.appendChild( renderer.domElement );
+
+var geometry = new THREE.BoxGeometry( 20, 20, 20);
+var material = new THREE.MeshLambertMaterial( { color: 0xfd59d7 } );
+var cube = new THREE.Mesh( geometry, material );
+scene.add( cube );
+
+camera.position.z = 100;
+
+var light = new THREE.PointLight( 0xFFFF00 );
+light.position.set( 10, 0, 25 );
+scene.add( light );
+
+
+
+var render = function () {
+  requestAnimationFrame( render );
+
+  cube.rotation.x += 0.1;
+  cube.rotation.y += 0.1;
+  camera.updateProjectionMatrix();
+
+  renderer.render(scene, camera);
+};
+
+render();
+
+// dat gui
+var gui = new dat.GUI();
+var cameraGui = gui.addFolder("camera position");
+cameraGui.add(camera.position, 'x');
+cameraGui.add(camera.position, 'y');
+cameraGui.add(camera.position, 'z');
+cameraGui.open();
+
+var cameraGui = gui.addFolder("camera projection");
+cameraGui.add(camera, "fov");
+cameraGui.open();
+
+var lightGui = gui.addFolder("light position");
+lightGui.add(light.position, 'x');
+lightGui.add(light.position, 'y');
+lightGui.add(light.position, 'z');
+lightGui.open();
+
+var cubeGui = gui.addFolder("cube position");
+cubeGui.add(cube.position, 'x');
+cubeGui.add(cube.position, 'y');
+cubeGui.add(cube.position, 'z');
+cubeGui.open();
+
+
+  
+    })();
+</script>
+
+<!-- <object type="application/x-vlc-plugin" pluginspage="http://www.videolan.org"
+
+    version="VideoLAN.VLCPlugin.2" id="vlc" width="480px" height="270px" events="True" classid="clsid:9BE31822-FDAD-461B-AD51-BE1D1C159921" >
+
+       <param name="MRL" value="rtsp://user:123aBc456@192.168.2.240:1554/Streaming/Channels/101/?transportmode=unicast" ref/>
+
+       <param name="volume" value="100" />
+
+       <param name="autoplay" value="1" />
+
+       <param name="AutoLoop" value="1">
+
+       <param name="Toolbar" value="1">
+
+       <param name="Visible" value="1">
+
+       <param name="StartTime" value="0">
+
+       <param name="BackColor" value="0">
+
+       <param name="FullscreenEnabled" value="-1">
+
+       <param name="ExtentWidth" value="12700">
+
+       <param name="ExtentHeight" value="7144">
+
+       <param name="BaseURL" ref value="vlc.htm">
+
+</object> -->
+
+
+</body>
+</html>

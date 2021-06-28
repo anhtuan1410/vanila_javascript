@@ -1,0 +1,220 @@
+
+<kt-portlet>
+    <kt-portlet-header [sticky]="true" [title]="getComponentTitle()" [class]="'kt-portlet__head--lg'" [viewLoading$]="loading$">
+        <ng-container ktPortletTools>
+            <button class="btn btn-secondary kt-margin-r-10" mat-raised-button matTooltip="Back to the học sinh list" (click)="goBack('')">
+                <i class="la la-arrow-left"></i>
+                <span class="kt-hidden-mobile">Back</span>
+            </button>
+            <a href="javascript:;" class="btn btn-secondary kt-margin-r-10" (click)="reset()" [disabled]="selectedTab !== 0" mat-raised-button matTooltip="Reset changes">
+                <i class="la la-cog"></i>
+                <span class="kt-hidden-mobile">Reset</span>
+            </a>
+            <a href="javascript:;" class="btn btn-primary kt-margin-r-10" color="primary" (click)="onSumbit(false)" mat-raised-button matTooltip="Save & Continue">
+                <span class="kt-hidden-mobile">Save</span>
+            </a>
+        </ng-container>
+    </kt-portlet-header>
+    <kt-portlet-body>
+        <div *ngIf="HocSinh">
+            <!--begin::Form-->
+            <form [formGroup]="HocSinhForm" class="kt-form kt-form--group-seperator-dashed">
+                <kt-alert *ngIf="hasFormErrors" type="warn" [showCloseButton]="true" [duration]="10000" (close)="onAlertClose($event)">
+                    Không thể lưu, vui lòng nhập đủ thông tin!
+                </kt-alert>
+                <div class="kt-form__section kt-form__section--first">
+                    <div class="kt-form__group">
+                            <div class="row">
+                                    <div class="col-md-4 kt-margin-bottom-10-mobile">
+                                            <mat-form-field class="mat-form-field-fluid">
+                                                        <input matInput placeholder="Nhập mã lớp*" formControlName="maLop" type="text">
+                                                        <mat-error>Mã lớp<strong> bắt buộc nhập</strong></mat-error>
+                                            </mat-form-field>
+                                    </div>
+                                    <div class="col-md-4 kt-margin-bottom-10-mobile">
+                                            <mat-form-field class="mat-form-field-fluid">
+                                                <mat-select 
+                                                    multiple
+                                                placeholder="Chọn ID Lớp học"
+                                                formControlName="iDLopHoc"
+                                                    >
+                                                    <mat-option *ngFor="let tmp of listIDLopHoc"
+                                                        value="{{tmp.IDNhomKH}}">
+                                                        {{tmp.TenNhomKH}}
+                                                    </mat-option>
+                                                </mat-select>
+                                                <mat-hint align="start">
+                                                    <strong>ID Lớp học</strong>
+                                                </mat-hint>
+                                            </mat-form-field>
+                                    </div>
+                                    <div class="col-md-4 kt-margin-bottom-10-mobile">
+                                            <mat-form-field class="mat-form-field-fluid">
+                                                        <input matInput placeholder="Nhập mã học sinh*" formControlName="maHocSinh" type="text">
+                                                        <mat-error>Mã học sinh<strong> bắt buộc nhập</strong></mat-error>
+                                            </mat-form-field>
+                                    </div>
+                            </div>
+                            <div class="row">
+                                    <div class="col-md-4 kt-margin-bottom-10-mobile">
+                                            <mat-form-field class="mat-form-field-fluid">
+                                                        <input matInput placeholder="Nhập tên học sinh*" formControlName="tenHocSinh" type="text">
+                                                        <mat-error>Tên học sinh<strong> bắt buộc nhập</strong></mat-error>
+                                            </mat-form-field>
+                                    </div>
+                                    <div class="col-md-4 kt-margin-bottom-10-mobile">
+                                            <mat-form-field class="mat-form-field-fluid">
+                                                        <input matInput placeholder="Nhập họ" formControlName="ho" type="text">
+                                            </mat-form-field>
+                                    </div>
+                                    <div class="col-md-4 kt-margin-bottom-10-mobile">
+                                            <mat-form-field class="mat-form-field-fluid">
+                                                        <input matInput placeholder="Nhập tên" formControlName="ten" type="text">
+                                            </mat-form-field>
+                                    </div>
+                            </div>
+                            <div class="row">
+                                    <div class="col-md-4 kt-margin-bottom-10-mobile">
+                                            <mat-form-field class="mat-form-field-fluid">
+                                                        <input matInput placeholder="Nhập ngày sinh*" formControlName="ngaySinh" type="text">
+                                                        <mat-error>Ngày sinh<strong> bắt buộc nhập</strong></mat-error>
+                                            </mat-form-field>
+                                    </div>
+                                    <div class="col-md-4 kt-margin-bottom-10-mobile">
+                                                <div>Giới tính:</div>
+                                                <mat-checkbox class="example-margin" formControlName="gioiTinh">
+                                                        Giới tính
+                                                </mat-checkbox>
+                                    </div>
+                                    <div class="col-md-4 kt-margin-bottom-10-mobile">
+                                            <mat-form-field class="mat-form-field-fluid">
+                                                        <input matInput placeholder="Nhập địa chỉ" formControlName="diaChi" type="text">
+                                            </mat-form-field>
+                                    </div>
+                            </div>
+                            <div class="row">
+                                    <div class="col-md-4 kt-margin-bottom-10-mobile">
+                                            <mat-form-field class="mat-form-field-fluid">
+                                                        <input matInput placeholder="Nhập họ tên cha*" formControlName="hoTenCha" type="text">
+                                                        <mat-error>Họ tên cha<strong> bắt buộc nhập</strong></mat-error>
+                                            </mat-form-field>
+                                    </div>
+                                    <div class="col-md-4 kt-margin-bottom-10-mobile">
+                                            <mat-form-field class="mat-form-field-fluid">
+                                                        <input matInput placeholder="Nhập số điện thoại cha*" formControlName="sDTCha" type="text">
+                                                        <mat-error>Số điện thoại cha<strong> bắt buộc nhập</strong></mat-error>
+                                            </mat-form-field>
+                                    </div>
+                                    <div class="col-md-4 kt-margin-bottom-10-mobile">
+                                            <mat-form-field class="mat-form-field-fluid">
+                                                        <input matInput placeholder="Nhập họ tên mẹ*" formControlName="hoTenMe" type="text">
+                                                        <mat-error>Họ tên mẹ<strong> bắt buộc nhập</strong></mat-error>
+                                            </mat-form-field>
+                                    </div>
+                            </div>
+                            <div class="row">
+                                    <div class="col-md-4 kt-margin-bottom-10-mobile">
+                                            <mat-form-field class="mat-form-field-fluid">
+                                                        <input matInput placeholder="Nhập số điện thoại mẹ*" formControlName="sDTMe" type="text">
+                                                        <mat-error>Số điện thoại mẹ<strong> bắt buộc nhập</strong></mat-error>
+                                            </mat-form-field>
+                                    </div>
+                                    <div class="col-md-4 kt-margin-bottom-10-mobile">
+                                            <mat-form-field class="mat-form-field-fluid">
+                                                        <input matInput placeholder="Nhập email phụ huynh*" formControlName="email" type="text">
+                                                        <mat-error>Email phụ huynh<strong> bắt buộc nhập</strong></mat-error>
+                                            </mat-form-field>
+                                    </div>
+                                    <div class="col-md-4 kt-margin-bottom-10-mobile">
+                                            <mat-form-field class="mat-form-field-fluid">
+                                                        <input matInput placeholder="Nhập ngày nhập học" formControlName="ngayNhapHoc" type="text">
+                                            </mat-form-field>
+                                    </div>
+                            </div>
+                            <div class="row">
+                                    <div class="col-md-4 kt-margin-bottom-10-mobile">
+                                            <mat-form-field class="mat-form-field-fluid">
+                                                        <input matInput placeholder="Nhập phường xã" formControlName="phuongXa" type="text">
+                                            </mat-form-field>
+                                    </div>
+                                    <div class="col-md-4 kt-margin-bottom-10-mobile">
+                                            <mat-form-field class="mat-form-field-fluid">
+                                                <mat-select 
+                                                    multiple
+                                                placeholder="Chọn ID tỉnh thành"
+                                                formControlName="iDTinhThanh"
+                                                                    (ngModelChange)="ListIDQuanHuyen(selectIDTinhThanh)"
+                                                    >
+                                                    <mat-option *ngFor="let tmp of listIDTinhThanh"
+                                                        value="{{tmp.IDTinhThanh}}">
+                                                        {{tmp.TenTinhThanh}}
+                                                    </mat-option>
+                                                </mat-select>
+                                                <mat-hint align="start">
+                                                    <strong>ID tỉnh thành</strong>
+                                                </mat-hint>
+                                            </mat-form-field>
+                                    </div>
+                                    <div class="col-md-4 kt-margin-bottom-10-mobile">
+                                            <mat-form-field class="mat-form-field-fluid">
+                                                <mat-select 
+                                                    multiple
+                                                placeholder="Chọn ID quận huyện"
+                                                formControlName="iDQuanHuyen"
+                                                                    (ngModelChange)="ListIDPhuongXa(selectIDQuanHuyen)"
+                                                    >
+                                                    <mat-option *ngFor="let tmp of listIDQuanHuyen"
+                                                        value="{{tmp.IDQuanHuyen}}">
+                                                        {{tmp.TenQuanHuyen}}
+                                                    </mat-option>
+                                                </mat-select>
+                                                <mat-hint align="start">
+                                                    <strong>ID quận huyện</strong>
+                                                </mat-hint>
+                                            </mat-form-field>
+                                    </div>
+                            </div>
+                            <div class="row">
+                                    <div class="col-md-4 kt-margin-bottom-10-mobile">
+                                            <mat-form-field class="mat-form-field-fluid">
+                                                <mat-select 
+                                                    multiple
+                                                placeholder="Chọn ID phường xã"
+                                                formControlName="iDPhuongXa"
+                                                    >
+                                                    <mat-option *ngFor="let tmp of listIDPhuongXa"
+                                                        value="{{tmp.IDPhuongXa}}">
+                                                        {{tmp.TenPhuongXa}}
+                                                    </mat-option>
+                                                </mat-select>
+                                                <mat-hint align="start">
+                                                    <strong>ID phường xã</strong>
+                                                </mat-hint>
+                                            </mat-form-field>
+                                    </div>
+                                    <div class="col-md-4 kt-margin-bottom-10-mobile">
+                                            <mat-form-field class="mat-form-field-fluid">
+                                                <mat-select 
+                                                    multiple
+                                                placeholder="Chọn ID chi nhánh, trường học"
+                                                formControlName="iDChiNhanh"
+                                                                    (ngModelChange)="ListIDLopHoc(selectIDChiNhanh)"
+                                                    >
+                                                    <mat-option *ngFor="let tmp of listIDChiNhanh"
+                                                        value="{{tmp.IDChiNhanh}}">
+                                                        {{tmp.TenChiNhanh}}
+                                                    </mat-option>
+                                                </mat-select>
+                                                <mat-hint align="start">
+                                                    <strong>ID chi nhánh, trường học</strong>
+                                                </mat-hint>
+                                            </mat-form-field>
+                                    </div>
+                            </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!--end::Form-->
+    </kt-portlet-body>
+</kt-portlet>

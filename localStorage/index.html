@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Local Storage Sample</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script>
+      function onStorageEvent(storageEvent){
+        //cái này hoạt động khi mở 2 tab cùng trang thì nó sẽ chạy hàm này.
+        alert("storage event");
+        }
+
+            window.addEventListener('storage', onStorageEvent, false);
+    </script>
+</head>
+<body>
+    
+    <script>
+        function nowICanSeeLocalStorageChangeEvents( e ) {
+            console.log(
+                "subscriber: "    + e.currentTarget.nodeName + "\n" +
+                "timestamp: "     + e.detail.timestamp + " (" + new Date( e.detail.timestamp ) + ")" + "\n" +
+                "prefix: "        + e.detail.prefix  + "\n" +
+                "message: "       + e.detail.message + "\n" +
+                "method: "        + e.detail.method  + "\n" +
+                "key: "           + e.detail.key     + "\n" +
+                "old value: "     + e.detail.oldval  + "\n" +
+                "new value: "     + e.detail.newval  + "\n" +
+                "old data type: " + e.detail.oldtype + "\n" +
+                "new data type: " + e.detail.newtype
+            );
+        };
+        document.addEventListener(
+            "localDataStorage"
+            , nowICanSeeLocalStorageChangeEvents
+            , false
+        );    
+    </script>
+
+</body>
+</html>

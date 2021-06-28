@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+    <script src="http://phrogz.net/JS/ArraySetMath.js" type="text/javascript" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+    <script src="js/abc.js" type="text/javascript"></script>
+    <script src="js/demo.js" type="text/javascript"></script>
+    <script>
+
+        $(document).ready(function(){
+
+            $('#decimal').keyup(function(){
+                var val = $(this).val();
+                if(isNaN(val)){
+                    val = val.replace(/[^0-9\.]/g,'');
+                    if(val.split('.').length>2) 
+                        val =val.replace(/\.+$/,"");
+                }
+                $(this).val(val); 
+            });
+
+            $('.inp-nbr').keypress(function(){
+                return isNumberKey(this);
+            });
+
+            function scaleText(){
+
+                jQuery("input[class='inp-scale']").on('focus', function(){
+                    this.setSelectionRange(0, this.value.length);
+                });
+
+                jQuery("input[class='inp-scale']").on('keydown', function(e){
+                    //ctrl: 17, v: 86
+                    var k_F2 = "113";
+                    if(e.keyCode == k_F2)
+                        this.value = "";
+                });
+            scaleText();
+            
+            }
+        });
+
+        function dfg(s){
+
+            var r = [
+                { a:6, b: 8 },
+                { c: 9, d: 8 }
+            ];
+
+            r.find(x => {
+
+                return Object.keys(x).find(
+                    y => {
+                        return x[y].toString().indexOf(s.toString()) !== -1 ? x : y
+                    }
+                );
+
+            });
+
+        }
+
+        dfg(8);
+
+    </script>
+
+
+</head>
+<body>
+    
+    <h1>CSS FlexBox</h1>
+    
+    <div class="grid">
+        <div class="col">
+            <p></p>
+        </div>
+        <div class="col">
+            <p></p>
+        </div>
+        <div class="col">
+            <p></p>
+        </div>
+        <div class="col">
+            <p></p>
+        </div>
+        <div class="col">
+            <p></p>
+        </div>
+    </div>
+    <section id="demo" class="flex-container">   
+            <div style="background-color:hsl(10, 50%, 75%);" class="flex-item">Lorem ipsum</div>
+            <div style="background-color:hsl(20, 50%, 75%);" class="flex-item">dolor</div>
+            <div style="background-color:hsl(30, 50%, 75%);" class="flex-item">sit</div>
+            <div style="background-color:hsl(40, 50%, 75%);" class="flex-item">amet</div>
+            <div style="background-color:hsl(50, 50%, 75%);" class="flex-item">consectetur</div>
+            <div style="background-color:hsl(60, 50%, 75%);" class="flex-item">adipiscing elit</div>
+            <div style="background-color:hsl(70, 50%, 75%);" class="flex-item">Nunc</div>
+            <div style="background-color:hsl(80, 50%, 75%);" class="flex-item">enim</div>
+            <div style="background-color:hsl(90, 50%, 75%);" class="flex-item">nunc</div>
+            <div style="background-color:hsl(100, 50%, 75%);" class="flex-item">volutpat eget</div>
+            <div style="background-color:hsl(110, 50%, 75%);" class="flex-item">aliquam</div>
+            <div style="background-color:hsl(120, 50%, 75%);" class="flex-item">nec</div>
+            <div style="background-color:hsl(130, 50%, 75%);" class="flex-item">accumsan rutrum</div>
+            <div style="background-color:hsl(140, 50%, 75%);" class="flex-item">bacon</div>
+            <div style="background-color:hsl(150, 50%, 75%);" class="flex-item">Maecenas</div>
+            <div style="background-color:hsl(160, 50%, 75%);" class="flex-item">luctus nisl</div>
+            <div style="background-color:hsl(170, 50%, 75%);" class="flex-item">id</div>
+            <div style="background-color:hsl(180, 50%, 75%);" class="flex-item">odio</div>
+            <div style="background-color:hsl(190, 50%, 75%);" class="flex-item">auctor</div>
+            <div style="background-color:hsl(200, 50%, 75%);" class="flex-item">eu</div>
+            <div style="background-color:hsl(210, 50%, 75%);" class="flex-item">figat</div>
+            <div style="background-color:hsl(220, 50%, 75%);" class="flex-item">nulla</div>
+            <div style="background-color:hsl(230, 50%, 75%);" class="flex-item">pariatur</div>
+        </section>
+
+        <div class="grid">
+            <div class="col-img green">
+                <img src="css/assest/img/color_me_run.jpg" />
+            </div>
+            <br>
+            <div class="">
+                <p id="value"></p>
+            </div>
+            <br>
+            <div class="">
+                <input type="text" 
+                    class="inp-nbr" 
+                />
+                <input type="text" class="decimal" value="" />
+            </div>
+        </div>
+
+        <div class="grid">
+            <div class="triangle triangle-top"></div>
+            <div class="triangle triangle-left"></div>
+            <div class="triangle triangle-bottom"></div>
+            <div class="triangle triangle-right"></div>
+        </div>
+
+        <br />
+
+        <br />
+
+        <div class="grid">
+            <canvas id="IdCanvas" style="border: 1px solid red;" width="600" height="600" ></canvas>
+        </div>
+
+        <script>
+            $(document).ready(function(){
+                let canvas = document.getElementById("IdCanvas");
+                let cv = canvas.getContext("2d");
+
+                let centerX, centerY;
+                centerX = canvas.clientWidth / 2;
+                centerY = canvas.clientHeight / 2;
+                
+                drawLine(cv);
+                drawRect(cv);
+                drawCircle(cv);
+
+                function drawLine(p)
+                {
+                    p.fillStyle = 'red';
+                    
+                    p.beginPath();
+                    p.moveTo(0,0);
+                    p.lineTo(100, 0);
+                    p.closePath();
+                    p.stroke();
+                    
+                    p.beginPath();
+                    p.moveTo(0,0);
+                    p.lineTo(0, 100);
+                    p.closePath();
+                    p.stroke();
+
+                    p.beginPath();
+                    p.moveTo(100, 0);
+                    p.lineTo(0, 100);
+                    p.closePath();
+                    p.stroke();
+                }
+
+                function drawRect(p)
+                {
+                    p.fillStyle = 'green';
+                    p.fillRect(50,50, 100, 100);
+
+                    p.strokeRect(80, 50, 100, 100);
+                }
+
+                function drawCircle(p)
+                {
+                    let arrEl = [13, 18, 25, 34, 5, 5];
+                    let arrColor = ['red','green','blue','grey','yellow', 'orange'];
+                    let radius_BanKinh = 200;
+                    let total = 100;
+                    
+                    let arrSec;
+
+                    //vị trí kết thúc cuối cùng của mảnh trước đó
+                    let lastend = 0;
+
+                    let offset = Math.PI / 2;
+
+                    arrEl.forEach((item, index) => {
+                        console.log(item);
+                        let thisPart = item;
+
+                        p.beginPath();
+                        p.fillStyle = arrColor[index];
+
+                        p.moveTo(centerX, centerY);
+
+                        //tính độ dựa vào phần trăm của mảnh này trong vòng tròn
+                        arrSec = Math.PI * 2 * item /  100;
+                        p.arc(centerX, centerY, radius_BanKinh, lastend - offset , lastend - offset + arrSec ,false);
+                        // p.lineTo(centerX, centerY);
+
+                        p.fill();
+                        p.closePath();
+                        
+                        // p.stroke();
+
+                        lastend += arrSec;
+
+                    });
+
+                }
+
+
+
+            });
+        </script>
+
+<!--   LINK XEM CAMERA
+    {
+        Stream: "rtsp://user:123aBc456@192.168.2.240:1554/Streaming/Channels/101/?transportmode=unicast",
+        NameCamera: "Camera_1_HD"
+   }
+
+   {
+    Stream: "rtsp://user:123aBc456@192.168.2.240:1554/Streaming/Channels/102/?transportmode=unicast",
+    NameCamera: "Camera_1_SD"
+   } -->
+
+
+   
+
+
+
+
+</body>
+</html>

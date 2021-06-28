@@ -1,0 +1,1847 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="danhmuc" xml:space="preserve">
+    <value>List</value>
+  </data>
+  <data name="danhmucbangcap" xml:space="preserve">
+    <value>Degrees List</value>
+  </data>
+  <data name="danhmucbophan" xml:space="preserve">
+    <value>Team list</value>
+  </data>
+  <data name="danhmuccalamviec" xml:space="preserve">
+    <value>Shifts List</value>
+  </data>
+  <data name="danhmuccapbac" xml:space="preserve">
+    <value>List the level</value>
+  </data>
+  <data name="danhmuccapquanly" xml:space="preserve">
+    <value>Management levels</value>
+  </data>
+  <data name="danhmucchannel" xml:space="preserve">
+    <value>Channel list</value>
+  </data>
+  <data name="danhmucchedonghi" xml:space="preserve">
+    <value>Tempate arrange shifts in a week</value>
+  </data>
+  <data name="danhmucchucdanh" xml:space="preserve">
+    <value>Jobtitles List</value>
+  </data>
+  <data name="danhmucchucvu" xml:space="preserve">
+    <value>Positions List</value>
+  </data>
+  <data name="danhmuccongtrinh" xml:space="preserve">
+    <value>Construction List</value>
+  </data>
+  <data name="danhmucdantoc" xml:space="preserve">
+    <value>Ethnic group List</value>
+  </data>
+  <data name="danhmucdaotaohoinhap" xml:space="preserve">
+    <value>Integration training list</value>
+  </data>
+  <data name="danhmucdiemdanhgia" xml:space="preserve">
+    <value>Assessment mark</value>
+  </data>
+  <data name="danhmucdongphuc" xml:space="preserve">
+    <value>List of the uniforms</value>
+  </data>
+  <data name="danhmucdonvi" xml:space="preserve">
+    <value>Branch list</value>
+  </data>
+  <data name="danhmucdonvitien" xml:space="preserve">
+    <value>List of currencies</value>
+  </data>
+  <data name="danhmucdotdanhgia" xml:space="preserve">
+    <value>Evaluation list</value>
+  </data>
+  <data name="danhmucduan" xml:space="preserve">
+    <value>Projects list</value>
+  </data>
+  <data name="danhmucgiadinhchinhsach" xml:space="preserve">
+    <value>Category the family policy</value>
+  </data>
+  <data name="danhmucgiatricotloi" xml:space="preserve">
+    <value>Core value list</value>
+  </data>
+  <data name="danhmuchangmuccongtrinh" xml:space="preserve">
+    <value>Project components list</value>
+  </data>
+  <data name="danhmuchangthuongbinh" xml:space="preserve">
+    <value>Category wounded soldiers level</value>
+  </data>
+  <data name="danhmuchoancanhgiadinh" xml:space="preserve">
+    <value>List of the family circumstances</value>
+  </data>
+  <data name="danhmuchoso" xml:space="preserve">
+    <value>Profile records list</value>
+  </data>
+  <data name="danhmuchuongphattrien" xml:space="preserve">
+    <value>Development direction list</value>
+  </data>
+  <data name="danhmuchuyen" xml:space="preserve">
+    <value>District list</value>
+  </data>
+  <data name="danhmuckhanangkethua" xml:space="preserve">
+    <value>Ability to inherit list</value>
+  </data>
+  <data name="danhmuckhoi" xml:space="preserve">
+    <value>Departments list</value>
+  </data>
+  <data name="danhmucloaicauhoi" xml:space="preserve">
+    <value>Questions types</value>
+  </data>
+  <data name="danhmucloaichitieu" xml:space="preserve">
+    <value>List Target types</value>
+  </data>
+  <data name="danhmucloaicongchuc" xml:space="preserve">
+    <value>List employee types</value>
+  </data>
+  <data name="danhmucloaihopdong" xml:space="preserve">
+    <value>List Contract types</value>
+  </data>
+  <data name="danhmucloainhanvien" xml:space="preserve">
+    <value>List staff types</value>
+  </data>
+  <data name="danhmucloaiphep" xml:space="preserve">
+    <value>List leave types</value>
+  </data>
+  <data name="danhmucloaiquyetdinh" xml:space="preserve">
+    <value>Type of decision list</value>
+  </data>
+  <data name="Danhmucloaisanpham" xml:space="preserve">
+    <value>Product type list</value>
+  </data>
+  <data name="danhmucloaitaisan" xml:space="preserve">
+    <value>Assets Category List</value>
+  </data>
+  <data name="danhmucloaithoiviec" xml:space="preserve">
+    <value>List resign type</value>
+  </data>
+  <data name="danhmucloaitieuchuan" xml:space="preserve">
+    <value>Criterion category list</value>
+  </data>
+  <data name="danhmucloaixe" xml:space="preserve">
+    <value>Category vehicles</value>
+  </data>
+  <data name="danhmuclydothoiviec" xml:space="preserve">
+    <value>List reasons for resign</value>
+  </data>
+  <data name="danhmucmauin" xml:space="preserve">
+    <value>Templates print</value>
+  </data>
+  <data name="danhmucmoctimeline" xml:space="preserve">
+    <value>List of timeline assessments</value>
+  </data>
+  <data name="danhmucmucdohailong" xml:space="preserve">
+    <value>Satisfaction list</value>
+  </data>
+  <data name="danhmucnanglucchuyenmon" xml:space="preserve">
+    <value>The list of professional competence</value>
+  </data>
+  <data name="danhmucngachluong" xml:space="preserve">
+    <value>Wage rank</value>
+  </data>
+  <data name="danhmucnganhang" xml:space="preserve">
+    <value>Banks List</value>
+  </data>
+  <data name="danhmucnganhhoc" xml:space="preserve">
+    <value>Faculties list</value>
+  </data>
+  <data name="danhmucngoaingu" xml:space="preserve">
+    <value>Category foreign language</value>
+  </data>
+  <data name="danhmucnguontuyendung" xml:space="preserve">
+    <value>List of recruitment resources</value>
+  </data>
+  <data name="danhmucnoiphongvan" xml:space="preserve">
+    <value>Interview places</value>
+  </data>
+  <data name="danhmucphonghop" xml:space="preserve">
+    <value>Meeting room list</value>
+  </data>
+  <data name="danhmucphucap" xml:space="preserve">
+    <value>Allowances list</value>
+  </data>
+  <data name="danhmucphuongxa" xml:space="preserve">
+    <value>List of Ward / Commune</value>
+  </data>
+  <data name="danhmucquanhuyen" xml:space="preserve">
+    <value>District list</value>
+  </data>
+  <data name="danhmucsanpham" xml:space="preserve">
+    <value>Product list</value>
+  </data>
+  <data name="danhmuctaisan" xml:space="preserve">
+    <value>List of assets</value>
+  </data>
+  <data name="danhmucthamso" xml:space="preserve">
+    <value>List - Parameters</value>
+  </data>
+  <data name="danhmucthongtinchinhtri" xml:space="preserve">
+    <value>List of political information</value>
+  </data>
+  <data name="danhmucthongtinsuckhoe" xml:space="preserve">
+    <value>Health information directory</value>
+  </data>
+  <data name="danhmucthunhapthemthang" xml:space="preserve">
+    <value>Other Income list</value>
+  </data>
+  <data name="danhmucthuong" xml:space="preserve">
+    <value>Bonus title</value>
+  </data>
+  <data name="danhmuctieuchi" xml:space="preserve">
+    <value>List of criteria</value>
+  </data>
+  <data name="danhmuctieuchidanhgia360" xml:space="preserve">
+    <value>Core values List</value>
+  </data>
+  <data name="danhmuctieuchidanhgiamucdohailong" xml:space="preserve">
+    <value>List of criteria for assessing satisfaction</value>
+  </data>
+  <data name="danhmuctieuchuandanhgia" xml:space="preserve">
+    <value>List assessment records</value>
+  </data>
+  <data name="danhmuctinh" xml:space="preserve">
+    <value>Provinces list</value>
+  </data>
+  <data name="danhmuctongiao" xml:space="preserve">
+    <value>List Religion</value>
+  </data>
+  <data name="danhmuctrinhdo" xml:space="preserve">
+    <value>Category of level (foreign language, IT)</value>
+  </data>
+  <data name="danhmuctrinhdochinhtri" xml:space="preserve">
+    <value>Category political skills</value>
+  </data>
+  <data name="danhmuctrinhdongoaingu" xml:space="preserve">
+    <value>Category language skills</value>
+  </data>
+  <data name="danhmuctrinhdoquanlynhanuoc" xml:space="preserve">
+    <value>Category the management state skills</value>
+  </data>
+  <data name="danhmuctrinhdovitinh" xml:space="preserve">
+    <value>Category computer skills</value>
+  </data>
+  <data name="danhmuctruluongthang" xml:space="preserve">
+    <value>Other Deducts list</value>
+  </data>
+  <data name="danhmuctruonghoc" xml:space="preserve">
+    <value>School list</value>
+  </data>
+  <data name="danhmucxeploainhanvien" xml:space="preserve">
+    <value>Category ranked employees</value>
+  </data>
+  <data name="adminduyetphep" xml:space="preserve">
+    <value>Admin approval leave/overtime</value>
+  </data>
+  <data name="bangcongtrongthang" xml:space="preserve">
+    <value>Timesheets in month</value>
+  </data>
+  <data name="bangdiemhocvien" xml:space="preserve">
+    <value>Student's transcripts</value>
+  </data>
+  <data name="bangluongchuyenkhoan" xml:space="preserve">
+    <value>Payrolls bank transfer</value>
+  </data>
+  <data name="bangluongtienmat" xml:space="preserve">
+    <value>Payroll cash</value>
+  </data>
+  <data name="bangluongtong" xml:space="preserve">
+    <value>Salary sheet sum</value>
+  </data>
+  <data name="bangluongtongquat" xml:space="preserve">
+    <value>Salary sheet generality</value>
+  </data>
+  <data name="bangtangca" xml:space="preserve">
+    <value>Overtime sheet</value>
+  </data>
+  <data name="baocaocongviec" xml:space="preserve">
+    <value>Job report</value>
+  </data>
+  <data name="baocaodanhgiatheophongban" xml:space="preserve">
+    <value>Assessment report follow department</value>
+  </data>
+  <data name="baohiemtainan" xml:space="preserve">
+    <value>Accidents</value>
+  </data>
+  <data name="benhvien" xml:space="preserve">
+    <value>Hospitals</value>
+  </data>
+  <data name="bochitieucuanhanviencapduoi" xml:space="preserve">
+    <value>List of indicators for employees</value>
+  </data>
+  <data name="cacchucdanhdangtuyen" xml:space="preserve">
+    <value>The job positions</value>
+  </data>
+  <data name="cackhoahocphattriennghenghiep" xml:space="preserve">
+    <value>The professional development courses</value>
+  </data>
+  <data name="cackhoangthoigianduyetphep" xml:space="preserve">
+    <value>The period of time to  approve leave</value>
+  </data>
+  <data name="cackhoantru" xml:space="preserve">
+    <value>Other Deduct</value>
+  </data>
+  <data name="cacphieudangchoduyet" xml:space="preserve">
+    <value>Overtime registration approval</value>
+  </data>
+  <data name="cacthamsokhac" xml:space="preserve">
+    <value>Parameters</value>
+  </data>
+  <data name="cacthongtindanhap" xml:space="preserve">
+    <value>Inf entered</value>
+  </data>
+  <data name="cactranggioithieu" xml:space="preserve">
+    <value>Introduction pages</value>
+  </data>
+  <data name="caidatthamso" xml:space="preserve">
+    <value>Setup parameters</value>
+  </data>
+  <data name="calamviec" xml:space="preserve">
+    <value>Shift</value>
+  </data>
+  <data name="camketdaotao" xml:space="preserve">
+    <value>Commitment to training</value>
+  </data>
+  <data name="canbodaotaohoinhap" xml:space="preserve">
+    <value>Integration training staff</value>
+  </data>
+  <data name="capnhatcachtinhthuenhanvien" xml:space="preserve">
+    <value>Update method for compute PIT of staff</value>
+  </data>
+  <data name="capnhatcachtinhthuethang" xml:space="preserve">
+    <value>Update method for compute PIT</value>
+  </data>
+  <data name="capnhatcongtac" xml:space="preserve">
+    <value>Update work trip for staffs</value>
+  </data>
+  <data name="capnhatketquadanhgia" xml:space="preserve">
+    <value>Update Assessment result</value>
+  </data>
+  <data name="capnhatkqchonvxaydungchitieutrengiay" xml:space="preserve">
+    <value>Updated results for employee targets construction on paper</value>
+  </data>
+  <data name="capnhatkqchonvxaydungchitieutrenmay" xml:space="preserve">
+    <value>Updated results for employee targets construction on machine</value>
+  </data>
+  <data name="capnhatmucthuong" xml:space="preserve">
+    <value>Input bonus</value>
+  </data>
+  <data name="capnhatnganhangcauhoi" xml:space="preserve">
+    <value>Update questions list</value>
+  </data>
+  <data name="capnhatngaythamgiadaotaohoinhap" xml:space="preserve">
+    <value>Update date of integration training participation</value>
+  </data>
+  <data name="capnhatnhombhxh" xml:space="preserve">
+    <value>Update group reports social insurance</value>
+  </data>
+  <data name="capnhatphieupvthoiviec" xml:space="preserve">
+    <value>Update exit interview</value>
+  </data>
+  <data name="capnhatquatrinhdaotao" xml:space="preserve">
+    <value>Update training history</value>
+  </data>
+  <data name="capnhatthamso" xml:space="preserve">
+    <value>Choose staff to receive notification</value>
+  </data>
+  <data name="capnhatthongtincongty" xml:space="preserve">
+    <value>Update company regulations</value>
+  </data>
+  <data name="capnhatthongtindanhgia" xml:space="preserve">
+    <value>Update information indicators </value>
+  </data>
+  <data name="capnhatthongtinnhanvien" xml:space="preserve">
+    <value>Update employee information</value>
+  </data>
+  <data name="cauhinhquytrinhduyetphep" xml:space="preserve">
+    <value>Configure approval process of leave</value>
+  </data>
+  <data name="cauhinhsongaynhacnho" xml:space="preserve">
+    <value>Configuration the notify date</value>
+  </data>
+  <data name="cauhinhsongayphephangnam" xml:space="preserve">
+    <value>Configuration seniority leave</value>
+  </data>
+  <data name="cauhinhtruditre" xml:space="preserve">
+    <value>Configuration deduct tardy</value>
+  </data>
+  <data name="cauhinhxinnghiphep" xml:space="preserve">
+    <value>Config leave</value>
+  </data>
+  <data name="chamcong" xml:space="preserve">
+    <value>Attendance</value>
+  </data>
+  <data name="chamdiembaitestluan" xml:space="preserve">
+    <value>Grading test</value>
+  </data>
+  <data name="chedolamviecrieng" xml:space="preserve">
+    <value>Private Template arrange shifts in a week</value>
+  </data>
+  <data name="chinhsuakqdanhgia" xml:space="preserve">
+    <value>Edit Assessment result</value>
+  </data>
+  <data name="chiphigiangvien" xml:space="preserve">
+    <value>Teaching costs</value>
+  </data>
+  <data name="chiphiguihocbenngoai" xml:space="preserve">
+    <value>Outside school costs</value>
+  </data>
+  <data name="chiphikhac" xml:space="preserve">
+    <value>Other costs</value>
+  </data>
+  <data name="choncanbonhansuguimail" xml:space="preserve">
+    <value>Choose staff receive notify email</value>
+  </data>
+  <data name="chonchitieuchung" xml:space="preserve">
+    <value>Select targer general</value>
+  </data>
+  <data name="chonchitieuchungchonhom" xml:space="preserve">
+    <value>Choose general criteria from staff</value>
+  </data>
+  <data name="chonnhanviendanhgia360" xml:space="preserve">
+    <value>Choose 360 ​​review staff</value>
+  </data>
+  <data name="chonnvtrungtamdaotaoguimail" xml:space="preserve">
+    <value>Select training center staff to send mail</value>
+  </data>
+  <data name="chotcong" xml:space="preserve">
+    <value>Attendance</value>
+  </data>
+  <data name="chotdulieu" xml:space="preserve">
+    <value>Lock payroll data</value>
+  </data>
+  <data name="chuyenphepnamofnamcu" xml:space="preserve">
+    <value>Move annual leave of old year to new year</value>
+  </data>
+  <data name="chuyenphongbanbangluongnv" xml:space="preserve">
+    <value>Change department of payroll</value>
+  </data>
+  <data name="dangkychedo" xml:space="preserve">
+    <value>Registration early</value>
+  </data>
+  <data name="dangkycongtac" xml:space="preserve">
+    <value>Registration the work trip</value>
+  </data>
+  <data name="dangkydaotao" xml:space="preserve">
+    <value>Training register</value>
+  </data>
+  <data name="dangkydaotaohoinhap" xml:space="preserve">
+    <value>Training registration integration</value>
+  </data>
+  <data name="dangkydaotaongoai" xml:space="preserve">
+    <value>Outside training register</value>
+  </data>
+  <data name="dangkylambu" xml:space="preserve">
+    <value>Register to compensating work</value>
+  </data>
+  <data name="dangkylophoc" xml:space="preserve">
+    <value>Register join a course</value>
+  </data>
+  <data name="dangkyphep" xml:space="preserve">
+    <value>Input leaves</value>
+  </data>
+  <data name="dangkypheptapthe" xml:space="preserve">
+    <value>Input leave for many staff</value>
+  </data>
+  <data name="dangkypheptheogio" xml:space="preserve">
+    <value>Register leave in hourly</value>
+  </data>
+  <data name="dangkytangca" xml:space="preserve">
+    <value>Overtime registration</value>
+  </data>
+  <data name="danhgia" xml:space="preserve">
+    <value>Assessment</value>
+  </data>
+  <data name="danhgia360" xml:space="preserve">
+    <value>360 degree feedback</value>
+  </data>
+  <data name="danhgiadaotao" xml:space="preserve">
+    <value>Evaluate the organization of the training course</value>
+  </data>
+  <data name="danhgiagiahanhopdong" xml:space="preserve">
+    <value>Evaluation of contract extension</value>
+  </data>
+  <data name="danhgiahieuquasaudaotao" xml:space="preserve">
+    <value>Assessment after training</value>
+  </data>
+  <data name="danhgiaketquakhoadaotao" xml:space="preserve">
+    <value>Assessment result training</value>
+  </data>
+  <data name="danhgiakqdaotao" xml:space="preserve">
+    <value>Assessment result training</value>
+  </data>
+  <data name="danhgianhanvien" xml:space="preserve">
+    <value>Staff Assessment</value>
+  </data>
+  <data name="danhgianhanviendaotaohoinhap" xml:space="preserve">
+    <value>Assessment of training personnel integration</value>
+  </data>
+  <data name="danhgiaphongvan" xml:space="preserve">
+    <value>Interview</value>
+  </data>
+  <data name="danhgiapv" xml:space="preserve">
+    <value>Interview</value>
+  </data>
+  <data name="danhgiasauthuviec" xml:space="preserve">
+    <value>Evaluate after probation/training</value>
+  </data>
+  <data name="danhgiatungnhanvien" xml:space="preserve">
+    <value>View Assessment of staff</value>
+  </data>
+  <data name="danhmucxeploainv" xml:space="preserve">
+    <value>Category ranked employees</value>
+  </data>
+  <data name="danhsachchinhgiocong" xml:space="preserve">
+    <value>List of request confirmation time keeping</value>
+  </data>
+  <data name="danhsachdangkycongtac" xml:space="preserve">
+    <value>List of registration the work trip</value>
+  </data>
+  <data name="Danhsachdanhgiagiahanhd" xml:space="preserve">
+    <value>List of evaluation of contract extension</value>
+  </data>
+  <data name="danhsachdanhgiasauthuviec" xml:space="preserve">
+    <value>List of assessment probation/training </value>
+  </data>
+  <data name="danhsachdongthuethunhap" xml:space="preserve">
+    <value>List employees pay income tax</value>
+  </data>
+  <data name="danhsachemaildagui" xml:space="preserve">
+    <value>Sent email</value>
+  </data>
+  <data name="Danhsachgiam_tamthoi" xml:space="preserve">
+    <value>List of temporary drops</value>
+  </data>
+  <data name="Danhsachgiam_thoiviec" xml:space="preserve">
+    <value>List of social insurance reduction - resign</value>
+  </data>
+  <data name="danhsachhopdongdakytheothoigian" xml:space="preserve">
+    <value>List contracts signed by time</value>
+  </data>
+  <data name="danhsachkehoachtangca" xml:space="preserve">
+    <value>List of overtime plan</value>
+  </data>
+  <data name="danhsachkhoadaotaohoinhap" xml:space="preserve">
+    <value>List of integration training courses</value>
+  </data>
+  <data name="danhsachlaydulieucongdacbiet" xml:space="preserve">
+    <value>List of special time attendance data</value>
+  </data>
+  <data name="danhsachluanchuyen" xml:space="preserve">
+    <value>Staffs rotation list</value>
+  </data>
+  <data name="danhsachnhanviendaotao" xml:space="preserve">
+    <value>List of training staffs</value>
+  </data>
+  <data name="danhsachnhanviendaotaohoinhap" xml:space="preserve">
+    <value>List of special time attendance data</value>
+  </data>
+  <data name="danhsachnhanvienduocdanhgiacao" xml:space="preserve">
+    <value>Staffs are appreciated</value>
+  </data>
+  <data name="danhsachphieuyeucau" xml:space="preserve">
+    <value>List of request form</value>
+  </data>
+  <data name="danhsachphuluc" xml:space="preserve">
+    <value>List of Appendix</value>
+  </data>
+  <data name="danhsachtaisandacap" xml:space="preserve">
+    <value>List of asset allocated</value>
+  </data>
+  <data name="Danhsachtang_nhanvienmoi" xml:space="preserve">
+    <value>List of increasing social insurance - new staff</value>
+  </data>
+  <data name="Danhsachtang_tanglai" xml:space="preserve">
+    <value>List of social insurance increase - increase again</value>
+  </data>
+  <data name="danhsachthamgiabhxhtrongthang" xml:space="preserve">
+    <value>List of social insurance participants in the month</value>
+  </data>
+  <data name="danhsachthamgiacongdoan" xml:space="preserve">
+    <value>List of participating union</value>
+  </data>
+  <data name="Danhsachthaydoimucluong" xml:space="preserve">
+    <value>List of salary changes in the month</value>
+  </data>
+  <data name="danhsachthoiviec" xml:space="preserve">
+    <value>Staffs resigned</value>
+  </data>
+  <data name="Danhsachthoivieccotruluong" xml:space="preserve">
+    <value>List of resign have deductions</value>
+  </data>
+  <data name="danhsachtinhcongdacbiet" xml:space="preserve">
+    <value>Attendance list is not limited to hours</value>
+  </data>
+  <data name="danhsachtrungtuyen" xml:space="preserve">
+    <value>List of matriculated</value>
+  </data>
+  <data name="danhsachungviendanhanvaolam" xml:space="preserve">
+    <value>List of Candidates joined</value>
+  </data>
+  <data name="danhsachungviendatketquapv" xml:space="preserve">
+    <value>List of passed interview</value>
+  </data>
+  <data name="danhsachungviendatketquatest" xml:space="preserve">
+    <value>List of passed testing</value>
+  </data>
+  <data name="danhsachungvienonline" xml:space="preserve">
+    <value>The list of candidates online</value>
+  </data>
+  <data name="danhsachungvientrongdottuyendung" xml:space="preserve">
+    <value>List of all Candidates</value>
+  </data>
+  <data name="danhsachungvienvaolam" xml:space="preserve">
+    <value>List of Candidates joined</value>
+  </data>
+  <data name="datphonghop" xml:space="preserve">
+    <value>Booking meeting room</value>
+  </data>
+  <data name="dexuatdacbiet" xml:space="preserve">
+    <value>Special proposal - contract evaluation</value>
+  </data>
+  <data name="diadiemlamviec" xml:space="preserve">
+    <value>Place of work</value>
+  </data>
+  <data name="diemdanhlophoc" xml:space="preserve">
+    <value>Attendance in class</value>
+  </data>
+  <data name="dieudongbonhiem" xml:space="preserve">
+    <value>Maneuver -  Appointed</value>
+  </data>
+  <data name="dmquanhenhanthan" xml:space="preserve">
+    <value>Relationship</value>
+  </data>
+  <data name="docdulieu" xml:space="preserve">
+    <value>Read data</value>
+  </data>
+  <data name="doicalamviec" xml:space="preserve">
+    <value>Exchange shift</value>
+  </data>
+  <data name="doimatkhau" xml:space="preserve">
+    <value>Change password</value>
+  </data>
+  <data name="donnghiphep" xml:space="preserve">
+    <value>Send application for leave</value>
+  </data>
+  <data name="donxacnhangiocong" xml:space="preserve">
+    <value>Confirmation time keeping</value>
+  </data>
+  <data name="donxinthoiviec" xml:space="preserve">
+    <value>Send resignation</value>
+  </data>
+  <data name="downloadungvienonline" xml:space="preserve">
+    <value>Download profile online</value>
+  </data>
+  <data name="dscackhoahoc" xml:space="preserve">
+    <value>List of Courses</value>
+  </data>
+  <data name="dscanbotuyendungdonvi" xml:space="preserve">
+    <value>List of recruitment staff</value>
+  </data>
+  <data name="dschoduyetphep" xml:space="preserve">
+    <value>List of waiting for approve leave</value>
+  </data>
+  <data name="dschuadanhgia" xml:space="preserve">
+    <value>List has not been assessed</value>
+  </data>
+  <data name="dschuaduocdanhgia" xml:space="preserve">
+    <value>List has not been assessed</value>
+  </data>
+  <data name="dschuagui" xml:space="preserve">
+    <value>List not yet send</value>
+  </data>
+  <data name="dsdaduyet" xml:space="preserve">
+    <value>List Approved</value>
+  </data>
+  <data name="dsdangkydaotao" xml:space="preserve">
+    <value>Register list</value>
+  </data>
+  <data name="dsdangkydaotaongoai" xml:space="preserve">
+    <value>List register outside scourse</value>
+  </data>
+  <data name="dsdangkyhocngoai" xml:space="preserve">
+    <value>List register outside scourse</value>
+  </data>
+  <data name="dsdaotaotheothoigian" xml:space="preserve">
+    <value>Training list by time</value>
+  </data>
+  <data name="dsdottuyendung" xml:space="preserve">
+    <value>List recruitment session</value>
+  </data>
+  <data name="dshethanhopdong" xml:space="preserve">
+    <value>List staff expired contract</value>
+  </data>
+  <data name="dskhaosatdatao" xml:space="preserve">
+    <value>List surveys session</value>
+  </data>
+  <data name="dskynangnghiepvu" xml:space="preserve">
+    <value>List skill</value>
+  </data>
+  <data name="dsnghiphep" xml:space="preserve">
+    <value> List of employee on leave</value>
+  </data>
+  <data name="dsnvtheotylehoanthanhchitieu" xml:space="preserve">
+    <value>Staff list by completion rate targets</value>
+  </data>
+  <data name="dsnvtheoxeploai" xml:space="preserve">
+    <value>Staff list by rank</value>
+  </data>
+  <data name="dsnvxuatsacnhieunam" xml:space="preserve">
+    <value>Staff list are appreciated in many years</value>
+  </data>
+  <data name="dsphanhoicuahocvien" xml:space="preserve">
+    <value>Feebbacks from staff</value>
+  </data>
+  <data name="dsphieuyeucau" xml:space="preserve">
+    <value>List of recruitment require</value>
+  </data>
+  <data name="dstangluong" xml:space="preserve">
+    <value>List of change salary</value>
+  </data>
+  <data name="dstheolydothoiviec" xml:space="preserve">
+    <value>Staff resigned list by reason</value>
+  </data>
+  <data name="dstheomucdothoiviec" xml:space="preserve">
+    <value>List staff by levels of satisfaction</value>
+  </data>
+  <data name="dstheongayvaocty" xml:space="preserve">
+    <value>Staffs by join date</value>
+  </data>
+  <data name="dstin" xml:space="preserve">
+    <value>Update news</value>
+  </data>
+  <data name="dstrubhxh" xml:space="preserve">
+    <value>Social Insuracne deduct</value>
+  </data>
+  <data name="dsxacnhandupv" xml:space="preserve">
+    <value>List candidate confirmation join interview</value>
+  </data>
+  <data name="dthn_chonnhanvienthamgia" xml:space="preserve">
+    <value>List staff join</value>
+  </data>
+  <data name="dulieumaychamcong" xml:space="preserve">
+    <value>Timesheet data</value>
+  </data>
+  <data name="duyetbangchamcong" xml:space="preserve">
+    <value>Confirmation for  timesheet</value>
+  </data>
+  <data name="duyetbangluong" xml:space="preserve">
+    <value>Approval payroll</value>
+  </data>
+  <data name="duyetchitieu" xml:space="preserve">
+    <value>Confirmation for targets</value>
+  </data>
+  <data name="duyetchitieudanhgianhanvien" xml:space="preserve">
+    <value>Approval staff evaluation criteria</value>
+  </data>
+  <data name="duyetchitieunhom" xml:space="preserve">
+    <value>Group target approval</value>
+  </data>
+  <data name="duyetdangkycongtac" xml:space="preserve">
+    <value>Confirmation for registration the work trip</value>
+  </data>
+  <data name="duyetdangkydaotao" xml:space="preserve">
+    <value>Confirmation for training register</value>
+  </data>
+  <data name="duyetdanhgiachitieunhom" xml:space="preserve">
+    <value>Check evaluation of team criteria</value>
+  </data>
+  <data name="duyetdanhgiagiahanhopdong" xml:space="preserve">
+    <value>Approval assessment contract adjourn</value>
+  </data>
+  <data name="duyetdanhgiasauthuviec" xml:space="preserve">
+    <value>Approval assessment after probation/training</value>
+  </data>
+  <data name="duyetdieuchinhgiocong" xml:space="preserve">
+    <value>Confirmation for request confirm time keeping</value>
+  </data>
+  <data name="duyetdonxinthoiviec" xml:space="preserve">
+    <value>Approve for resignation letter</value>
+  </data>
+  <data name="duyethosoungvien" xml:space="preserve">
+    <value>Approval of profile employee</value>
+  </data>
+  <data name="duyetkehoachtangca" xml:space="preserve">
+    <value>Overtime plan approval</value>
+  </data>
+  <data name="duyetketquatest" xml:space="preserve">
+    <value>Filter profiles by test result</value>
+  </data>
+  <data name="duyetlambu" xml:space="preserve">
+    <value>Compensation working approval</value>
+  </data>
+  <data name="duyetmolaiphieuyeucautuyendung" xml:space="preserve">
+    <value>Approval reopened recruitment request form</value>
+  </data>
+  <data name="duyetnghiphep" xml:space="preserve">
+    <value>Leave request approval</value>
+  </data>
+  <data name="Duyetofferletter" xml:space="preserve">
+    <value>Approval offer letter</value>
+  </data>
+  <data name="duyetphieu" xml:space="preserve">
+    <value>Confirmation</value>
+  </data>
+  <data name="duyetthongtinungviennhap" xml:space="preserve">
+    <value>Approval information candidates input</value>
+  </data>
+  <data name="duyetyeucautuyendung" xml:space="preserve">
+    <value>Approval recruitment request</value>
+  </data>
+  <data name="gopydagui" xml:space="preserve">
+    <value>Comments send</value>
+  </data>
+  <data name="guigopy" xml:space="preserve">
+    <value>Send contact</value>
+  </data>
+  <data name="guiketquatesting" xml:space="preserve">
+    <value>Send result testing</value>
+  </data>
+  <data name="guinhucaudaotao" xml:space="preserve">
+    <value>Send require training</value>
+  </data>
+  <data name="guithongtintaikhoan" xml:space="preserve">
+    <value>Send account via email</value>
+  </data>
+  <data name="guiyeucautuyendung" xml:space="preserve">
+    <value>Send recruitment request</value>
+  </data>
+  <data name="hinhthucchiluong" xml:space="preserve">
+    <value>Forms of salary payment</value>
+  </data>
+  <data name="hopdong" xml:space="preserve">
+    <value>Contract</value>
+  </data>
+  <data name="hoso" xml:space="preserve">
+    <value>Documents of staff</value>
+  </data>
+  <data name="huongdansudung_phanPA_Danhchocanhan" xml:space="preserve">
+    <value>Guide to use</value>
+  </data>
+  <data name="huydulieucong" xml:space="preserve">
+    <value>Clear timekeeping data</value>
+  </data>
+  <data name="importchitieucanhan" xml:space="preserve">
+    <value>Import personal target</value>
+  </data>
+  <data name="importcongdaotao" xml:space="preserve">
+    <value>Import attendance for training staff</value>
+  </data>
+  <data name="importcongnhanvien" xml:space="preserve">
+    <value>Import attendance for employee</value>
+  </data>
+  <data name="Importcongtuexcel" xml:space="preserve">
+    <value>Get attendance data from excel</value>
+  </data>
+  <data name="importketquadaotao" xml:space="preserve">
+    <value>Import training result</value>
+  </data>
+  <data name="importphieuluong" xml:space="preserve">
+    <value>Import Payslips</value>
+  </data>
+  <data name="importtangcanhanvien" xml:space="preserve">
+    <value>Import overtime for employee</value>
+  </data>
+  <data name="importtangluongnv" xml:space="preserve">
+    <value>Import change salary data</value>
+  </data>
+  <data name="incamketbaomatthongtin" xml:space="preserve">
+    <value>Print Commitment security to infomation</value>
+  </data>
+  <data name="indanhsachthoiviec" xml:space="preserve">
+    <value>Print resign staff list</value>
+  </data>
+  <data name="inquyetdinhtuyendung" xml:space="preserve">
+    <value>Print the recruitment decision</value>
+  </data>
+  <data name="kehoachdaotao" xml:space="preserve">
+    <value>Learning plan</value>
+  </data>
+  <data name="kehoachtangca" xml:space="preserve">
+    <value>Overtime plan</value>
+  </data>
+  <data name="ketnoidulieutumaychamcong" xml:space="preserve">
+    <value>Get attendance data from access control devices</value>
+  </data>
+  <data name="ketnoidulieutuPTS" xml:space="preserve">
+    <value>Get attendance data from PTS</value>
+  </data>
+  <data name="ketquadaotaohoinhap" xml:space="preserve">
+    <value>Result integration training</value>
+  </data>
+  <data name="ketquaduyetdangkyngoai" xml:space="preserve">
+    <value>Result of approve outside training registration</value>
+  </data>
+  <data name="ketquapv" xml:space="preserve">
+    <value>Interview result</value>
+  </data>
+  <data name="khamsuckhoe" xml:space="preserve">
+    <value>Health examination</value>
+  </data>
+  <data name="khenthuongkyluat" xml:space="preserve">
+    <value>Reward - Discipline</value>
+  </data>
+  <data name="khoadulieuthang" xml:space="preserve">
+    <value>Lock data leave - overtime in monthly</value>
+  </data>
+  <data name="kiemnhiem" xml:space="preserve">
+    <value>Concurrently</value>
+    <comment>field thong tin nhan vien</comment>
+  </data>
+  <data name="kqxeploainvtrongnhieunam" xml:space="preserve">
+    <value>Rank of staff in many years</value>
+  </data>
+  <data name="lichhoccuaban" xml:space="preserve">
+    <value>Your school calendar</value>
+  </data>
+  <data name="lichhocdaotaotheothang" xml:space="preserve">
+    <value>Monthly training calendar</value>
+  </data>
+  <data name="lichsuluong" xml:space="preserve">
+    <value>Salary History</value>
+  </data>
+  <data name="linhvucchuyenmon" xml:space="preserve">
+    <value>Expertise</value>
+  </data>
+  <data name="loaicackhoanthunhapkhac" xml:space="preserve">
+    <value>Categories of other income</value>
+  </data>
+  <data name="loaicackhoantruluong" xml:space="preserve">
+    <value>Categories of other deduct</value>
+  </data>
+  <data name="loaingaycong" xml:space="preserve">
+    <value>Working day types</value>
+  </data>
+  <data name="luutruhoso" xml:space="preserve">
+    <value>Store profiles</value>
+  </data>
+  <data name="lylichnhanvien" xml:space="preserve">
+    <value>Employee CVs</value>
+  </data>
+  <data name="mau1a" xml:space="preserve">
+    <value>Form A01a</value>
+  </data>
+  <data name="mau3a" xml:space="preserve">
+    <value>Form D02TS</value>
+  </data>
+  <data name="mau66a" xml:space="preserve">
+    <value>Form C66a</value>
+  </data>
+  <data name="mau67a" xml:space="preserve">
+    <value>Form C67a</value>
+  </data>
+  <data name="mau68a" xml:space="preserve">
+    <value>Form C68a</value>
+  </data>
+  <data name="mau69a" xml:space="preserve">
+    <value>Form C69a</value>
+  </data>
+  <data name="mau70a" xml:space="preserve">
+    <value>Form C70a</value>
+  </data>
+  <data name="Mokhoadulieuchamcongluong" xml:space="preserve">
+    <value>Unlock time attendence - payroll</value>
+  </data>
+  <data name="motacongviecanhan" xml:space="preserve">
+    <value>Personal job description</value>
+  </data>
+  <data name="motacv" xml:space="preserve">
+    <value>Job Description</value>
+  </data>
+  <data name="ngayle" xml:space="preserve">
+    <value>Holiday</value>
+  </data>
+  <data name="Ngayphepconlai" xml:space="preserve">
+    <value>Leave Quota</value>
+  </data>
+  <data name="nghibu" xml:space="preserve">
+    <value>Compensatory rest</value>
+  </data>
+  <data name="nguoiphuthuoc" xml:space="preserve">
+    <value>Dependents</value>
+  </data>
+  <data name="nhanvien" xml:space="preserve">
+    <value>Employee</value>
+  </data>
+  <data name="nhanvienduocdanhgiacao" xml:space="preserve">
+    <value>Staff lists are appreciated</value>
+  </data>
+  <data name="nhanvienhethanthuviec" xml:space="preserve">
+    <value>Number of staff probation expire</value>
+  </data>
+  <data name="nhanviensapthoiviec" xml:space="preserve">
+    <value>Staff list is about to resign</value>
+  </data>
+  <data name="nhapchitieuchonhom" xml:space="preserve">
+    <value>Input team/department duty</value>
+  </data>
+  <data name="nhapchitieuchung" xml:space="preserve">
+    <value>Input general criteria</value>
+  </data>
+  <data name="nhapchitieudanhgianhanviencapduoi" xml:space="preserve">
+    <value>Input targer assessment staff</value>
+  </data>
+  <data name="nhapluong" xml:space="preserve">
+    <value>Input salary</value>
+  </data>
+  <data name="nhapmotacongviec" xml:space="preserve">
+    <value>Input job description</value>
+  </data>
+  <data name="nhapphucap" xml:space="preserve">
+    <value>Input allowance</value>
+  </data>
+  <data name="nhapphucapcodinh" xml:space="preserve">
+    <value>Input fixed allowance</value>
+  </data>
+  <data name="nhapquytrinhduyet" xml:space="preserve">
+    <value>Input Approval process</value>
+  </data>
+  <data name="nhucaudaotaonoibo" xml:space="preserve">
+    <value>Internal training needs</value>
+  </data>
+  <data name="Noicapgiaypheplaixe" xml:space="preserve">
+    <value>Driving license Issuer</value>
+  </data>
+  <data name="noiquy" xml:space="preserve">
+    <value>Company rules</value>
+  </data>
+  <data name="nvconhieubochitieu" xml:space="preserve">
+    <value>Staffs have many jobtitle in a year</value>
+  </data>
+  <data name="omdauthaisan" xml:space="preserve">
+    <value>Sickness-Maternity</value>
+  </data>
+  <data name="phanhoiykienvoittdt" xml:space="preserve">
+    <value>Feedback to training center</value>
+  </data>
+  <data name="phanquyen" xml:space="preserve">
+    <value>Permission</value>
+  </data>
+  <data name="phanquyencapnhathoso" xml:space="preserve">
+    <value>Permit for access profile range</value>
+  </data>
+  <data name="phanquyencapnhatsodo" xml:space="preserve">
+    <value>Permit for acces orgranization chart</value>
+  </data>
+  <data name="phanquyenchamcong" xml:space="preserve">
+    <value>Permit for Timekeeping</value>
+  </data>
+  <data name="phanquyenguiphieuyeucautuyendung" xml:space="preserve">
+    <value>Permit for recruitment request</value>
+  </data>
+  <data name="phanquyenxembangchamcong" xml:space="preserve">
+    <value>Permit for view timesheet</value>
+  </data>
+  <data name="phantichdulieutuyendung" xml:space="preserve">
+    <value>Analysise recruiment data</value>
+  </data>
+  <data name="phantichthoigianxulyhoso" xml:space="preserve">
+    <value>Analysise time profile process</value>
+  </data>
+  <data name="phepnam" xml:space="preserve">
+    <value>Annual leave</value>
+  </data>
+  <data name="phieuluong" xml:space="preserve">
+    <value>Payslip</value>
+  </data>
+  <data name="phucap" xml:space="preserve">
+    <value>Allowances</value>
+  </data>
+  <data name="provinces" xml:space="preserve">
+    <value>Provinces</value>
+  </data>
+  <data name="quanhenhanthan" xml:space="preserve">
+    <value>Personal relations</value>
+  </data>
+  <data name="quanlychiphigiangvien" xml:space="preserve">
+    <value>Manage teaching costs</value>
+  </data>
+  <data name="quanlydanhgiachitieunhom" xml:space="preserve">
+    <value>Evaluation of team criteria</value>
+  </data>
+  <data name="quanlykhoadaotao" xml:space="preserve">
+    <value>Manage courses</value>
+  </data>
+  <data name="quanlyluong" xml:space="preserve">
+    <value>Payroll management</value>
+  </data>
+  <data name="Quanlythietbi" xml:space="preserve">
+    <value>Add/Remove/Edit Attendance machine</value>
+  </data>
+  <data name="quanlyvantay" xml:space="preserve">
+    <value>Manage Finger/Card</value>
+  </data>
+  <data name="quatrinhdanhgianvnhieunam" xml:space="preserve">
+    <value>Staff Assessment process</value>
+  </data>
+  <data name="quatrinhdaotao" xml:space="preserve">
+    <value>Your training history</value>
+  </data>
+  <data name="quatrinhdaotaocuanv" xml:space="preserve">
+    <value>Training history of stafff</value>
+  </data>
+  <data name="quatrinhlamviec" xml:space="preserve">
+    <value>Work process before join company</value>
+  </data>
+  <data name="quydinhtruluong" xml:space="preserve">
+    <value>Deduction Rule</value>
+  </data>
+  <data name="sodonhansukethua" xml:space="preserve">
+    <value>Inheritance staff chart</value>
+  </data>
+  <data name="sodotochuc" xml:space="preserve">
+    <value>Organizational chart</value>
+  </data>
+  <data name="soluongnhanvientheochucdanh" xml:space="preserve">
+    <value>Number of staff by jobtitle</value>
+  </data>
+  <data name="soluongnvtheotylehoanthanhchitieu" xml:space="preserve">
+    <value>Number of staff by completion rate targets</value>
+  </data>
+  <data name="soluongnvtheoxeploai" xml:space="preserve">
+    <value>Number of staff by ranking</value>
+  </data>
+  <data name="sosanhquyluongphongbandata" xml:space="preserve">
+    <value>Total salary in many months</value>
+  </data>
+  <data name="sosanhtongquyluong" xml:space="preserve">
+    <value>Compare the total monthly salary</value>
+  </data>
+  <data name="sotay" xml:space="preserve">
+    <value>My Calendar</value>
+  </data>
+  <data name="taisansudung" xml:space="preserve">
+    <value>Assets used by staff</value>
+  </data>
+  <data name="taobaitest" xml:space="preserve">
+    <value>Create new skill testing</value>
+  </data>
+  <data name="taodotthi" xml:space="preserve">
+    <value>Create new testing session</value>
+  </data>
+  <data name="taomoidottuyendung" xml:space="preserve">
+    <value>New recruitment session</value>
+  </data>
+  <data name="taotaikhoan" xml:space="preserve">
+    <value>Create account</value>
+  </data>
+  <data name="tgnghiviectb" xml:space="preserve">
+    <value>The average stay</value>
+  </data>
+  <data name="thamsocong" xml:space="preserve">
+    <value>Parameters </value>
+  </data>
+  <data name="thaydoicalamviec" xml:space="preserve">
+    <value>Change working shift</value>
+  </data>
+  <data name="Thaydoihesotangca" xml:space="preserve">
+    <value>Change coefficient overtime - night shift</value>
+  </data>
+  <data name="thaydoiluongdaotao" xml:space="preserve">
+    <value>Change training salary</value>
+  </data>
+  <data name="thaydoimucdongbhxh" xml:space="preserve">
+    <value>The social insurance</value>
+  </data>
+  <data name="thaydoimucgiamtru" xml:space="preserve">
+    <value>Deduction for PIT</value>
+  </data>
+  <data name="themmoidotkhaosat" xml:space="preserve">
+    <value>Add new survey</value>
+  </data>
+  <data name="themmoikynangnghiepvu" xml:space="preserve">
+    <value>Add new skill</value>
+  </data>
+  <data name="themmoiphieuyeucau" xml:space="preserve">
+    <value>Add new request form</value>
+  </data>
+  <data name="themtin" xml:space="preserve">
+    <value>Add news</value>
+  </data>
+  <data name="themungvien" xml:space="preserve">
+    <value>Add candidate profile</value>
+  </data>
+  <data name="theodoingayphep" xml:space="preserve">
+    <value>Leave tracking</value>
+  </data>
+  <data name="theodoithunhapkhac" xml:space="preserve">
+    <value>Other income</value>
+  </data>
+  <data name="theodoitruluongkhac" xml:space="preserve">
+    <value>Other deduct</value>
+  </data>
+  <data name="theodoivipham" xml:space="preserve">
+    <value>Assessment violation - achievements</value>
+  </data>
+  <data name="theodoixaydungchitieu" xml:space="preserve">
+    <value>Follow set up target</value>
+  </data>
+  <data name="thietlapchitieunhom" xml:space="preserve">
+    <value>Input targer group</value>
+  </data>
+  <data name="thietlapdanhgia360" xml:space="preserve">
+    <value>Setup 360</value>
+  </data>
+  <data name="thietlapkhoahoc" xml:space="preserve">
+    <value>Set up the course</value>
+  </data>
+  <data name="thoathuantaitrodaotao" xml:space="preserve">
+    <value>Training grant agreement</value>
+  </data>
+  <data name="thoigiantrungbinhtuyendungtheocaobac" xml:space="preserve">
+    <value>The average crecruiment time</value>
+  </data>
+  <data name="thoiviec" xml:space="preserve">
+    <value>Resign</value>
+    <comment>field thong tin nhan vien</comment>
+  </data>
+  <data name="thoiviecvaolamlai" xml:space="preserve">
+    <value>Resigned to rework</value>
+  </data>
+  <data name="thongbao" xml:space="preserve">
+    <value>Notify</value>
+  </data>
+  <data name="thongbaocuakhoinhansu" xml:space="preserve">
+    <value>Notify of HR Department</value>
+  </data>
+  <data name="thongkebaikiemtra_dthn" xml:space="preserve">
+    <value>List test</value>
+  </data>
+  <data name="thongkechamsocsuckhoe" xml:space="preserve">
+    <value>Statistical health care</value>
+  </data>
+  <data name="thongkedanhgiadonvitochuckhoadaotao" xml:space="preserve">
+    <value>Training unit statistics</value>
+  </data>
+  <data name="thongkedanhgiahieuquadaotao" xml:space="preserve">
+    <value>Training performance evaluation statistics</value>
+  </data>
+  <data name="thongkedanhgiatungnv" xml:space="preserve">
+    <value>View assessement of staff</value>
+  </data>
+  <data name="thongkedanhsachcongtac" xml:space="preserve">
+    <value>List of work trip</value>
+  </data>
+  <data name="thongkedanhsachdoandang" xml:space="preserve">
+    <value>The list Delegation-Party</value>
+  </data>
+  <data name="thongkedanhsachtangca" xml:space="preserve">
+    <value>List overtime</value>
+  </data>
+  <data name="thongkedanhsachxacnhangiocong" xml:space="preserve">
+    <value>List of confirmation time keeping</value>
+  </data>
+  <data name="thongkedanhsachxinvaotrerasom" xml:space="preserve">
+    <value>List of request in late/out early</value>
+  </data>
+  <data name="thongkedaotaohoinhap" xml:space="preserve">
+    <value>Statistics of Integrated training</value>
+  </data>
+  <data name="thongkedexuat" xml:space="preserve">
+    <value>List suggest of staff</value>
+  </data>
+  <data name="Thongkediadiemlamviectyle" xml:space="preserve">
+    <value>Work location</value>
+  </data>
+  <data name="thongkehanmucphep" xml:space="preserve">
+    <value>Quota leaves report</value>
+  </data>
+  <data name="thongkehopdonglaodong" xml:space="preserve">
+    <value>Statistics labor contract</value>
+  </data>
+  <data name="thongkekhaosat_dthn" xml:space="preserve">
+    <value>Statistics of orientation training survey</value>
+  </data>
+  <data name="thongkekiemsoatanninh" xml:space="preserve">
+    <value>List of defense note</value>
+  </data>
+  <data name="thongkekinhnghiem" xml:space="preserve">
+    <value>Statistics by work experience</value>
+  </data>
+  <data name="thongkeluong" xml:space="preserve">
+    <value>Report to current salary</value>
+  </data>
+  <data name="thongkeluongcapbac" xml:space="preserve">
+    <value>Total salary by level</value>
+  </data>
+  <data name="thongkeluongnhanvien" xml:space="preserve">
+    <value>Salary detail of Employee by time</value>
+  </data>
+  <data name="thongkelydothoiviec" xml:space="preserve">
+    <value>Statistics by reason for resign</value>
+  </data>
+  <data name="thongkemucdohailong" xml:space="preserve">
+    <value>Statistics by satisfaction levels about salary, bonus, work environment</value>
+  </data>
+  <data name="thongkenhanthan" xml:space="preserve">
+    <value>Statistics relatives</value>
+  </data>
+  <data name="thongkephuluchopdong" xml:space="preserve">
+    <value>Statistics of contract addendum</value>
+  </data>
+  <data name="thongkequatrinhdongbaohiem" xml:space="preserve">
+    <value>Insurance premiums history</value>
+  </data>
+  <data name="thongkequyen" xml:space="preserve">
+    <value>Reports by permit of staff</value>
+  </data>
+  <data name="thongkesoluongdilam" xml:space="preserve">
+    <value>Number of staffs working in day</value>
+  </data>
+  <data name="thongkesoluongtheotyle" xml:space="preserve">
+    <value>Number of staff by rate</value>
+  </data>
+  <data name="thongkesoluongungvienchotungvitri" xml:space="preserve">
+    <value>User statistics number for each position</value>
+  </data>
+  <data name="thongkesonguoithamgia" xml:space="preserve">
+    <value>Number of staff join</value>
+  </data>
+  <data name="thongkethamniennhanvien" xml:space="preserve">
+    <value>Statistics the seniority of employees</value>
+  </data>
+  <data name="thongketheobangcap" xml:space="preserve">
+    <value>Statistict by literacy</value>
+  </data>
+  <data name="thongketheothoigiancongtac" xml:space="preserve">
+    <value>Statistict by working time</value>
+  </data>
+  <data name="thongkethieuhoso" xml:space="preserve">
+    <value>Reporting lack profile records</value>
+  </data>
+  <data name="thongkethoathuantaitrodaotao" xml:space="preserve">
+    <value>Statistic training grant agreement</value>
+  </data>
+  <data name="thongkethoihanphieuyeucau" xml:space="preserve">
+    <value>Statistics of deadline request form</value>
+  </data>
+  <data name="thongkethunhapcongthem" xml:space="preserve">
+    <value>Total other income</value>
+  </data>
+  <data name="thongketonghopkehoachtangca" xml:space="preserve">
+    <value>Statistics aggregate overtime plans</value>
+  </data>
+  <data name="thongketonghopxeploainv" xml:space="preserve">
+    <value>Collect rank of staff</value>
+  </data>
+  <data name="thongketongquyluong" xml:space="preserve">
+    <value>Total salary, allowance by Department</value>
+  </data>
+  <data name="thongketruluong" xml:space="preserve">
+    <value>Total income items by date</value>
+  </data>
+  <data name="thongketylekenhtuyendung" xml:space="preserve">
+    <value>Statistics of recruitment channel rate</value>
+  </data>
+  <data name="thongtinbaohiem" xml:space="preserve">
+    <value>Insurance information</value>
+  </data>
+  <data name="thongtincanhan" xml:space="preserve">
+    <value>Personal Infomation</value>
+  </data>
+  <data name="thongtinchinhtri" xml:space="preserve">
+    <value>Politic infomation</value>
+  </data>
+  <data name="thongtinchung" xml:space="preserve">
+    <value>General Infomation</value>
+  </data>
+  <data name="thunhapkhac" xml:space="preserve">
+    <value>Other Income</value>
+  </data>
+  <data name="thunhapthemcodinh" xml:space="preserve">
+    <value>Other Income list</value>
+  </data>
+  <data name="thuyenchuyenchucvu" xml:space="preserve">
+    <value>Appoint</value>
+  </data>
+  <data name="thuyenchuyennhanvien" xml:space="preserve">
+    <value>Move staff to another group</value>
+  </data>
+  <data name="timkiemhoso" xml:space="preserve">
+    <value>Search profile</value>
+  </data>
+  <data name="tinhcongngay" xml:space="preserve">
+    <value>Compute working hours in day</value>
+  </data>
+  <data name="tinhhinhbiendongnhansu" xml:space="preserve">
+    <value>Staff fluctuation</value>
+  </data>
+  <data name="tinhluong" xml:space="preserve">
+    <value>Payroll</value>
+  </data>
+  <data name="tinhluongnhanviendaotao" xml:space="preserve">
+    <value>Training staffs salary</value>
+  </data>
+  <data name="tinhtranghonnhan" xml:space="preserve">
+    <value>Marital status</value>
+  </data>
+  <data name="tkchiphiguihocbenngoai" xml:space="preserve">
+    <value>Cost for outside training</value>
+  </data>
+  <data name="tkchiphilophoc" xml:space="preserve">
+    <value>Reporting for class costs</value>
+  </data>
+  <data name="tkdanhsachtheotyle" xml:space="preserve">
+    <value>List staff by rate</value>
+  </data>
+  <data name="tkdanhsachtheoxeploai" xml:space="preserve">
+    <value>List staff by ranking</value>
+  </data>
+  <data name="tksoluongdangky" xml:space="preserve">
+    <value>Number of staff registration</value>
+  </data>
+  <data name="tksoluongtheoxeploai" xml:space="preserve">
+    <value>Number of staff by ranking</value>
+  </data>
+  <data name="tonghopchitieutheochucdanh" xml:space="preserve">
+    <value>Collection targets by jobtitle</value>
+  </data>
+  <data name="tonghopdanhgia" xml:space="preserve">
+    <value>Synthetic assessment</value>
+  </data>
+  <data name="tonghopdanhsachgiangviennoibo" xml:space="preserve">
+    <value>List of internal teacher</value>
+  </data>
+  <data name="tonghopkhoahoc" xml:space="preserve">
+    <value>Synthesis course</value>
+  </data>
+  <data name="tonghopnghiphep" xml:space="preserve">
+    <value>Statistics leave</value>
+  </data>
+  <data name="tonghopphepnam" xml:space="preserve">
+    <value>Statistics annual leave</value>
+  </data>
+  <data name="tonghopphieuquatuyendung" xml:space="preserve">
+    <value>Recruitment effective</value>
+  </data>
+  <data name="tonghoptangca" xml:space="preserve">
+    <value>Statistics overtime</value>
+  </data>
+  <data name="tonghoptinhhinhdanhgia" xml:space="preserve">
+    <value>Assessment status</value>
+  </data>
+  <data name="tonghopvaotrerasom" xml:space="preserve">
+    <value>Statistics in late - out soon</value>
+  </data>
+  <data name="tongsonv" xml:space="preserve">
+    <value>Proportion of gender</value>
+  </data>
+  <data name="tracuucamketdaotao" xml:space="preserve">
+    <value>Search training commitment</value>
+  </data>
+  <data name="truluongcodinh" xml:space="preserve">
+    <value>Other Deduct list</value>
+  </data>
+  <data name="tudanhgia" xml:space="preserve">
+    <value>Assessment myself - View assessment result</value>
+  </data>
+  <data name="tylesanglochoso" xml:space="preserve">
+    <value>Proportion of filter profiles</value>
+  </data>
+  <data name="tylesanglochososaupv" xml:space="preserve">
+    <value>Rate of filter profile after interview</value>
+  </data>
+  <data name="uyquyenduyetphieu" xml:space="preserve">
+    <value>Authorize approve</value>
+  </data>
+  <data name="vaotrerasom" xml:space="preserve">
+    <value>In late - out soon</value>
+  </data>
+  <data name="Xacnhanofferletter" xml:space="preserve">
+    <value>Confirm offer letter</value>
+  </data>
+  <data name="xacnhantangca" xml:space="preserve">
+    <value>Confirm overtime request</value>
+  </data>
+  <data name="xaydungchitieu" xml:space="preserve">
+    <value>Input targets</value>
+  </data>
+  <data name="xembangcc" xml:space="preserve">
+    <value>View time attendance</value>
+  </data>
+  <data name="xembangluong" xml:space="preserve">
+    <value>View payroll</value>
+  </data>
+  <data name="xembangluongdaotao" xml:space="preserve">
+    <value>View payroll/time attendance</value>
+  </data>
+  <data name="xembaocaocongviec" xml:space="preserve">
+    <value>View job reports</value>
+  </data>
+  <data name="xemcalamviec" xml:space="preserve">
+    <value>List of work shifts</value>
+  </data>
+  <data name="xemcamketbaomatthongtin" xml:space="preserve">
+    <value>View privacy commitment information</value>
+  </data>
+  <data name="xemdanhsachdiemdanhlophoc" xml:space="preserve">
+    <value>View attendance in a class</value>
+  </data>
+  <data name="xemdanhsachtrungtuyen" xml:space="preserve">
+    <value>List matriculation</value>
+  </data>
+  <data name="xemdinhhuongphatriennghenghiep" xml:space="preserve">
+    <value>View personal development plan</value>
+  </data>
+  <data name="xemduyetchitieu" xml:space="preserve">
+    <value>View/Approve criteria</value>
+  </data>
+  <data name="xemhieuqua" xml:space="preserve">
+    <value>View performance of staffs</value>
+  </data>
+  <data name="xemketquadanhgia" xml:space="preserve">
+    <value>View assessment result</value>
+  </data>
+  <data name="xemlaibaitest" xml:space="preserve">
+    <value>List of tests closed</value>
+  </data>
+  <data name="xemlichdaycuaban" xml:space="preserve">
+    <value>Your teach calendar</value>
+  </data>
+  <data name="xemlog" xml:space="preserve">
+    <value>View logs</value>
+  </data>
+  <data name="xemmotacongviecchucdanh" xml:space="preserve">
+    <value>View jobs description</value>
+  </data>
+  <data name="xemsodotochuc" xml:space="preserve">
+    <value>View organizational chart</value>
+  </data>
+  <data name="xemthongtin" xml:space="preserve">
+    <value>View training info of staff</value>
+  </data>
+  <data name="xepcalamviec" xml:space="preserve">
+    <value>Shift arrange</value>
+  </data>
+  <data name="xeplichhoc" xml:space="preserve">
+    <value>Choose student to join class</value>
+  </data>
+  <data name="xeplichpv" xml:space="preserve">
+    <value>Interview calendar</value>
+  </data>
+  <data name="xeplichtest" xml:space="preserve">
+    <value>Arrange testing time</value>
+  </data>
+  <data name="xepnguoipv" xml:space="preserve">
+    <value>Choose interiviewer</value>
+  </data>
+  <data name="xepphonghoc" xml:space="preserve">
+    <value>Arrange classroom</value>
+  </data>
+  <data name="xindieuchinhgiocong" xml:space="preserve">
+    <value>Request confirmation time keeping</value>
+  </data>
+  <data name="xinvaotrerasom" xml:space="preserve">
+    <value>In late - out early</value>
+  </data>
+  <data name="xoafileupload" xml:space="preserve">
+    <value>File uploaded</value>
+  </data>
+  <data name="xuatbaocaodong" xml:space="preserve">
+    <value>Export dynamic data</value>
+  </data>
+  <data name="xuatdulieunhanvien" xml:space="preserve">
+    <value>Export Data </value>
+  </data>
+  <data name="xulyyeucautuyendung" xml:space="preserve">
+    <value>Handling recruitment requirements</value>
+  </data>
+  <data name="yeucautangca" xml:space="preserve">
+    <value>Request staff overtime</value>
+  </data>
+  <data name="bhxh" xml:space="preserve">
+    <value>Social Insurance</value>
+  </data>
+  <data name="capnhatdanhmucnoiphongvan" xml:space="preserve">
+    <value>Interview location</value>
+  </data>
+  <data name="cauhinhmailserver" xml:space="preserve">
+    <value>Cấu hình email gửi đi</value>
+  </data>
+  <data name="cauhinhmenu" xml:space="preserve">
+    <value>Cài đặt menu cá nhân và quản lý</value>
+  </data>
+  <data name="cauhinhphepthamnien" xml:space="preserve">
+    <value>Cấu hình phép thâm niên</value>
+  </data>
+  <data name="chucnangkhac" xml:space="preserve">
+    <value>Others</value>
+  </data>
+  <data name="congtangca" xml:space="preserve">
+    <value>Timesheet</value>
+  </data>
+  <data name="danhchocanhan" xml:space="preserve">
+    <value>Dành cho cá nhân</value>
+  </data>
+  <data name="danhgiachitieukpi" xml:space="preserve">
+    <value>Assessment</value>
+  </data>
+  <data name="danhsachhethanthuviec" xml:space="preserve">
+    <value>Danh sách sắp/đã hết hạn thử việc việc</value>
+  </data>
+  <data name="danhsachsinhnhat" xml:space="preserve">
+    <value>Danh sách sinh nhật</value>
+  </data>
+  <data name="daotao" xml:space="preserve">
+    <value>Training</value>
+  </data>
+  <data name="daotaohoinhap" xml:space="preserve">
+    <value>Onboarding</value>
+  </data>
+  <data name="donggopykien" xml:space="preserve">
+    <value>Đóng góp ý kiến</value>
+  </data>
+  <data name="dulieucong" xml:space="preserve">
+    <value>Attendance everyday</value>
+  </data>
+  <data name="duyettangca" xml:space="preserve">
+    <value>Overtime management</value>
+  </data>
+  <data name="hanhchinh" xml:space="preserve">
+    <value>Hành chánh</value>
+  </data>
+  <data name="huythoiviec" xml:space="preserve">
+    <value>Hủy thôi việc đã nhập</value>
+  </data>
+  <data name="khaosat" xml:space="preserve">
+    <value>Survey</value>
+  </data>
+  <data name="maychamcong" xml:space="preserve">
+    <value>Devices management</value>
+  </data>
+  <data name="motacongviec" xml:space="preserve">
+    <value>Job description</value>
+  </data>
+  <data name="nhanviensaphethanthuyenchuyen" xml:space="preserve">
+    <value>Nhân viên sắp hết hạn thuyên chuyển</value>
+  </data>
+  <data name="nhanvientiemnang" xml:space="preserve">
+    <value>Nhân viên tiềm năng</value>
+  </data>
+  <data name="nhucaudaotaotheochucdanh" xml:space="preserve">
+    <value>Nhu cầu đào tạo theo chức vụ</value>
+  </data>
+  <data name="noiquyquytrinh" xml:space="preserve">
+    <value>Nội quy</value>
+  </data>
+  <data name="phep" xml:space="preserve">
+    <value>Leave</value>
+  </data>
+  <data name="phongvanthoiviec" xml:space="preserve">
+    <value>Exit interview</value>
+  </data>
+  <data name="quanlycong" xml:space="preserve">
+    <value>Quản lý công</value>
+  </data>
+  <data name="quanlyhethong" xml:space="preserve">
+    <value>Hệ thống</value>
+  </data>
+  <data name="quanlyhopdong" xml:space="preserve">
+    <value>Contract management</value>
+  </data>
+  <data name="quanlyhoso" xml:space="preserve">
+    <value>Profile management</value>
+  </data>
+  <data name="quanlynghiphep" xml:space="preserve">
+    <value>Leave management</value>
+  </data>
+  <data name="quanlyphieuyeucau" xml:space="preserve">
+    <value>Quản lý phiếu yêu cầu</value>
+  </data>
+  <data name="quanlytaikhoan" xml:space="preserve">
+    <value>Account management</value>
+  </data>
+  <data name="quanlytesting" xml:space="preserve">
+    <value>Testing</value>
+  </data>
+  <data name="quanlyungvien" xml:space="preserve">
+    <value>Candidate management</value>
+  </data>
+  <data name="quanlywebsite" xml:space="preserve">
+    <value>Website</value>
+  </data>
+  <data name="quytrinh" xml:space="preserve">
+    <value>Process</value>
+  </data>
+  <data name="thamso" xml:space="preserve">
+    <value>Reference</value>
+  </data>
+  <data name="thamsokhac" xml:space="preserve">
+    <value>Others</value>
+  </data>
+  <data name="thaydoiluong" xml:space="preserve">
+    <value>Change salary</value>
+  </data>
+  <data name="thongke" xml:space="preserve">
+    <value>Statistics</value>
+  </data>
+  <data name="thongkesoluongnhanvien" xml:space="preserve">
+    <value>Number of staff by department</value>
+  </data>
+  <data name="tienluong" xml:space="preserve">
+    <value>Quản lý lương</value>
+  </data>
+  <data name="timnhanvien" xml:space="preserve">
+    <value>Search staff</value>
+  </data>
+  <data name="tonghopchitieu" xml:space="preserve">
+    <value>Tổng hợp chỉ tiêu</value>
+  </data>
+  <data name="trinhdobangcap" xml:space="preserve">
+    <value>Education level - Certificates</value>
+  </data>
+  <data name="tuyendung" xml:space="preserve">
+    <value>Recruitment</value>
+  </data>
+  <data name="viewlog" xml:space="preserve">
+    <value>View logs</value>
+  </data>
+  <data name="xaydungquytrinh" xml:space="preserve">
+    <value>Build process</value>
+  </data>
+  <data name="baocaobaohiemxahoi" xml:space="preserve">
+    <value>Báo cáo tăng - giảm bảo hiểm xã hội</value>
+  </data>
+  <data name="downloadulieuchamcong" xml:space="preserve">
+    <value>Download Attendance data</value>
+  </data>
+  <data name="importcong" xml:space="preserve">
+    <value>Import attendance data</value>
+  </data>
+  <data name="nhapthunhapthemcongdinh" xml:space="preserve">
+    <value>Update fixed other income</value>
+  </data>
+  <data name="nhaptruluongcodinh" xml:space="preserve">
+    <value>Update fixed other deduction</value>
+  </data>
+  <data name="suadulieuluong" xml:space="preserve">
+    <value>Edit basic salary</value>
+  </data>
+  <data name="cocautochuc" xml:space="preserve">
+    <value>Branch - Department - Team</value>
+  </data>
+  <data name="danhmucluong" xml:space="preserve">
+    <value>Salaries list</value>
+  </data>
+  <data name="Caphanmucphep" xml:space="preserve">
+    <value>Allocation leave</value>
+  </data>
+</root>

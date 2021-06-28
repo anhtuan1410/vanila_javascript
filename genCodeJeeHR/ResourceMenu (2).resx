@@ -1,0 +1,1850 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data type="vn" name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data type="vn" name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data type="vn" name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data type="vn" name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data type="vn" name="danhmuc" xml:space="preserve">
+    <value>Danh mục</value>
+  </data>
+  <data type="vn" name="danhmucbangcap" xml:space="preserve">
+    <value>Danh mục bằng cấp</value>
+  </data>
+  <data type="vn" name="danhmucbophan" xml:space="preserve">
+    <value>Danh mục bộ phận</value>
+  </data>
+  <data type="vn" name="danhmuccalamviec" xml:space="preserve">
+    <value>Danh mục ca làm việc</value>
+  </data>
+  <data type="vn" name="danhmuccapbac" xml:space="preserve">
+    <value>Danh mục cấp bậc</value>
+  </data>
+  <data type="vn" name="danhmuccapquanly" xml:space="preserve">
+    <value>Danh mục cấp quản lý</value>
+  </data>
+  <data type="vn" name="danhmucchannel" xml:space="preserve">
+    <value>Danh mục channel</value>
+  </data>
+  <data type="vn" name="danhmucchedonghi" xml:space="preserve">
+    <value>Danh mục chế độ làm việc</value>
+  </data>
+  <data type="vn" name="danhmucchucdanh" xml:space="preserve">
+    <value>Danh mục chức vụ</value>
+  </data>
+  <data type="vn" name="danhmucchucvu" xml:space="preserve">
+    <value>Danh mục chức danh</value>
+  </data>
+  <data type="vn" name="danhmuccongtrinh" xml:space="preserve">
+    <value>Danh mục công trình</value>
+  </data>
+  <data type="vn" name="danhmucdantoc" xml:space="preserve">
+    <value>Danh mục dân tộc</value>
+  </data>
+  <data type="vn" name="danhmucdaotaohoinhap" xml:space="preserve">
+    <value>Danh mục đào tạo hội nhập</value>
+  </data>
+  <data type="vn" name="danhmucdiemdanhgia" xml:space="preserve">
+    <value>Danh mục điểm đánh giá</value>
+  </data>
+  <data type="vn" name="danhmucdongphuc" xml:space="preserve">
+    <value>Danh mục đồng phục</value>
+  </data>
+  <data type="vn" name="danhmucdonvi" xml:space="preserve">
+    <value>Danh mục đơn vị</value>
+  </data>
+  <data type="vn" name="danhmucdonvitien" xml:space="preserve">
+    <value>Danh mục đơn vị tiền</value>
+  </data>
+  <data type="vn" name="danhmucdotdanhgia" xml:space="preserve">
+    <value>Danh mục đợt đánh giá</value>
+  </data>
+  <data type="vn" name="danhmucduan" xml:space="preserve">
+    <value>Danh mục dự án</value>
+  </data>
+  <data type="vn" name="danhmucgiadinhchinhsach" xml:space="preserve">
+    <value>Danh mục gia đình chính sách</value>
+  </data>
+  <data type="vn" name="danhmucgiatricotloi" xml:space="preserve">
+    <value>Danh mục giá trị cốt lõi</value>
+  </data>
+  <data type="vn" name="danhmuchangmuccongtrinh" xml:space="preserve">
+    <value>Danh mục hạng mục công trình</value>
+  </data>
+  <data type="vn" name="danhmuchangthuongbinh" xml:space="preserve">
+    <value>Danh mục hạng thương binh</value>
+  </data>
+  <data type="vn" name="danhmuchoancanhgiadinh" xml:space="preserve">
+    <value>Danh mục hoàn cảnh gia đình</value>
+  </data>
+  <data type="vn" name="danhmuchoso" xml:space="preserve">
+    <value>Danh mục hồ sơ</value>
+  </data>
+  <data type="vn" name="danhmuchuongphattrien" xml:space="preserve">
+    <value>Danh mục hướng phát triển</value>
+  </data>
+  <data type="vn" name="danhmuchuyen" xml:space="preserve">
+    <value>Danh mục huyện</value>
+  </data>
+  <data type="vn" name="danhmuckhanangkethua" xml:space="preserve">
+    <value>Danh mục khả năng kế thừa</value>
+  </data>
+  <data type="vn" name="danhmuckhoi" xml:space="preserve">
+    <value>Danh mục Khối/Phòng ban</value>
+  </data>
+  <data type="vn" name="danhmucloaicauhoi" xml:space="preserve">
+    <value>Danh mục loại câu hỏi</value>
+  </data>
+  <data type="vn" name="danhmucloaichitieu" xml:space="preserve">
+    <value>Danh mục loại chỉ tiêu</value>
+  </data>
+  <data type="vn" name="danhmucloaicongchuc" xml:space="preserve">
+    <value>Danh mục loại công chức</value>
+  </data>
+  <data type="vn" name="danhmucloaihopdong" xml:space="preserve">
+    <value>Danh mục loại hợp đồng</value>
+  </data>
+  <data type="vn" name="danhmucloainhanvien" xml:space="preserve">
+    <value>Danh mục loại nhân viên</value>
+  </data>
+  <data type="vn" name="danhmucloaiphep" xml:space="preserve">
+    <value>Danh mục loại phép</value>
+  </data>
+  <data type="vn" name="danhmucloaiquyetdinh" xml:space="preserve">
+    <value>Danh mục loại quyết định</value>
+  </data>
+  <data type="vn" name="Danhmucloaisanpham" xml:space="preserve">
+    <value>Danh mục loại sản phẩm</value>
+  </data>
+  <data type="vn" name="danhmucloaitaisan" xml:space="preserve">
+    <value>Danh mục loại tài sản</value>
+  </data>
+  <data type="vn" name="danhmucloaithoiviec" xml:space="preserve">
+    <value>Danh mục loại thôi việc</value>
+  </data>
+  <data type="vn" name="danhmucloaitieuchuan" xml:space="preserve">
+    <value>Danh mục loại tiêu chuẩn</value>
+  </data>
+  <data type="vn" name="danhmucloaixe" xml:space="preserve">
+    <value>Danh mục loại xe</value>
+  </data>
+  <data type="vn" name="danhmuclydothoiviec" xml:space="preserve">
+    <value>Danh mục lý do thôi việc</value>
+  </data>
+  <data type="vn" name="danhmucmauin" xml:space="preserve">
+    <value>Danh mục mẫu in</value>
+  </data>
+  <data type="vn" name="danhmucmoctimeline" xml:space="preserve">
+    <value>Danh mục mốc timeline đánh giá</value>
+  </data>
+  <data type="vn" name="danhmucmucdohailong" xml:space="preserve">
+    <value>Danh mục mức độ hài lòng</value>
+  </data>
+  <data type="vn" name="danhmucnanglucchuyenmon" xml:space="preserve">
+    <value>Danh mục năng lực chuyên môn</value>
+  </data>
+  <data type="vn" name="danhmucngachluong" xml:space="preserve">
+    <value>Danh mục ngạch lương</value>
+  </data>
+  <data type="vn" name="danhmucnganhang" xml:space="preserve">
+    <value>Danh mục ngân hàng</value>
+  </data>
+  <data type="vn" name="danhmucnganhhoc" xml:space="preserve">
+    <value>Danh mục ngành học</value>
+  </data>
+  <data type="vn" name="danhmucngoaingu" xml:space="preserve">
+    <value>Danh mục ngoại ngữ</value>
+  </data>
+  <data type="vn" name="danhmucnguontuyendung" xml:space="preserve">
+    <value>Danh mục nguồn tuyển dụng</value>
+  </data>
+  <data type="vn" name="danhmucnoiphongvan" xml:space="preserve">
+    <value>Danh mục nơi phỏng vấn</value>
+  </data>
+  <data type="vn" name="danhmucphonghop" xml:space="preserve">
+    <value>Danh mục phòng họp</value>
+  </data>
+  <data type="vn" name="danhmucphucap" xml:space="preserve">
+    <value>Danh mục phụ cấp</value>
+  </data>
+  <data type="vn" name="danhmucphuongxa" xml:space="preserve">
+    <value>Danh mục Phường/Xã</value>
+  </data>
+  <data type="vn" name="danhmucquanhuyen" xml:space="preserve">
+    <value>Danh mục quận huyện</value>
+  </data>
+  <data type="vn" name="danhmucsanpham" xml:space="preserve">
+    <value>Danh mục sản phẩm</value>
+  </data>
+  <data type="vn" name="danhmuctaisan" xml:space="preserve">
+    <value>Danh mục tài sản</value>
+  </data>
+  <data type="vn" name="danhmucthamso" xml:space="preserve">
+    <value>Danh mục - tham số</value>
+  </data>
+  <data type="vn" name="danhmucthongtinchinhtri" xml:space="preserve">
+    <value>Danh mục thông tin chính trị</value>
+  </data>
+  <data type="vn" name="danhmucthongtinsuckhoe" xml:space="preserve">
+    <value>Danh mục thông tin sức khỏe</value>
+  </data>
+  <data type="vn" name="danhmucthunhapthemthang" xml:space="preserve">
+    <value>Danh mục các cột thu nhập khác</value>
+  </data>
+  <data type="vn" name="danhmucthuong" xml:space="preserve">
+    <value>Danh mục thưởng</value>
+  </data>
+  <data type="vn" name="danhmuctieuchi" xml:space="preserve">
+    <value>Danh mục tiêu chí</value>
+  </data>
+  <data type="vn" name="danhmuctieuchidanhgia360" xml:space="preserve">
+    <value>Danh mục tiêu chí đánh giá 360</value>
+  </data>
+  <data type="vn" name="danhmuctieuchidanhgiamucdohailong" xml:space="preserve">
+    <value>Danh mục tiêu chí đánh giá mức độ hài lòng</value>
+  </data>
+  <data type="vn" name="danhmuctieuchuandanhgia" xml:space="preserve">
+    <value>Danh mục tiêu chuẩn đánh giá</value>
+  </data>
+  <data type="vn" name="danhmuctinh" xml:space="preserve">
+    <value>Danh mục tỉnh</value>
+  </data>
+  <data type="vn" name="danhmuctongiao" xml:space="preserve">
+    <value>Danh mục tôn giáo</value>
+  </data>
+  <data type="vn" name="danhmuctrinhdo" xml:space="preserve">
+    <value>Danh mục trình độ (ngoại ngữ, vi tính)</value>
+  </data>
+  <data type="vn" name="danhmuctrinhdochinhtri" xml:space="preserve">
+    <value>Danh mục trình độ chính trị</value>
+  </data>
+  <data type="vn" name="danhmuctrinhdongoaingu" xml:space="preserve">
+    <value>Danh mục trình độ ngoại ngữ</value>
+  </data>
+  <data type="vn" name="danhmuctrinhdoquanlynhanuoc" xml:space="preserve">
+    <value>Trình độ quản lý nhà nước</value>
+  </data>
+  <data type="vn" name="danhmuctrinhdovitinh" xml:space="preserve">
+    <value>Danh mục trình độ vi tính</value>
+  </data>
+  <data type="vn" name="danhmuctruluongthang" xml:space="preserve">
+    <value>Danh mục các cột trừ lương</value>
+  </data>
+  <data type="vn" name="danhmuctruonghoc" xml:space="preserve">
+    <value>Danh mục trường học</value>
+  </data>
+  <data type="vn" name="danhmucxeploainhanvien" xml:space="preserve">
+    <value>Danh mục xếp loại nhân viên</value>
+  </data>
+  <data type="vn" name="adminduyetphep" xml:space="preserve">
+    <value>Admin duyệt phép/tăng ca</value>
+  </data>
+  <data type="vn" name="bangcongtrongthang" xml:space="preserve">
+    <value>Bảng công trong tháng</value>
+  </data>
+  <data type="vn" name="bangdiemhocvien" xml:space="preserve">
+    <value>Bảng điểm học viên</value>
+  </data>
+  <data type="vn" name="bangluongchuyenkhoan" xml:space="preserve">
+    <value>Bảng lương chuyển khoản</value>
+  </data>
+  <data type="vn" name="bangluongtienmat" xml:space="preserve">
+    <value>Bảng lương tiền mặt</value>
+  </data>
+  <data type="vn" name="bangluongtong" xml:space="preserve">
+    <value>Bảng lương tổng</value>
+  </data>
+  <data type="vn" name="bangluongtongquat" xml:space="preserve">
+    <value>Bảng lương tổng quát</value>
+  </data>
+  <data type="vn" name="bangtangca" xml:space="preserve">
+    <value>Bảng tăng ca</value>
+  </data>
+  <data type="vn" name="baocaocongviec" xml:space="preserve">
+    <value>Báo cáo công việc</value>
+  </data>
+  <data type="vn" name="baocaodanhgiatheophongban" xml:space="preserve">
+    <value>Báo cáo đánh giá theo phòng ban</value>
+  </data>
+  <data type="vn" name="baohiemtainan" xml:space="preserve">
+    <value>Quá trình tai nạn</value>
+  </data>
+  <data type="vn" name="benhvien" xml:space="preserve">
+    <value>Nơi khám chữa bệnh ban đầu</value>
+  </data>
+  <data type="vn" name="bochitieucuanhanviencapduoi" xml:space="preserve">
+    <value>Danh sách bộ chỉ tiêu của nhân viên cấp dưới</value>
+  </data>
+  <data type="vn" name="cacchucdanhdangtuyen" xml:space="preserve">
+    <value>Các chức vụ đăng tuyển</value>
+  </data>
+  <data type="vn" name="cackhoahocphattriennghenghiep" xml:space="preserve">
+    <value>Các khóa học phát triển nghề nghiệp</value>
+  </data>
+  <data type="vn" name="cackhoangthoigianduyetphep" xml:space="preserve">
+    <value>Các khoảng thời gian duyệt phép</value>
+  </data>
+  <data type="vn" name="cackhoantru" xml:space="preserve">
+    <value>Trừ lương</value>
+  </data>
+  <data type="vn" name="cacphieudangchoduyet" xml:space="preserve">
+    <value>Duyệt đăng ký tăng ca</value>
+  </data>
+  <data type="vn" name="cacthamsokhac" xml:space="preserve">
+    <value>Các tham số khác</value>
+  </data>
+  <data type="vn" name="cacthongtindanhap" xml:space="preserve">
+    <value>Các thông tin đã nhập</value>
+  </data>
+  <data type="vn" name="cactranggioithieu" xml:space="preserve">
+    <value>Các trang giới thiệu</value>
+  </data>
+  <data type="vn" name="caidatthamso" xml:space="preserve">
+    <value>Cài đặt tham số</value>
+  </data>
+  <data type="vn" name="calamviec" xml:space="preserve">
+    <value>Ca làm việc</value>
+  </data>
+  <data type="vn" name="camketdaotao" xml:space="preserve">
+    <value>Cam kết đào tạo</value>
+  </data>
+  <data type="vn" name="canbodaotaohoinhap" xml:space="preserve">
+    <value>Cán bộ đào tạo hội nhập</value>
+  </data>
+  <data type="vn" name="capnhatcachtinhthuenhanvien" xml:space="preserve">
+    <value>Cập nhật cách tính thuế nhân viên</value>
+  </data>
+  <data type="vn" name="capnhatcachtinhthuethang" xml:space="preserve">
+    <value>Cập nhật cách tính thuế</value>
+  </data>
+  <data type="vn" name="capnhatcongtac" xml:space="preserve">
+    <value>Cập nhật nhân viên đi công tác</value>
+  </data>
+  <data type="vn" name="capnhatketquadanhgia" xml:space="preserve">
+    <value>Cập nhật kết quả đánh giá</value>
+  </data>
+  <data type="vn" name="capnhatkqchonvxaydungchitieutrengiay" xml:space="preserve">
+    <value>Cập nhật kết quả cho nhân viên xây dựng chỉ tiêu trên giấy</value>
+  </data>
+  <data type="vn" name="capnhatkqchonvxaydungchitieutrenmay" xml:space="preserve">
+    <value>Cập nhật kết quả cho nhân viên xây dựng chỉ tiêu trên máy</value>
+  </data>
+  <data type="vn" name="capnhatmucthuong" xml:space="preserve">
+    <value>Cập nhật mức thưởng</value>
+  </data>
+  <data type="vn" name="capnhatnganhangcauhoi" xml:space="preserve">
+    <value>Cập nhật ngân hàng câu hỏi</value>
+  </data>
+  <data type="vn" name="capnhatngaythamgiadaotaohoinhap" xml:space="preserve">
+    <value>Cập nhật ngày tham gia đào tạo hội nhập</value>
+  </data>
+  <data type="vn" name="capnhatnhombhxh" xml:space="preserve">
+    <value>Cập nhật nhóm báo cáo bhxh</value>
+  </data>
+  <data type="vn" name="capnhatphieupvthoiviec" xml:space="preserve">
+    <value>Cập nhật phiếu phỏng vấn thôi việc</value>
+  </data>
+  <data type="vn" name="capnhatquatrinhdaotao" xml:space="preserve">
+    <value>Cập nhật quá trình đào tạo của nhân viên</value>
+  </data>
+  <data type="vn" name="capnhatthamso" xml:space="preserve">
+    <value>Chọn nhân viên nhận email thông báo</value>
+  </data>
+  <data type="vn" name="capnhatthongtincongty" xml:space="preserve">
+    <value>Cập nhật thông tin công ty</value>
+  </data>
+  <data type="vn" name="capnhatthongtindanhgia" xml:space="preserve">
+    <value>Cập nhật thông tin bộ chỉ tiêu</value>
+  </data>
+  <data type="vn" name="capnhatthongtinnhanvien" xml:space="preserve">
+    <value>Cập nhật thông tin nhân viên</value>
+  </data>
+  <data type="vn" name="cauhinhquytrinhduyetphep" xml:space="preserve">
+    <value>Cấu hình quy trình duyệt phép</value>
+  </data>
+  <data type="vn" name="cauhinhsongaynhacnho" xml:space="preserve">
+    <value>Cấu hình số ngày nhắc nhở</value>
+  </data>
+  <data type="vn" name="cauhinhsongayphephangnam" xml:space="preserve">
+    <value>Cấu hình số ngày phép hàng năm</value>
+  </data>
+  <data type="vn" name="cauhinhtruditre" xml:space="preserve">
+    <value>Cấu hình trừ đi trễ</value>
+  </data>
+  <data type="vn" name="cauhinhxinnghiphep" xml:space="preserve">
+    <value>Các cấp phép - hạn mức phép</value>
+  </data>
+  <data type="vn" name="chamcong" xml:space="preserve">
+    <value>Chấm công</value>
+  </data>
+  <data type="vn" name="chamdiembaitestluan" xml:space="preserve">
+    <value>Chấm điểm bài kiểm tra luận</value>
+  </data>
+  <data type="vn" name="chedolamviecrieng" xml:space="preserve">
+    <value>Chế độ làm việc riêng</value>
+  </data>
+  <data type="vn" name="chinhsuakqdanhgia" xml:space="preserve">
+    <value>Chỉnh sửa kết quả đánh giá</value>
+  </data>
+  <data type="vn" name="chiphigiangvien" xml:space="preserve">
+    <value>Chi phí giảng viên</value>
+  </data>
+  <data type="vn" name="chiphiguihocbenngoai" xml:space="preserve">
+    <value>Chi phí gửi học bên ngoài</value>
+  </data>
+  <data type="vn" name="chiphikhac" xml:space="preserve">
+    <value>Chi phí khác</value>
+  </data>
+  <data type="vn" name="choncanbonhansuguimail" xml:space="preserve">
+    <value>Chọn cán bộ nhân sự gửi mail</value>
+  </data>
+  <data type="vn" name="chonchitieuchung" xml:space="preserve">
+    <value>Chọn chỉ tiêu chung</value>
+  </data>
+  <data type="vn" name="chonchitieuchungchonhom" xml:space="preserve">
+    <value>Chọn chỉ tiêu chung cho nhân viên</value>
+  </data>
+  <data type="vn" name="chonnhanviendanhgia360" xml:space="preserve">
+    <value>Chọn nhân viên đánh giá 360</value>
+  </data>
+  <data type="vn" name="chonnvtrungtamdaotaoguimail" xml:space="preserve">
+    <value>Chọn nhân viên trung tâm đào tạo gửi mail</value>
+  </data>
+  <data type="vn" name="chotcong" xml:space="preserve">
+    <value>Tính công</value>
+  </data>
+  <data type="vn" name="chotdulieu" xml:space="preserve">
+    <value>Chốt dữ liệu lương</value>
+  </data>
+  <data type="vn" name="chuyenphepnamofnamcu" xml:space="preserve">
+    <value>Chuyển phép năm của năm cũ</value>
+  </data>
+  <data type="vn" name="chuyenphongbanbangluongnv" xml:space="preserve">
+    <value>Chuyển phòng ban bảng lương</value>
+  </data>
+  <data type="vn" name="dangkychedo" xml:space="preserve">
+    <value>Đăng ký chế độ</value>
+  </data>
+  <data type="vn" name="dangkycongtac" xml:space="preserve">
+    <value>Đăng ký công tác</value>
+  </data>
+  <data type="vn" name="dangkydaotao" xml:space="preserve">
+    <value>Đăng ký đào tạo</value>
+  </data>
+  <data type="vn" name="dangkydaotaohoinhap" xml:space="preserve">
+    <value>Đăng ký đào tạo hội nhập</value>
+  </data>
+  <data type="vn" name="dangkydaotaongoai" xml:space="preserve">
+    <value>Đăng ký đào tạo bên ngoài</value>
+  </data>
+  <data type="vn" name="dangkylambu" xml:space="preserve">
+    <value>Đăng ký làm bù</value>
+  </data>
+  <data type="vn" name="dangkylophoc" xml:space="preserve">
+    <value>Đăng ký lớp học</value>
+  </data>
+  <data type="vn" name="dangkyphep" xml:space="preserve">
+    <value>Đăng ký phép</value>
+  </data>
+  <data type="vn" name="dangkypheptapthe" xml:space="preserve">
+    <value>Đăng ký phép tập thể</value>
+  </data>
+  <data type="vn" name="dangkypheptheogio" xml:space="preserve">
+    <value>Đăng ký phép theo giờ</value>
+  </data>
+  <data type="vn" name="dangkytangca" xml:space="preserve">
+    <value>Đăng ký tăng ca</value>
+  </data>
+  <data type="vn" name="danhgia" xml:space="preserve">
+    <value>Đánh giá</value>
+  </data>
+  <data type="vn" name="danhgia360" xml:space="preserve">
+    <value>Đánh giá 360</value>
+  </data>
+  <data type="vn" name="danhgiadaotao" xml:space="preserve">
+    <value>Đánh giá đơn vị tổ chức khóa đào tạo</value>
+  </data>
+  <data type="vn" name="danhgiagiahanhopdong" xml:space="preserve">
+    <value>Đánh giá gia hạn hợp đồng</value>
+  </data>
+  <data type="vn" name="danhgiahieuquasaudaotao" xml:space="preserve">
+    <value>Đánh giá hiệu quả sau đào tạo</value>
+  </data>
+  <data type="vn" name="danhgiaketquakhoadaotao" xml:space="preserve">
+    <value>Đánh giá kết quả khóa đào tạo</value>
+  </data>
+  <data type="vn" name="danhgiakqdaotao" xml:space="preserve">
+    <value>Đánh giá kết quả đào tạo</value>
+  </data>
+  <data type="vn" name="danhgianhanvien" xml:space="preserve">
+    <value>Đánh giá nhân viên</value>
+  </data>
+  <data type="vn" name="danhgianhanviendaotaohoinhap" xml:space="preserve">
+    <value>Đánh giá nhân viên đào tạo hội nhập</value>
+  </data>
+  <data type="vn" name="danhgiaphongvan" xml:space="preserve">
+    <value>Đánh giá phỏng vấn</value>
+  </data>
+  <data type="vn" name="danhgiapv" xml:space="preserve">
+    <value>Đánh giá phỏng vấn</value>
+  </data>
+  <data type="vn" name="danhgiasauthuviec" xml:space="preserve">
+    <value>Đánh giá sau thử việc/đào tạo</value>
+  </data>
+  <data type="vn" name="danhgiatungnhanvien" xml:space="preserve">
+    <value>Đánh giá từng nhân viên</value>
+  </data>
+  <data type="vn" name="danhmucxeploainv" xml:space="preserve">
+    <value>Danh mục xếp loại nhân viên</value>
+  </data>
+  <data type="vn" name="danhsachchinhgiocong" xml:space="preserve">
+    <value>Danh sách xin xác nhận giờ công</value>
+  </data>
+  <data type="vn" name="danhsachdangkycongtac" xml:space="preserve">
+    <value>Danh sách đăng ký công tác</value>
+  </data>
+  <data type="vn" name="Danhsachdanhgiagiahanhd" xml:space="preserve">
+    <value>Danh sách đánh giá gia hạn hợp đồng</value>
+  </data>
+  <data type="vn" name="danhsachdanhgiasauthuviec" xml:space="preserve">
+    <value>Danh sách đánh giá thử việc/đào tạo</value>
+  </data>
+  <data type="vn" name="danhsachdongthuethunhap" xml:space="preserve">
+    <value>Danh sách đóng thuế thu nhập</value>
+  </data>
+  <data type="vn" name="danhsachemaildagui" xml:space="preserve">
+    <value>Danh sách email đã gửi</value>
+  </data>
+  <data type="vn" name="Danhsachgiam_tamthoi" xml:space="preserve">
+    <value>Danh sách giảm tạm thời</value>
+  </data>
+  <data type="vn" name="Danhsachgiam_thoiviec" xml:space="preserve">
+    <value>Danh sách giảm BHXH - thôi việc</value>
+  </data>
+  <data type="vn" name="danhsachhopdongdakytheothoigian" xml:space="preserve">
+    <value>Danh sách hợp đồng đã ký</value>
+  </data>
+  <data type="vn" name="danhsachkehoachtangca" xml:space="preserve">
+    <value>Danh sách kế hoạch tăng ca</value>
+  </data>
+  <data type="vn" name="danhsachkhoadaotaohoinhap" xml:space="preserve">
+    <value>Danh sách khóa đào tạo hội nhập</value>
+  </data>
+  <data type="vn" name="danhsachlaydulieucongdacbiet" xml:space="preserve">
+    <value>Danh sách lấy dữ liệu công đặc biệt</value>
+  </data>
+  <data type="vn" name="danhsachluanchuyen" xml:space="preserve">
+    <value>Danh sách luân chuyển</value>
+  </data>
+  <data type="vn" name="danhsachnhanviendaotao" xml:space="preserve">
+    <value>Danh sách nhân viên đào tạo</value>
+  </data>
+  <data type="vn" name="danhsachnhanviendaotaohoinhap" xml:space="preserve">
+    <value>Danh sách nhân viên đào tạo hội nhập</value>
+  </data>
+  <data type="vn" name="danhsachnhanvienduocdanhgiacao" xml:space="preserve">
+    <value>Danh sách nhân viên được đánh giá cao</value>
+  </data>
+  <data type="vn" name="danhsachphieuyeucau" xml:space="preserve">
+    <value>Danh sách phiếu yêu cầu</value>
+  </data>
+  <data type="vn" name="danhsachphuluc" xml:space="preserve">
+    <value>Danh sách phụ lục</value>
+  </data>
+  <data type="vn" name="danhsachtaisandacap" xml:space="preserve">
+    <value>Danh sách tài sản đã cấp</value>
+  </data>
+  <data type="vn" name="Danhsachtang_nhanvienmoi" xml:space="preserve">
+    <value>Danh sách tăng BHXH - nhân viên mới</value>
+  </data>
+  <data type="vn" name="Danhsachtang_tanglai" xml:space="preserve">
+    <value>Danh sách tăng BHXH - tăng lại</value>
+  </data>
+  <data type="vn" name="danhsachthamgiabhxhtrongthang" xml:space="preserve">
+    <value>Danh sách tham gia BHXH trong tháng</value>
+  </data>
+  <data type="vn" name="danhsachthamgiacongdoan" xml:space="preserve">
+    <value>Danh sách tham gia công đoàn</value>
+  </data>
+  <data type="vn" name="Danhsachthaydoimucluong" xml:space="preserve">
+    <value>Danh sách thay đổi mức lương trong tháng</value>
+  </data>
+  <data type="vn" name="danhsachthoiviec" xml:space="preserve">
+    <value>Danh sách thôi việc</value>
+  </data>
+  <data type="vn" name="Danhsachthoivieccotruluong" xml:space="preserve">
+    <value>Danh sách thôi việc có trừ lương</value>
+  </data>
+  <data type="vn" name="danhsachtinhcongdacbiet" xml:space="preserve">
+    <value>Danh sách tính công không giới hạn giờ</value>
+  </data>
+  <data type="vn" name="danhsachtrungtuyen" xml:space="preserve">
+    <value>Danh sách trúng tuyển</value>
+  </data>
+  <data type="vn" name="danhsachungviendanhanvaolam" xml:space="preserve">
+    <value>Danh sách ứng viên đã nhận vào làm</value>
+  </data>
+  <data type="vn" name="danhsachungviendatketquapv" xml:space="preserve">
+    <value>Danh sách ứng viên tham gia phỏng vấn</value>
+  </data>
+  <data type="vn" name="danhsachungviendatketquatest" xml:space="preserve">
+    <value>Danh sách ứng viên làm bài test</value>
+  </data>
+  <data type="vn" name="danhsachungvienonline" xml:space="preserve">
+    <value>Danh sách tất cả hồ sơ ứng viên online</value>
+  </data>
+  <data type="vn" name="danhsachungvientrongdottuyendung" xml:space="preserve">
+    <value>Danh sách tất cả ứng viên</value>
+  </data>
+  <data type="vn" name="danhsachungvienvaolam" xml:space="preserve">
+    <value>Danh sách ứng viên đã nhận vào làm</value>
+  </data>
+  <data type="vn" name="datphonghop" xml:space="preserve">
+    <value>Đặt phòng họp</value>
+  </data>
+  <data type="vn" name="dexuatdacbiet" xml:space="preserve">
+    <value>Đề xuất đặc biệt - đánh giá hợp đồng</value>
+  </data>
+  <data type="vn" name="diadiemlamviec" xml:space="preserve">
+    <value>Địa điểm làm việc</value>
+  </data>
+  <data type="vn" name="diemdanhlophoc" xml:space="preserve">
+    <value>Điểm danh lớp học</value>
+  </data>
+  <data type="vn" name="dieudongbonhiem" xml:space="preserve">
+    <value>Thuyên chuyển</value>
+  </data>
+  <data type="vn" name="dmquanhenhanthan" xml:space="preserve">
+    <value>Quan hệ nhân thân</value>
+  </data>
+  <data type="vn" name="docdulieu" xml:space="preserve">
+    <value>Đọc dữ liệu</value>
+  </data>
+  <data type="vn" name="doicalamviec" xml:space="preserve">
+    <value>Đổi ca làm việc nhân viên</value>
+  </data>
+  <data type="vn" name="doimatkhau" xml:space="preserve">
+    <value>Đổi mật khẩu</value>
+  </data>
+  <data type="vn" name="donnghiphep" xml:space="preserve">
+    <value>Gửi đơn xin nghỉ phép</value>
+  </data>
+  <data type="vn" name="donxacnhangiocong" xml:space="preserve">
+    <value>Đơn xác nhận giờ công</value>
+  </data>
+  <data type="vn" name="donxinthoiviec" xml:space="preserve">
+    <value>Gửi đơn xin thôi việc</value>
+  </data>
+  <data type="vn" name="downloadungvienonline" xml:space="preserve">
+    <value>Download hồ sơ ứng viên online</value>
+  </data>
+  <data type="vn" name="dscackhoahoc" xml:space="preserve">
+    <value>Danh sách các khóa học</value>
+  </data>
+  <data type="vn" name="dscanbotuyendungdonvi" xml:space="preserve">
+    <value>Danh sách cán bộ tuyển dụng đơn vị</value>
+  </data>
+  <data type="vn" name="dschoduyetphep" xml:space="preserve">
+    <value>Danh sách chờ duyệt phép</value>
+  </data>
+  <data type="vn" name="dschuadanhgia" xml:space="preserve">
+    <value>Danh sách chưa đánh giá</value>
+  </data>
+  <data type="vn" name="dschuaduocdanhgia" xml:space="preserve">
+    <value>Danh sách chưa được đánh giá</value>
+  </data>
+  <data type="vn" name="dschuagui" xml:space="preserve">
+    <value>Quản lý bộ chỉ tiêu của toàn bộ nhân viên</value>
+  </data>
+  <data type="vn" name="dsdaduyet" xml:space="preserve">
+    <value>Danh sách đã duyệt</value>
+  </data>
+  <data type="vn" name="dsdangkydaotao" xml:space="preserve">
+    <value>Danh sách đăng ký đào tạo</value>
+  </data>
+  <data type="vn" name="dsdangkydaotaongoai" xml:space="preserve">
+    <value>Danh sách đăng ký đào tạo ngoài</value>
+  </data>
+  <data type="vn" name="dsdangkyhocngoai" xml:space="preserve">
+    <value>Danh sách đăng ký học bên ngoài</value>
+  </data>
+  <data type="vn" name="dsdaotaotheothoigian" xml:space="preserve">
+    <value>Danh sách đào tạo theo thời gian</value>
+  </data>
+  <data type="vn" name="dsdottuyendung" xml:space="preserve">
+    <value>Danh sách đợt tuyển dụng</value>
+  </data>
+  <data type="vn" name="dshethanhopdong" xml:space="preserve">
+    <value>Danh sách hết hạn hợp đồng</value>
+  </data>
+  <data type="vn" name="dskhaosatdatao" xml:space="preserve">
+    <value>Danh sách đợt khảo sát đã tạo</value>
+  </data>
+  <data type="vn" name="dskynangnghiepvu" xml:space="preserve">
+    <value>Danh sách kỹ năng  - Nghiệp vụ</value>
+  </data>
+  <data type="vn" name="dsnghiphep" xml:space="preserve">
+    <value>Danh sách nghỉ phép</value>
+  </data>
+  <data type="vn" name="dsnvtheotylehoanthanhchitieu" xml:space="preserve">
+    <value>Danh sách nhân viên theo tỷ lệ hoàn thành chỉ tiêu</value>
+  </data>
+  <data type="vn" name="dsnvtheoxeploai" xml:space="preserve">
+    <value>Danh sách nhân viên theo xếp loại</value>
+  </data>
+  <data type="vn" name="dsnvxuatsacnhieunam" xml:space="preserve">
+    <value>Danh sách nhân viên xuất sắc nhiều năm</value>
+  </data>
+  <data type="vn" name="dsphanhoicuahocvien" xml:space="preserve">
+    <value>Danh sách phản hồi của học viên</value>
+  </data>
+  <data type="vn" name="dsphieuyeucau" xml:space="preserve">
+    <value>Danh sách phiếu yêu cầu</value>
+  </data>
+  <data type="vn" name="dstangluong" xml:space="preserve">
+    <value>Danh sách tăng lương</value>
+  </data>
+  <data type="vn" name="dstheolydothoiviec" xml:space="preserve">
+    <value>Danh sách theo lý do thôi việc</value>
+  </data>
+  <data type="vn" name="dstheomucdothoiviec" xml:space="preserve">
+    <value>Danh sách theo mức độ hài lòng</value>
+  </data>
+  <data type="vn" name="dstheongayvaocty" xml:space="preserve">
+    <value>Danh sách thành viên mới</value>
+  </data>
+  <data type="vn" name="dstin" xml:space="preserve">
+    <value>Cập nhật các tin đăng</value>
+  </data>
+  <data type="vn" name="dstrubhxh" xml:space="preserve">
+    <value>Danh sách trừ BHXH</value>
+  </data>
+  <data type="vn" name="dsxacnhandupv" xml:space="preserve">
+    <value>Danh sách xác nhận dự phỏng vấn</value>
+  </data>
+  <data type="vn" name="dthn_chonnhanvienthamgia" xml:space="preserve">
+    <value>Danh sách nhân viên tham gia</value>
+  </data>
+  <data type="vn" name="dulieumaychamcong" xml:space="preserve">
+    <value>Dữ liệu chấm công</value>
+  </data>
+  <data type="vn" name="duyetbangchamcong" xml:space="preserve">
+    <value>Duyệt bảng chấm công</value>
+  </data>
+  <data type="vn" name="duyetbangluong" xml:space="preserve">
+    <value>Duyệt bảng lương</value>
+  </data>
+  <data type="vn" name="duyetchitieu" xml:space="preserve">
+    <value>Duyệt chỉ tiêu cá nhân</value>
+  </data>
+  <data type="vn" name="duyetchitieudanhgianhanvien" xml:space="preserve">
+    <value>Duyệt chỉ tiêu đánh giá nhân viên</value>
+  </data>
+  <data type="vn" name="duyetchitieunhom" xml:space="preserve">
+    <value>Duyệt chỉ tiêu nhóm</value>
+  </data>
+  <data type="vn" name="duyetdangkycongtac" xml:space="preserve">
+    <value>Duyệt đăng ký công tác</value>
+  </data>
+  <data type="vn" name="duyetdangkydaotao" xml:space="preserve">
+    <value>Duyệt đăng ký đào tạo</value>
+  </data>
+  <data type="vn" name="duyetdanhgiachitieunhom" xml:space="preserve">
+    <value>Duyệt đánh giá chỉ tiêu nhóm</value>
+  </data>
+  <data type="vn" name="duyetdanhgiagiahanhopdong" xml:space="preserve">
+    <value>Duyệt đánh giá gia hạn hợp đồng</value>
+  </data>
+  <data type="vn" name="duyetdanhgiasauthuviec" xml:space="preserve">
+    <value>Duyệt đánh giá sau thử việc/đào tạo</value>
+  </data>
+  <data type="vn" name="duyetdieuchinhgiocong" xml:space="preserve">
+    <value>Duyệt đơn xin xác nhận giờ công</value>
+  </data>
+  <data type="vn" name="duyetdonxinthoiviec" xml:space="preserve">
+    <value>Duyệt đơn xin thôi việc</value>
+  </data>
+  <data type="vn" name="duyethosoungvien" xml:space="preserve">
+    <value>Duyệt hồ sơ ứng viên</value>
+  </data>
+  <data type="vn" name="duyetkehoachtangca" xml:space="preserve">
+    <value>Duyệt kế hoạch tăng ca</value>
+  </data>
+  <data type="vn" name="duyetketquatest" xml:space="preserve">
+    <value>Duyệt kết quả test</value>
+  </data>
+  <data type="vn" name="duyetlambu" xml:space="preserve">
+    <value>Duyệt làm bù</value>
+  </data>
+  <data type="vn" name="duyetmolaiphieuyeucautuyendung" xml:space="preserve">
+    <value>Duyệt mở lại phiếu yêu cầu tuyển dụng</value>
+  </data>
+  <data type="vn" name="duyetnghiphep" xml:space="preserve">
+    <value>Duyệt nghỉ phép</value>
+  </data>
+  <data type="vn" name="Duyetofferletter" xml:space="preserve">
+    <value>Duyệt offer letter</value>
+  </data>
+  <data type="vn" name="duyetphieu" xml:space="preserve">
+    <value>Duyệt phiếu</value>
+  </data>
+  <data type="vn" name="duyetthongtinungviennhap" xml:space="preserve">
+    <value>Duyệt thông tin ứng viên nhập</value>
+  </data>
+  <data type="vn" name="duyetyeucautuyendung" xml:space="preserve">
+    <value>Duyệt yêu cầu tuyển dụng</value>
+  </data>
+  <data type="vn" name="gopydagui" xml:space="preserve">
+    <value>Góp ý đã gửi</value>
+  </data>
+  <data type="vn" name="guigopy" xml:space="preserve">
+    <value>Gửi góp ý</value>
+  </data>
+  <data type="vn" name="guiketquatesting" xml:space="preserve">
+    <value>Gửi kết quả testing</value>
+  </data>
+  <data type="vn" name="guinhucaudaotao" xml:space="preserve">
+    <value>Gửi nhu cầu đào tạo</value>
+  </data>
+  <data type="vn" name="guithongtintaikhoan" xml:space="preserve">
+    <value>Gửi thông tin tài khoản</value>
+  </data>
+  <data type="vn" name="guiyeucautuyendung" xml:space="preserve">
+    <value>Gửi yêu cầu tuyển dụng</value>
+  </data>
+  <data type="vn" name="hinhthucchiluong" xml:space="preserve">
+    <value>Hình thức chi lương</value>
+  </data>
+  <data type="vn" name="hopdong" xml:space="preserve">
+    <value>Hợp đồng</value>
+  </data>
+  <data type="vn" name="hoso" xml:space="preserve">
+    <value>Hồ sơ đã nộp</value>
+  </data>
+  <data type="vn" name="huongdansudung_phanPA_Danhchocanhan" xml:space="preserve">
+    <value>Hướng dẫn sử dụng - Phần đánh giá - Dành cho cá nhân</value>
+  </data>
+  <data type="vn" name="huydulieucong" xml:space="preserve">
+    <value>Hủy dữ liệu chấm công đã đọc</value>
+  </data>
+  <data type="vn" name="importchitieucanhan" xml:space="preserve">
+    <value>Import chỉ tiêu cá nhân</value>
+  </data>
+  <data type="vn" name="importcongdaotao" xml:space="preserve">
+    <value>Nhập bảng công đào tạo</value>
+  </data>
+  <data type="vn" name="importcongnhanvien" xml:space="preserve">
+    <value>Nhập bảng công cho nhân viên</value>
+  </data>
+  <data type="vn" name="Importcongtuexcel" xml:space="preserve">
+    <value>Kết nối dữ liệu - từ tập tin excel</value>
+  </data>
+  <data type="vn" name="importketquadaotao" xml:space="preserve">
+    <value>Nhập kết quả đào tạo</value>
+  </data>
+  <data type="vn" name="importphieuluong" xml:space="preserve">
+    <value>Nhập phiếu lương</value>
+  </data>
+  <data type="vn" name="importtangcanhanvien" xml:space="preserve">
+    <value>Nhập bảng tăng ca cho nhân viên</value>
+  </data>
+  <data type="vn" name="importtangluongnv" xml:space="preserve">
+    <value>Import tăng lương nhân viên</value>
+  </data>
+  <data type="vn" name="incamketbaomatthongtin" xml:space="preserve">
+    <value>In cam kết bảo mật thông tin</value>
+  </data>
+  <data type="vn" name="indanhsachthoiviec" xml:space="preserve">
+    <value>In danh sách nhân viên thôi việc</value>
+  </data>
+  <data type="vn" name="inquyetdinhtuyendung" xml:space="preserve">
+    <value>In quyết định tuyển dụng</value>
+  </data>
+  <data type="vn" name="kehoachdaotao" xml:space="preserve">
+    <value>Kế hoạch đào tạo</value>
+  </data>
+  <data type="vn" name="kehoachtangca" xml:space="preserve">
+    <value>Kế hoạch tăng ca</value>
+  </data>
+  <data type="vn" name="ketnoidulieutumaychamcong" xml:space="preserve">
+    <value>Kết nối dữ liệu - từ thiết bị chấm công</value>
+  </data>
+  <data type="vn" name="ketnoidulieutuPTS" xml:space="preserve">
+    <value>Kết nối dữ liệu - từ PTS</value>
+  </data>
+  <data type="vn" name="ketquadaotaohoinhap" xml:space="preserve">
+    <value>Kết quả đào tạo hội nhập</value>
+  </data>
+  <data type="vn" name="ketquaduyetdangkyngoai" xml:space="preserve">
+    <value>Kết quả duyệt đăng ký học bên ngoài</value>
+  </data>
+  <data type="vn" name="ketquapv" xml:space="preserve">
+    <value>Kết quả phỏng vấn</value>
+  </data>
+  <data type="vn" name="khamsuckhoe" xml:space="preserve">
+    <value>Thông tin sức khỏe</value>
+  </data>
+  <data type="vn" name="khenthuongkyluat" xml:space="preserve">
+    <value>Khen thưởng - kỷ luật</value>
+  </data>
+  <data type="vn" name="khoadulieuthang" xml:space="preserve">
+    <value>Khóa dữ liệu phép - tăng ca hàng tháng</value>
+  </data>
+  <data type="vn" name="kiemnhiem" xml:space="preserve">
+    <value>Kiêm nhiệm</value>
+    <comment>field thong tin nhan vien</comment>
+  </data>
+  <data type="vn" name="kqxeploainvtrongnhieunam" xml:space="preserve">
+    <value>Kết quả xếp loại nhân viên trong nhiều năm</value>
+  </data>
+  <data type="vn" name="lichhoccuaban" xml:space="preserve">
+    <value>Lịch học của bạn</value>
+  </data>
+  <data type="vn" name="lichhocdaotaotheothang" xml:space="preserve">
+    <value>Lịch học đào tạo theo tháng</value>
+  </data>
+  <data type="vn" name="lichsuluong" xml:space="preserve">
+    <value>Lịch sử lương</value>
+  </data>
+  <data type="vn" name="linhvucchuyenmon" xml:space="preserve">
+    <value>Lĩnh vực chuyên môn</value>
+  </data>
+  <data type="vn" name="loaicackhoanthunhapkhac" xml:space="preserve">
+    <value>Loại các khoản thu nhập khác</value>
+  </data>
+  <data type="vn" name="loaicackhoantruluong" xml:space="preserve">
+    <value>Loại các khoản trừ lương</value>
+  </data>
+  <data type="vn" name="loaingaycong" xml:space="preserve">
+    <value>Loại ngày công</value>
+  </data>
+  <data type="vn" name="luutruhoso" xml:space="preserve">
+    <value>Lưu trữ hồ sơ</value>
+  </data>
+  <data type="vn" name="lylichnhanvien" xml:space="preserve">
+    <value>Lý lịch nhân viên</value>
+  </data>
+  <data type="vn" name="mau1a" xml:space="preserve">
+    <value>Mẫu A01a</value>
+  </data>
+  <data type="vn" name="mau3a" xml:space="preserve">
+    <value>Mẫu D02TS</value>
+  </data>
+  <data type="vn" name="mau66a" xml:space="preserve">
+    <value>Mẫu C66a</value>
+  </data>
+  <data type="vn" name="mau67a" xml:space="preserve">
+    <value>Mẫu C67a</value>
+  </data>
+  <data type="vn" name="mau68a" xml:space="preserve">
+    <value>Mẫu C68a</value>
+  </data>
+  <data type="vn" name="mau69a" xml:space="preserve">
+    <value>Mẫu C69a</value>
+  </data>
+  <data type="vn" name="mau70a" xml:space="preserve">
+    <value>Mẫu C70a</value>
+  </data>
+  <data type="vn" name="Mokhoadulieuchamcongluong" xml:space="preserve">
+    <value>Mở khóa dữ liệu công - lương</value>
+  </data>
+  <data type="vn" name="motacongviecanhan" xml:space="preserve">
+    <value>Mổ tả công việc cá nhân</value>
+  </data>
+  <data type="vn" name="motacv" xml:space="preserve">
+    <value>Mô tả công việc</value>
+  </data>
+  <data type="vn" name="ngayle" xml:space="preserve">
+    <value>Ngày lễ</value>
+  </data>
+  <data type="vn" name="Ngayphepconlai" xml:space="preserve">
+    <value>Hạn mức phép</value>
+  </data>
+  <data type="vn" name="nghibu" xml:space="preserve">
+    <value>Nghỉ bù lễ</value>
+  </data>
+  <data type="vn" name="nguoiphuthuoc" xml:space="preserve">
+    <value>Người phụ thuộc</value>
+  </data>
+  <data type="vn" name="nhanvien" xml:space="preserve">
+    <value>Thêm nhân viên</value>
+  </data>
+  <data type="vn" name="nhanvienduocdanhgiacao" xml:space="preserve">
+    <value>Nhân viên được đánh giá cao</value>
+  </data>
+  <data type="vn" name="nhanvienhethanthuviec" xml:space="preserve">
+    <value>Nhân viên hết hạn thử việc</value>
+  </data>
+  <data type="vn" name="nhanviensapthoiviec" xml:space="preserve">
+    <value>Nhân viên sắp thôi việc</value>
+  </data>
+  <data type="vn" name="nhapchitieuchonhom" xml:space="preserve">
+    <value>Nhập chỉ tiêu cho nhóm</value>
+  </data>
+  <data type="vn" name="nhapchitieuchung" xml:space="preserve">
+    <value>Nhập chỉ tiêu chung</value>
+  </data>
+  <data type="vn" name="nhapchitieudanhgianhanviencapduoi" xml:space="preserve">
+    <value>Nhập chỉ tiêu đánh giá nhân viên cấp dưới</value>
+  </data>
+  <data type="vn" name="nhapluong" xml:space="preserve">
+    <value>Nhập lương</value>
+  </data>
+  <data type="vn" name="nhapmotacongviec" xml:space="preserve">
+    <value>Nhập mô tả công việc cho chức vụ</value>
+  </data>
+  <data type="vn" name="nhapphucap" xml:space="preserve">
+    <value>Nhập phụ cấp</value>
+  </data>
+  <data type="vn" name="nhapphucapcodinh" xml:space="preserve">
+    <value>Nhập phụ cấp cố định</value>
+  </data>
+  <data type="vn" name="nhapquytrinhduyet" xml:space="preserve">
+    <value>Nhập quy trình duyệt</value>
+  </data>
+  <data type="vn" name="nhucaudaotaonoibo" xml:space="preserve">
+    <value>Nhu cầu đào tạo nội bộ</value>
+  </data>
+  <data type="vn" name="Noicapgiaypheplaixe" xml:space="preserve">
+    <value>Danh mục nơi cấp GPLX</value>
+  </data>
+  <data type="vn" name="noiquy" xml:space="preserve">
+    <value>Các quy trình</value>
+  </data>
+  <data type="vn" name="nvconhieubochitieu" xml:space="preserve">
+    <value>Quản lý nhân viên có nhiều bộ chỉ tiêu</value>
+  </data>
+  <data type="vn" name="omdauthaisan" xml:space="preserve">
+    <value>Nghỉ hưởng BHXH</value>
+  </data>
+  <data type="vn" name="phanhoiykienvoittdt" xml:space="preserve">
+    <value>Phản hồi ý kiến với TTĐT</value>
+  </data>
+  <data type="vn" name="phanquyen" xml:space="preserve">
+    <value>Phân quyền chức năng</value>
+  </data>
+  <data type="vn" name="phanquyencapnhathoso" xml:space="preserve">
+    <value>Phân quyền phạm vi quản lý hồ sơ</value>
+  </data>
+  <data type="vn" name="phanquyencapnhatsodo" xml:space="preserve">
+    <value>Phân quyền cập nhật SĐTC</value>
+  </data>
+  <data type="vn" name="phanquyenchamcong" xml:space="preserve">
+    <value>Phân quyền chấm công</value>
+  </data>
+  <data type="vn" name="phanquyenguiphieuyeucautuyendung" xml:space="preserve">
+    <value>Phân quyền gửi phiếu yêu cầu tuyển dụng</value>
+  </data>
+  <data type="vn" name="phanquyenxembangchamcong" xml:space="preserve">
+    <value>Phân quyền xem bảng chấm công</value>
+  </data>
+  <data type="vn" name="phantichdulieutuyendung" xml:space="preserve">
+    <value>Phân tích dữ liệu tuyển dụng</value>
+  </data>
+  <data type="vn" name="phantichthoigianxulyhoso" xml:space="preserve">
+    <value>Phân tích thời gian xử lý hồ sơ</value>
+  </data>
+  <data type="vn" name="phepnam" xml:space="preserve">
+    <value>Quản lý phép năm</value>
+  </data>
+  <data type="vn" name="phieuluong" xml:space="preserve">
+    <value>Xem phiếu lương</value>
+  </data>
+  <data type="vn" name="phucap" xml:space="preserve">
+    <value>Phụ cấp</value>
+  </data>
+  <data type="vn" name="provinces" xml:space="preserve">
+    <value>Tỉnh/Thành phố</value>
+  </data>
+  <data type="vn" name="quanhenhanthan" xml:space="preserve">
+    <value>Quan hệ nhân thân</value>
+  </data>
+  <data type="vn" name="quanlychiphigiangvien" xml:space="preserve">
+    <value>Quản lý chi phí giảng viên</value>
+  </data>
+  <data type="vn" name="quanlydanhgiachitieunhom" xml:space="preserve">
+    <value>Đánh giá chỉ tiêu nhóm</value>
+  </data>
+  <data type="vn" name="quanlykhoadaotao" xml:space="preserve">
+    <value>Quản lý khóa đào tạo</value>
+  </data>
+  <data type="vn" name="quanlyluong" xml:space="preserve">
+    <value>Quản lý lương</value>
+  </data>
+  <data type="vn" name="Quanlythietbi" xml:space="preserve">
+    <value>Quản lý thiết bị</value>
+  </data>
+  <data type="vn" name="quanlyvantay" xml:space="preserve">
+    <value>Quản lý vân tay/thẻ</value>
+  </data>
+  <data type="vn" name="quatrinhdanhgianvnhieunam" xml:space="preserve">
+    <value>Quá trình đánh giá nhân viên nhiều năm</value>
+  </data>
+  <data type="vn" name="quatrinhdaotao" xml:space="preserve">
+    <value>Quá trình đào tạo của bạn</value>
+  </data>
+  <data type="vn" name="quatrinhdaotaocuanv" xml:space="preserve">
+    <value>Quá trình đào tạo của nhân viên</value>
+  </data>
+  <data type="vn" name="quatrinhlamviec" xml:space="preserve">
+    <value>Quá trình làm việc trước khi vào công ty</value>
+  </data>
+  <data type="vn" name="quydinhtruluong" xml:space="preserve">
+    <value>Quy định trừ lương</value>
+  </data>
+  <data type="vn" name="sodonhansukethua" xml:space="preserve">
+    <value>Sơ đồ nhân sự kế thừa</value>
+  </data>
+  <data type="vn" name="sodotochuc" xml:space="preserve">
+    <value>Sơ đồ tổ chức</value>
+  </data>
+  <data type="vn" name="soluongnhanvientheochucdanh" xml:space="preserve">
+    <value>Số lượng nhân viên theo chức vụ</value>
+  </data>
+  <data type="vn" name="soluongnvtheotylehoanthanhchitieu" xml:space="preserve">
+    <value>Số lượng nhân viên theo tỷ lệ hoàn thành chỉ tiêu</value>
+  </data>
+  <data type="vn" name="soluongnvtheoxeploai" xml:space="preserve">
+    <value>Số lượng nhân viên theo xếp loại</value>
+  </data>
+  <data type="vn" name="sosanhquyluongphongbandata" xml:space="preserve">
+    <value>Tổng quỹ lương các tháng</value>
+  </data>
+  <data type="vn" name="sosanhtongquyluong" xml:space="preserve">
+    <value>So sánh tổng quỹ lương theo tháng</value>
+  </data>
+  <data type="vn" name="sotay" xml:space="preserve">
+    <value>Sổ tay nhân viên</value>
+  </data>
+  <data type="vn" name="taisansudung" xml:space="preserve">
+    <value>Tài sản sử dụng</value>
+  </data>
+  <data type="vn" name="taobaitest" xml:space="preserve">
+    <value>Tạo bài test kỹ năng</value>
+  </data>
+  <data type="vn" name="taodotthi" xml:space="preserve">
+    <value>Tạo đợt thi</value>
+  </data>
+  <data type="vn" name="taomoidottuyendung" xml:space="preserve">
+    <value>Tạo mới đợt tuyển dụng</value>
+  </data>
+  <data type="vn" name="taotaikhoan" xml:space="preserve">
+    <value>Tạo tài khoản</value>
+  </data>
+  <data type="vn" name="tgnghiviectb" xml:space="preserve">
+    <value>Thời gian nghỉ việc trung bình</value>
+  </data>
+  <data type="vn" name="thamsocong" xml:space="preserve">
+    <value>Tham số công</value>
+  </data>
+  <data type="vn" name="thaydoicalamviec" xml:space="preserve">
+    <value>Thay đổi ca làm việc</value>
+  </data>
+  <data type="vn" name="Thaydoihesotangca" xml:space="preserve">
+    <value>Hệ số tăng ca</value>
+  </data>
+  <data type="vn" name="thaydoiluongdaotao" xml:space="preserve">
+    <value>Thay đổi mức lương đào tạo</value>
+  </data>
+  <data type="vn" name="thaydoimucdongbhxh" xml:space="preserve">
+    <value>Mức đóng BHXH</value>
+  </data>
+  <data type="vn" name="thaydoimucgiamtru" xml:space="preserve">
+    <value>Giảm trừ TTNCN</value>
+  </data>
+  <data type="vn" name="themmoidotkhaosat" xml:space="preserve">
+    <value>Thêm đợt khảo sát</value>
+  </data>
+  <data type="vn" name="themmoikynangnghiepvu" xml:space="preserve">
+    <value>Thêm mới kỹ năng - Nghiệp vụ</value>
+  </data>
+  <data type="vn" name="themmoiphieuyeucau" xml:space="preserve">
+    <value>Thêm mới phiếu yêu cầu</value>
+  </data>
+  <data type="vn" name="themtin" xml:space="preserve">
+    <value>Thêm tin</value>
+  </data>
+  <data type="vn" name="themungvien" xml:space="preserve">
+    <value>Thêm ứng viên</value>
+  </data>
+  <data type="vn" name="theodoingayphep" xml:space="preserve">
+    <value>Theo dõi ngày phép</value>
+  </data>
+  <data type="vn" name="theodoithunhapkhac" xml:space="preserve">
+    <value>Thu nhập khác</value>
+  </data>
+  <data type="vn" name="theodoitruluongkhac" xml:space="preserve">
+    <value>Trừ lương</value>
+  </data>
+  <data type="vn" name="theodoivipham" xml:space="preserve">
+    <value>Đánh giá vi phạm/thành tích</value>
+  </data>
+  <data type="vn" name="theodoixaydungchitieu" xml:space="preserve">
+    <value>Theo dõi xây dựng chỉ tiêu</value>
+  </data>
+  <data type="vn" name="thietlapchitieunhom" xml:space="preserve">
+    <value>Nhập chỉ tiêu nhóm</value>
+  </data>
+  <data type="vn" name="thietlapdanhgia360" xml:space="preserve">
+    <value>Thiết lập đánh giá 360</value>
+  </data>
+  <data type="vn" name="thietlapkhoahoc" xml:space="preserve">
+    <value>Thiết lập khóa đào tạo</value>
+  </data>
+  <data type="vn" name="thoathuantaitrodaotao" xml:space="preserve">
+    <value>Thỏa thuận tài trợ đào tạo</value>
+  </data>
+  <data type="vn" name="thoigiantrungbinhtuyendungtheocaobac" xml:space="preserve">
+    <value>Thời gian tuyển dụng trung bình</value>
+  </data>
+  <data type="vn" name="thoiviec" xml:space="preserve">
+    <value>Thôi việc</value>
+    <comment>field thong tin nhan vien</comment>
+  </data>
+  <data type="vn" name="thoiviecvaolamlai" xml:space="preserve">
+    <value>Thôi việc vào làm lại</value>
+  </data>
+  <data type="vn" name="thongbao" xml:space="preserve">
+    <value>Thông báo</value>
+  </data>
+  <data type="vn" name="thongbaocuakhoinhansu" xml:space="preserve">
+    <value>Thông báo của phòng nhân sự</value>
+  </data>
+  <data type="vn" name="thongkebaikiemtra_dthn" xml:space="preserve">
+    <value>Thống kê bài kiểm tra</value>
+  </data>
+  <data type="vn" name="thongkechamsocsuckhoe" xml:space="preserve">
+    <value>Danh sách nhân viên có thẻ Healthcare</value>
+  </data>
+  <data type="vn" name="thongkedanhgiadonvitochuckhoadaotao" xml:space="preserve">
+    <value>Thống kê đơn vị tổ chức khóa đào tạo</value>
+  </data>
+  <data type="vn" name="thongkedanhgiahieuquadaotao" xml:space="preserve">
+    <value>Thống kê đánh giá hiệu quả đào tạo</value>
+  </data>
+  <data type="vn" name="thongkedanhgiatungnv" xml:space="preserve">
+    <value>Thống kê đánh giá từng nhân viên</value>
+  </data>
+  <data type="vn" name="thongkedanhsachcongtac" xml:space="preserve">
+    <value>Thống kê danh sách đi công tác</value>
+  </data>
+  <data type="vn" name="thongkedanhsachdoandang" xml:space="preserve">
+    <value>Thống kê danh sách Đoàn Đảng</value>
+  </data>
+  <data type="vn" name="thongkedanhsachtangca" xml:space="preserve">
+    <value>Thống kê danh sách tăng ca</value>
+  </data>
+  <data type="vn" name="thongkedanhsachxacnhangiocong" xml:space="preserve">
+    <value>Danh sách xin xác nhận giờ công</value>
+  </data>
+  <data type="vn" name="thongkedanhsachxinvaotrerasom" xml:space="preserve">
+    <value>Danh sách xin vào trễ/ra sớm</value>
+  </data>
+  <data type="vn" name="thongkedaotaohoinhap" xml:space="preserve">
+    <value>Thống kê đào tạo hội nhập</value>
+  </data>
+  <data type="vn" name="thongkedexuat" xml:space="preserve">
+    <value>Thống kê đề xuât của nhân viên</value>
+  </data>
+  <data type="vn" name="Thongkediadiemlamviectyle" xml:space="preserve">
+    <value>Thống kê địa điểm làm việc</value>
+  </data>
+  <data type="vn" name="thongkehanmucphep" xml:space="preserve">
+    <value>Thống kê hạn mức phép</value>
+  </data>
+  <data type="vn" name="thongkehopdonglaodong" xml:space="preserve">
+    <value>Thống kê hợp đồng lao động</value>
+  </data>
+  <data type="vn" name="thongkekhaosat_dthn" xml:space="preserve">
+    <value>Thống kê khảo sát đào tạo định hướng</value>
+  </data>
+  <data type="vn" name="thongkekiemsoatanninh" xml:space="preserve">
+    <value>Danh sách do bảo vệ note</value>
+  </data>
+  <data type="vn" name="thongkekinhnghiem" xml:space="preserve">
+    <value>Số lượng theo thâm niên công tác</value>
+  </data>
+  <data type="vn" name="thongkeluong" xml:space="preserve">
+    <value>Thống kê lương hiện tại</value>
+  </data>
+  <data type="vn" name="thongkeluongcapbac" xml:space="preserve">
+    <value>Thống kê cấu trúc lương</value>
+  </data>
+  <data type="vn" name="thongkeluongnhanvien" xml:space="preserve">
+    <value>Lương nhân viên theo thời gian</value>
+  </data>
+  <data type="vn" name="thongkelydothoiviec" xml:space="preserve">
+    <value>Thống kê lý do thôi việc</value>
+  </data>
+  <data type="vn" name="thongkemucdohailong" xml:space="preserve">
+    <value>Thống kê mức độ hài lòng</value>
+  </data>
+  <data type="vn" name="thongkenhanthan" xml:space="preserve">
+    <value>Thống kê nhân thân</value>
+  </data>
+  <data type="vn" name="thongkephuluchopdong" xml:space="preserve">
+    <value>Thống kê phụ lục hợp đồng</value>
+  </data>
+  <data type="vn" name="thongkequatrinhdongbaohiem" xml:space="preserve">
+    <value>Thống kê quá trình đóng bảo hiểm</value>
+  </data>
+  <data type="vn" name="thongkequyen" xml:space="preserve">
+    <value>Thống kê quyền nhân viên</value>
+  </data>
+  <data type="vn" name="thongkesoluongdilam" xml:space="preserve">
+    <value>Số lượng nhân viên đi làm</value>
+  </data>
+  <data type="vn" name="thongkesoluongtheotyle" xml:space="preserve">
+    <value>Thống kê số lượng theo tỷ lệ</value>
+  </data>
+  <data type="vn" name="thongkesoluongungvienchotungvitri" xml:space="preserve">
+    <value>Thống kê số lượng ứng viên cho từng vị trí</value>
+  </data>
+  <data type="vn" name="thongkesonguoithamgia" xml:space="preserve">
+    <value>Thống kê số người tham gia</value>
+  </data>
+  <data type="vn" name="thongkethamniennhanvien" xml:space="preserve">
+    <value>Thống kê thâm niên nhân viên</value>
+  </data>
+  <data type="vn" name="thongketheobangcap" xml:space="preserve">
+    <value>Thống kê theo bằng cấp</value>
+  </data>
+  <data type="vn" name="thongketheothoigiancongtac" xml:space="preserve">
+    <value>DS đã thôi việc theo thời gian công tác</value>
+  </data>
+  <data type="vn" name="thongkethieuhoso" xml:space="preserve">
+    <value>Thống kê thiếu hồ sơ</value>
+  </data>
+  <data type="vn" name="thongkethoathuantaitrodaotao" xml:space="preserve">
+    <value>Thống kê thỏa thuận tài trợ đào tạo</value>
+  </data>
+  <data type="vn" name="thongkethoihanphieuyeucau" xml:space="preserve">
+    <value>Thống kê thời hạn phiếu yêu cầu</value>
+  </data>
+  <data type="vn" name="thongkethunhapcongthem" xml:space="preserve">
+    <value>Tổng các khoản thu nhập thêm</value>
+  </data>
+  <data type="vn" name="thongketonghopkehoachtangca" xml:space="preserve">
+    <value>Thống kê tổng hợp kế hoạch tăng ca</value>
+  </data>
+  <data type="vn" name="thongketonghopxeploainv" xml:space="preserve">
+    <value>Tổng hợp xếp loại nhân viên</value>
+  </data>
+  <data type="vn" name="thongketongquyluong" xml:space="preserve">
+    <value>Tổng quỹ lương, phụ cấp</value>
+  </data>
+  <data type="vn" name="thongketruluong" xml:space="preserve">
+    <value>Tổng các khoản trừ lương</value>
+  </data>
+  <data type="vn" name="thongketylekenhtuyendung" xml:space="preserve">
+    <value>Thống kê tỷ lệ kênh tuyển dụng</value>
+  </data>
+  <data type="vn" name="thongtinbaohiem" xml:space="preserve">
+    <value>Thông tin bảo hiểm</value>
+  </data>
+  <data type="vn" name="thongtincanhan" xml:space="preserve">
+    <value>Thông tin cá nhân</value>
+  </data>
+  <data type="vn" name="thongtinchinhtri" xml:space="preserve">
+    <value>Thông tin chính trị</value>
+  </data>
+  <data type="vn" name="thongtinchung" xml:space="preserve">
+    <value>Thông tin chung</value>
+  </data>
+  <data type="vn" name="thunhapkhac" xml:space="preserve">
+    <value>Thu nhập khác</value>
+  </data>
+  <data type="vn" name="thunhapthemcodinh" xml:space="preserve">
+    <value>Danh mục các khoản thu nhập khác</value>
+  </data>
+  <data type="vn" name="thuyenchuyenchucvu" xml:space="preserve">
+    <value>Thuyên chuyển chức vụ</value>
+  </data>
+  <data type="vn" name="thuyenchuyennhanvien" xml:space="preserve">
+    <value>Chuyển nhân viên qua nhóm khác</value>
+  </data>
+  <data type="vn" name="timkiemhoso" xml:space="preserve">
+    <value>Tìm kiếm hồ sơ</value>
+  </data>
+  <data type="vn" name="tinhcongngay" xml:space="preserve">
+    <value>Cập nhật tính công ngày</value>
+  </data>
+  <data type="vn" name="tinhhinhbiendongnhansu" xml:space="preserve">
+    <value>Tình hình biến động nhân sự</value>
+  </data>
+  <data type="vn" name="tinhluong" xml:space="preserve">
+    <value>Tính lương</value>
+  </data>
+  <data type="vn" name="tinhluongnhanviendaotao" xml:space="preserve">
+    <value>Tính lương nhân viên đào tạo</value>
+  </data>
+  <data type="vn" name="tinhtranghonnhan" xml:space="preserve">
+    <value>Tình trạng hôn nhân</value>
+  </data>
+  <data type="vn" name="tkchiphiguihocbenngoai" xml:space="preserve">
+    <value>Thống kê chi phí gửi học bên ngoài</value>
+  </data>
+  <data type="vn" name="tkchiphilophoc" xml:space="preserve">
+    <value>Thống kê chi phí lớp học</value>
+  </data>
+  <data type="vn" name="tkdanhsachtheotyle" xml:space="preserve">
+    <value>Thống kê danh sách theo tỷ lệ</value>
+  </data>
+  <data type="vn" name="tkdanhsachtheoxeploai" xml:space="preserve">
+    <value>Thống kê danh sách theo xếp loại</value>
+  </data>
+  <data type="vn" name="tksoluongdangky" xml:space="preserve">
+    <value>Thống kê số lượng đăng ký</value>
+  </data>
+  <data type="vn" name="tksoluongtheoxeploai" xml:space="preserve">
+    <value>Thống kê số lượng theo xếp loại</value>
+  </data>
+  <data type="vn" name="tonghopchitieutheochucdanh" xml:space="preserve">
+    <value>Tổng hợp chỉ tiêu theo chức vụ</value>
+  </data>
+  <data type="vn" name="tonghopdanhgia" xml:space="preserve">
+    <value>Tổng hợp đánh giá</value>
+  </data>
+  <data type="vn" name="tonghopdanhsachgiangviennoibo" xml:space="preserve">
+    <value>Tổng hợp danh sách giảng viên nội bộ</value>
+  </data>
+  <data type="vn" name="tonghopkhoahoc" xml:space="preserve">
+    <value>Tổng hợp khóa học</value>
+  </data>
+  <data type="vn" name="tonghopnghiphep" xml:space="preserve">
+    <value>Dữ liệu ngày phép</value>
+  </data>
+  <data type="vn" name="tonghopphepnam" xml:space="preserve">
+    <value>Tổng hợp phép năm</value>
+  </data>
+  <data type="vn" name="tonghopphieuquatuyendung" xml:space="preserve">
+    <value>Tổng hợp hiệu quả tuyển dụng</value>
+  </data>
+  <data type="vn" name="tonghoptangca" xml:space="preserve">
+    <value>Dữ liệu tăng ca</value>
+  </data>
+  <data type="vn" name="tonghoptinhhinhdanhgia" xml:space="preserve">
+    <value>Tổng hợp tình hình đánh giá</value>
+  </data>
+  <data type="vn" name="tonghopvaotrerasom" xml:space="preserve">
+    <value>Tổng hợp vào trễ - ra sớm</value>
+  </data>
+  <data type="vn" name="tongsonv" xml:space="preserve">
+    <value>Số nhân viên, tuổi trung bình, tỷ lệ nam nữ</value>
+  </data>
+  <data type="vn" name="tracuucamketdaotao" xml:space="preserve">
+    <value>Tra cứu cam kết đào tạo</value>
+  </data>
+  <data type="vn" name="truluongcodinh" xml:space="preserve">
+    <value>Danh mục các khoản trừ lương khác</value>
+  </data>
+  <data type="vn" name="tudanhgia" xml:space="preserve">
+    <value>Tự đánh giá - xem kết quả đánh giá</value>
+  </data>
+  <data type="vn" name="tylesanglochoso" xml:space="preserve">
+    <value>Tỷ lệ sàng lọc hồ sơ</value>
+  </data>
+  <data type="vn" name="tylesanglochososaupv" xml:space="preserve">
+    <value>Tỷ lệ sàng lọc hồ sơ sau phỏng vấn</value>
+  </data>
+  <data type="vn" name="uyquyenduyetphieu" xml:space="preserve">
+    <value>Ủy quyền duyệt phiếu</value>
+  </data>
+  <data type="vn" name="vaotrerasom" xml:space="preserve">
+    <value>Vào trễ - ra sớm</value>
+  </data>
+  <data type="vn" name="Xacnhanofferletter" xml:space="preserve">
+    <value>Xác nhận offer letter</value>
+  </data>
+  <data type="vn" name="xacnhantangca" xml:space="preserve">
+    <value>Xác nhận yêu cầu tăng ca</value>
+  </data>
+  <data type="vn" name="xaydungchitieu" xml:space="preserve">
+    <value>Xây dựng chỉ tiêu</value>
+  </data>
+  <data type="vn" name="xembangcc" xml:space="preserve">
+    <value>Xem bảng chấm công</value>
+  </data>
+  <data type="vn" name="xembangluong" xml:space="preserve">
+    <value>Xem bảng lương</value>
+  </data>
+  <data type="vn" name="xembangluongdaotao" xml:space="preserve">
+    <value>Xem bảng công/lương</value>
+  </data>
+  <data type="vn" name="xembaocaocongviec" xml:space="preserve">
+    <value>Xem báo cáo công việc</value>
+  </data>
+  <data type="vn" name="xemcalamviec" xml:space="preserve">
+    <value>Danh sách ca làm việc</value>
+  </data>
+  <data type="vn" name="xemcamketbaomatthongtin" xml:space="preserve">
+    <value>Xem cam kết bảo mật thông tin</value>
+  </data>
+  <data type="vn" name="xemdanhsachdiemdanhlophoc" xml:space="preserve">
+    <value>Xem danh sách điểm danh lớp học</value>
+  </data>
+  <data type="vn" name="xemdanhsachtrungtuyen" xml:space="preserve">
+    <value>Danh sách trúng tuyển</value>
+  </data>
+  <data type="vn" name="xemdinhhuongphatriennghenghiep" xml:space="preserve">
+    <value>Xem định hướng phát triển nghề nghiệp</value>
+  </data>
+  <data type="vn" name="xemduyetchitieu" xml:space="preserve">
+    <value>Xem/Duyệt chỉ tiêu</value>
+  </data>
+  <data type="vn" name="xemhieuqua" xml:space="preserve">
+    <value>Xem hiệu quả làm việc cấp dưới</value>
+  </data>
+  <data type="vn" name="xemketquadanhgia" xml:space="preserve">
+    <value>Xem kết quả đánh giá</value>
+  </data>
+  <data type="vn" name="xemlaibaitest" xml:space="preserve">
+    <value>Danh sách bài test đã đóng tuyển dụng</value>
+  </data>
+  <data type="vn" name="xemlichdaycuaban" xml:space="preserve">
+    <value>Xem lịch dạy của bạn</value>
+  </data>
+  <data type="vn" name="xemlog" xml:space="preserve">
+    <value>Xem logs</value>
+  </data>
+  <data type="vn" name="xemmotacongviecchucdanh" xml:space="preserve">
+    <value>Xem mô tả công việc của chức vụ</value>
+  </data>
+  <data type="vn" name="xemsodotochuc" xml:space="preserve">
+    <value>Xem sơ đồ tổ chức</value>
+  </data>
+  <data type="vn" name="xemthongtin" xml:space="preserve">
+    <value>Xem thông tin đào tạo của nhân viên cấp dưới</value>
+  </data>
+  <data type="vn" name="xepcalamviec" xml:space="preserve">
+    <value>Xếp ca làm việc</value>
+  </data>
+  <data type="vn" name="xeplichhoc" xml:space="preserve">
+    <value>Chọn học viên vào khóa đào tạo</value>
+  </data>
+  <data type="vn" name="xeplichpv" xml:space="preserve">
+    <value>Xếp lịch phỏng vấn</value>
+  </data>
+  <data type="vn" name="xeplichtest" xml:space="preserve">
+    <value>Xếp lịch test</value>
+  </data>
+  <data type="vn" name="xepnguoipv" xml:space="preserve">
+    <value>Xếp người phỏng vấn</value>
+  </data>
+  <data type="vn" name="xepphonghoc" xml:space="preserve">
+    <value>Xếp phòng học</value>
+  </data>
+  <data type="vn" name="xindieuchinhgiocong" xml:space="preserve">
+    <value>Gửi đơn xin xác nhận giờ công</value>
+  </data>
+  <data type="vn" name="xinvaotrerasom" xml:space="preserve">
+    <value>Xin vào trễ - ra sớm</value>
+  </data>
+  <data type="vn" name="xoafileupload" xml:space="preserve">
+    <value>Xóa file đã upload</value>
+  </data>
+  <data type="vn" name="xuatbaocaodong" xml:space="preserve">
+    <value>Xuất báo cáo động</value>
+  </data>
+  <data type="vn" name="xuatdulieunhanvien" xml:space="preserve">
+    <value>Xuất dữ liệu nhân viên</value>
+  </data>
+  <data type="vn" name="xulyyeucautuyendung" xml:space="preserve">
+    <value>Xử lý phiếu yêu cầu tuyển dụng</value>
+  </data>
+  <data type="vn" name="yeucautangca" xml:space="preserve">
+    <value>Yêu cầu cấp dưới tăng ca</value>
+  </data>
+  <data type="vn" name="bhxh" xml:space="preserve">
+    <value>BHXH</value>
+  </data>
+  <data type="vn" name="capnhatdanhmucnoiphongvan" xml:space="preserve">
+    <value>Danh mục nơi phỏng vấn</value>
+  </data>
+  <data type="vn" name="cauhinhmailserver" xml:space="preserve">
+    <value>Cấu hình email gửi đi</value>
+  </data>
+  <data type="vn" name="cauhinhmenu" xml:space="preserve">
+    <value>Cài đặt menu cá nhân và quản lý</value>
+  </data>
+  <data type="vn" name="cauhinhphepthamnien" xml:space="preserve">
+    <value>Cấu hình phép thâm niên</value>
+  </data>
+  <data type="vn" name="chucnangkhac" xml:space="preserve">
+    <value>Chức năng khác</value>
+  </data>
+  <data type="vn" name="congtangca" xml:space="preserve">
+    <value>Công - tăng ca</value>
+  </data>
+  <data type="vn" name="danhchocanhan" xml:space="preserve">
+    <value>Dành cho cá nhân</value>
+  </data>
+  <data type="vn" name="danhgiachitieukpi" xml:space="preserve">
+    <value>Đánh giá chỉ tiêu</value>
+  </data>
+  <data type="vn" name="danhsachhethanthuviec" xml:space="preserve">
+    <value>Danh sách sắp/đã hết hạn thử việc việc</value>
+  </data>
+  <data type="vn" name="danhsachsinhnhat" xml:space="preserve">
+    <value>Danh sách sinh nhật</value>
+  </data>
+  <data type="vn" name="daotao" xml:space="preserve">
+    <value>Đào tạo</value>
+  </data>
+  <data type="vn" name="daotaohoinhap" xml:space="preserve">
+    <value>Đào tạo hội nhập</value>
+  </data>
+  <data type="vn" name="donggopykien" xml:space="preserve">
+    <value>Đóng góp ý kiến</value>
+  </data>
+  <data type="vn" name="dulieucong" xml:space="preserve">
+    <value>Xem chấm công hàng ngày</value>
+  </data>
+  <data type="vn" name="duyettangca" xml:space="preserve">
+    <value>Quản lý tăng ca</value>
+  </data>
+  <data type="vn" name="hanhchinh" xml:space="preserve">
+    <value>Hành chánh</value>
+  </data>
+  <data type="vn" name="huythoiviec" xml:space="preserve">
+    <value>Hủy thôi việc đã nhập</value>
+  </data>
+  <data type="vn" name="khaosat" xml:space="preserve">
+    <value>Khảo sát</value>
+  </data>
+  <data type="vn" name="maychamcong" xml:space="preserve">
+    <value>Quản lý máy chấm công</value>
+  </data>
+  <data type="vn" name="motacongviec" xml:space="preserve">
+    <value>Mô tả công việc</value>
+  </data>
+  <data type="vn" name="nhanviensaphethanthuyenchuyen" xml:space="preserve">
+    <value>Nhân viên sắp hết hạn thuyên chuyển</value>
+  </data>
+  <data type="vn" name="nhanvientiemnang" xml:space="preserve">
+    <value>Nhân viên tiềm năng</value>
+  </data>
+  <data type="vn" name="nhucaudaotaotheochucdanh" xml:space="preserve">
+    <value>Nhu cầu đào tạo theo chức vụ</value>
+  </data>
+  <data type="vn" name="noiquyquytrinh" xml:space="preserve">
+    <value>Nội quy</value>
+  </data>
+  <data type="vn" name="phep" xml:space="preserve">
+    <value>Phép - công tác</value>
+  </data>
+  <data type="vn" name="phongvanthoiviec" xml:space="preserve">
+    <value>Phỏng vấn thôi việc</value>
+  </data>
+  <data type="vn" name="quanlycong" xml:space="preserve">
+    <value>Quản lý công</value>
+  </data>
+  <data type="vn" name="quanlyhethong" xml:space="preserve">
+    <value>Hệ thống</value>
+  </data>
+  <data type="vn" name="quanlyhopdong" xml:space="preserve">
+    <value>Quản lý hợp đồng</value>
+  </data>
+  <data type="vn" name="quanlyhoso" xml:space="preserve">
+    <value>Quản lý hồ sơ</value>
+  </data>
+  <data type="vn" name="quanlynghiphep" xml:space="preserve">
+    <value>Quản lý phép</value>
+  </data>
+  <data type="vn" name="quanlyphieuyeucau" xml:space="preserve">
+    <value>Quản lý phiếu yêu cầu</value>
+  </data>
+  <data type="vn" name="quanlytaikhoan" xml:space="preserve">
+    <value>Quản lý tài khoản</value>
+  </data>
+  <data type="vn" name="quanlytesting" xml:space="preserve">
+    <value>Quản lý testing</value>
+  </data>
+  <data type="vn" name="quanlyungvien" xml:space="preserve">
+    <value>Quản lý ứng viên</value>
+  </data>
+  <data type="vn" name="quanlywebsite" xml:space="preserve">
+    <value>Quản lý website</value>
+  </data>
+  <data type="vn" name="quytrinh" xml:space="preserve">
+    <value>Quy trình</value>
+  </data>
+  <data type="vn" name="thamso" xml:space="preserve">
+    <value>Tham số</value>
+  </data>
+  <data type="vn" name="thamsokhac" xml:space="preserve">
+    <value>Tham số khác</value>
+  </data>
+  <data type="vn" name="thaydoiluong" xml:space="preserve">
+    <value>Thay đổi lương</value>
+  </data>
+  <data type="vn" name="thongke" xml:space="preserve">
+    <value>Thống kê</value>
+  </data>
+  <data type="vn" name="thongkesoluongnhanvien" xml:space="preserve">
+    <value>Thống kê số lượng nhân viên theo phòng ban</value>
+  </data>
+  <data type="vn" name="tienluong" xml:space="preserve">
+    <value>Quản lý lương</value>
+  </data>
+  <data type="vn" name="timnhanvien" xml:space="preserve">
+    <value>Tìm kiếm nhân viên</value>
+  </data>
+  <data type="vn" name="tonghopchitieu" xml:space="preserve">
+    <value>Tổng hợp chỉ tiêu</value>
+  </data>
+  <data type="vn" name="trinhdobangcap" xml:space="preserve">
+    <value>Trình độ - bằng cấp</value>
+  </data>
+  <data type="vn" name="tuyendung" xml:space="preserve">
+    <value>Tuyển dụng</value>
+  </data>
+  <data type="vn" name="viewlog" xml:space="preserve">
+    <value>Xem log hệ thống</value>
+  </data>
+  <data type="vn" name="xaydungquytrinh" xml:space="preserve">
+    <value>Xây dựng quy trình</value>
+  </data>
+  <data type="vn" name="baocaobaohiemxahoi" xml:space="preserve">
+    <value>Báo cáo tăng - giảm bảo hiểm xã hội</value>
+  </data>
+  <data type="vn" name="downloadulieuchamcong" xml:space="preserve">
+    <value>Tải dữ liệu từ máy chấm công</value>
+  </data>
+  <data type="vn" name="importcong" xml:space="preserve">
+    <value>Import dữ liệu chấm công</value>
+  </data>
+  <data type="vn" name="nhapthunhapthemcongdinh" xml:space="preserve">
+    <value>Thu nhập khác cố định</value>
+  </data>
+  <data type="vn" name="nhaptruluongcodinh" xml:space="preserve">
+    <value>Trừ lương khác cố định</value>
+  </data>
+  <data type="vn" name="suadulieuluong" xml:space="preserve">
+    <value>Sửa lương của nhân viên</value>
+  </data>
+  <data type="vn" name="cocautochuc" xml:space="preserve">
+    <value>Đơn vị - phòng ban - bộ phận</value>
+  </data>
+  <data type="vn" name="danhmucluong" xml:space="preserve">
+    <value>Danh mục lương</value>
+  </data>
+  <data type="vn" name="cauhinhthongbaoemail" xml:space="preserve">
+    <value>Cấu hình thông báo email</value>
+  </data>
+  <data type="vn" name="Caphanmucphep" xml:space="preserve">
+    <value>Cấp hạn mức phép</value>
+  </data>
+</root>

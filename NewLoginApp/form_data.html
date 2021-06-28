@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script>
+
+        var t = [ 
+            { 
+                extension: "png",
+                filename: "0_4",
+                strBase64:"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" } ];
+
+        var r = JSON.stringify(t);
+        console.log(r);
+
+    </script>
+    
+</head>
+<body>
+
+    <form enctype="multipart/form-data" method="post" name="fileinfo">
+        <label>Your email address:</label>
+        <input type="email" autocomplete="on" autofocus name="userid" placeholder="email" required size="32" maxlength="64" /><br />
+        <label>Custom file label:</label>
+        <input type="text" name="filelabel" size="12" maxlength="32" /><br />
+        <label>File to stash:</label>
+        <input type="file" name="file" required />
+        <input type="submit" value="Stash the file!" />
+      </form>
+
+      <script>
+
+
+                
+        var form = document.forms.namedItem("fileinfo");
+        form.addEventListener('submit', function(ev) {
+        var oOutput = document.querySelector("div"),
+            oData = new FormData(form);
+
+            oData = new FormData();
+            
+        var t = {
+            name: "qweqwe",
+            value: 0
+        }
+        oData.append("CustomField",  JSON.stringify(t));
+        oData.append("FileUploadNemo",  document.getElementsByName("file")[0].files[0] );
+      
+        var oReq = new XMLHttpRequest();
+        oReq.open("POST", "http://localhost:8885/api/quanlysolienlac/UploadFormData", true);
+        oReq.onload = function(oEvent) {
+            if (oReq.status == 200) {
+            oOutput.innerHTML = "Uploaded!";
+            } else {
+            oOutput.innerHTML = "Error " + oReq.status + " occurred when trying to upload your file.<br \/>";
+            }
+        };
+
+        oReq.send(oData);
+        ev.preventDefault();
+        }, false);
+
+            
+
+
+            </script>
+    
+</body>
+</html>

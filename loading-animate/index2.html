@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        .pulse-loader:not(:required) {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    -moz-animation: pulse-loader 0.7s linear infinite alternate;
+    -webkit-animation: pulse-loader 0.7s linear infinite alternate;
+    animation: pulse-loader 0.7s linear infinite alternate;
+    border: 2px solid #e67e22;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    overflow: hidden;
+    text-indent: 50px;
+  }
+  
+  @-moz-keyframes pulse-loader {
+    0% {
+      -moz-box-shadow: #e67e22 0 0 0px 20px;
+      box-shadow: #e67e22 0 0 0px 20px;
+    }
+    40% {
+      -moz-box-shadow: none;
+      box-shadow: none;
+    }
+    100% {
+      -moz-box-shadow: #e67e22 0 0 0px 25px inset;
+      box-shadow: #e67e22 0 0 0px 25px inset;
+    }
+  }
+  @-webkit-keyframes pulse-loader {
+    0% {
+      -webkit-box-shadow: #e67e22 0 0 0px 20px;
+      box-shadow: #e67e22 0 0 0px 20px;
+    }
+    40% {
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
+    100% {
+      -webkit-box-shadow: #e67e22 0 0 0px 25px inset;
+      box-shadow: #e67e22 0 0 0px 25px inset;
+    }
+  }
+  @keyframes pulse-loader {
+    0% {
+      -moz-box-shadow: #e67e22 0 0 0px 20px;
+      -webkit-box-shadow: #e67e22 0 0 0px 20px;
+      box-shadow: #e67e22 0 0 0px 20px;
+    }
+    40% {
+      -moz-box-shadow: none;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+    }
+    100% {
+      -moz-box-shadow: #e67e22 0 0 0px 25px inset;
+      -webkit-box-shadow: #e67e22 0 0 0px 25px inset;
+      box-shadow: #e67e22 0 0 0px 25px inset;
+    }
+  }
+    </style>
+</head>
+<body>
+        <div class="pulse-loader"> </div>
+</body>
+</html>

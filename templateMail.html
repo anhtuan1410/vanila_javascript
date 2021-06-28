@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="crossStorage.js" type="text/javascript"></script>
+    <script>
+        function checkImag(){
+            var image = new Image();
+            var linkImg = "http://jmk-admin.bookve.com.vn//dulieu/2592/images/nguoidung/2813_.jpeg";
+            image.onload = function() {
+
+                console.log("Image loaded success => ");
+
+                // image exists and is loaded
+                document.body.appendChild(image);
+                document.getElementById("imgTest").setAttribute("src", linkImg);
+            }
+            image.onerror = function() {
+
+                console.log("Image error");
+
+                // image did not load
+                var err = new Image();
+                err.src = 'https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS5MaoZoEjI6sc7--D0oNIQ1qQcF6fMlsID7YOInXyLQ1ZBukhO&usqp=CAU';
+
+                document.getElementById("imgTest").setAttribute("src", err.src);
+                document.body.appendChild(err);
+            }
+
+            image.src = linkImg;
+        }
+
+
+
+
+//         (function(){
+ 
+//  //allowed domains (that can use RegExp)
+//  var whitelist = ["localhost", "127.0.0.1", "^.*\.domain\.com"];
+ 
+
+//  function verifyOrigin(origin){
+//      var domain = origin.replace(/^https?:\/\/|:\d{1,4}$/g, "").toLowerCase(),
+//          i = 0,
+//          len = whitelist.length;
+
+//      while(i < len) {
+//          if (domain.match(new RegExp(whitelist[i]))) {
+//              return true;
+//          }
+//          i++;
+//      }
+
+//      return false;
+//  }
+
+//  function handleRequest(event){
+//      if (verifyOrigin(event.origin)) {
+//          var request = JSON.parse(event.data);
+//          var storage = request.storage;
+         
+//          if (request.type == 'get') {
+//              value = window[storage].getItem(request.key);
+//              event.source.postMessage(JSON.stringify({
+//                  id: request.id,
+//                  key:request.key,
+//                  value: value
+//              }), event.origin);
+//          } else if (request.type == 'set') {
+//              window[storage].setItem(request.key, request.value);
+//          } else if(request.type == 'remove') {
+//              window[storage].removeItem(request.key);
+//          }
+//      }
+//  }
+
+//  if(window.addEventListener) {
+//      window.addEventListener("message", handleRequest, false);
+//  } else if (window.attachEvent) {
+//      window.attachEvent("onmessage", handleRequest);
+//  }
+// })();
+
+
+(function(){
+
+//allowed domains
+var whitelist = ["foo.example.com", "www.example.com"];
+
+function verifyOrigin(origin){
+    var domain = origin.replace(/^https?:\/\/|:\d{1,4}$/g, "").toLowerCase(),
+        i = 0,
+        len = whitelist.length;
+
+    while(i < len){
+        if (whitelist[i] == domain){
+            return true;
+        }
+        i++;
+    }
+
+    return false;
+}
+
+function handleRequest(event){
+    if (verifyOrigin(event.origin)){
+        var data = JSON.parse(event.data),
+            value = localStorage.getItem(data.key);
+        event.source.postMessage(JSON.stringify({id: data.id, key:data.key, value: value}), event.origin);
+    }
+}
+
+if(window.addEventListener){
+    window.addEventListener("message", handleRequest, false);
+} else if (window.attachEvent){
+    window.attachEvent("onmessage", handleRequest);
+}
+})();
+
+        function dumping(){
+            var remoteStorage = new CrossDomainStorage("http://www.example.com", "/util/server.htm");
+
+                remoteStorage.requestValue("keyname", function(key, value){
+                    alert("The value for '" + key + "' is '" + value + "'");
+                });
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <div>
+        <img id="imgTest" src="http://jmk-admin.bookve.com.vn//dulieu/2592/images/nguoidung/2813_.jpeg"
+        />
+        <button onclick="checkImag()">
+            Click me check image
+        </button>
+
+        <input type="text" value='"\r\nKỳ 02/2020: 60,000\r\nKỳ 03/2020: 10,000\r\nKỳ 04/2020: 10,000\r\nKỳ 05/2020: 10,000\r\nKỳ 06/2020: 10,000\r\n"' />
+
+    </div>
+
+    <table cellspacing="2" cellpadding="2" style="font-family: 'Times New Roman', Times, serif;">
+        <thead></thead>
+        <tbody>
+            <tr>
+                <td style="padding: 10px 0px;font-size: 12pt;">
+                    ##CONTENT##
+                </td>
+            </tr>
+            <tr>
+                <td style="font-size: 23px;line-height: 23px;padding: 10px 0px;">
+                    Cảm ơn!
+                </td>
+            </tr>
+            <tr>
+                <td style="font-size: 23px;line-height: 23px;padding: 10px 0px;
+                border-top: 1px dashed red;border-bottom: 1px dashed red;
+                ">
+                    <span style="text-transform: uppercase;">
+                        YSCHOOL
+                        <br>
+                        Công ty Cổ phần DVTM Việt Nam Trực tuyến - Việt Nam Online (VNO).
+                        <br>
+                    </span>
+                    ĐT: 19006474
+                    <br>
+                    Email: đang cập nhật
+                </td>
+            </tr>
+            <tr>
+                <td style="padding: 10px 0px;">
+                    <img src="F:\yschool.png" 
+                    alt="YSchool" style="width: 50%;height: 125px;" />
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <button>
+
+    </button>
+
+</body>
+
+</html>

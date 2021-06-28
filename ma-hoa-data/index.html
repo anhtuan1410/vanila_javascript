@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="CryptoJS v3.1.2 (1)/components/crypto-js.min.js">
+    </script>
+    <script>
+        function genHMAX() {
+            var _keySecret = "$target#@!Purse)(";
+            var _keyMer = "app_phu_huynh";
+            var _obj = {
+                nameApi: "FindBill_V2",
+                phoneNumber: "0909000002",
+                tokenValue: "123123123-123123123-123sdfsd-fsdfsdf-sdfdf",
+                timeSpan: ((new Date()).toJSON()).replace(/((\-)|(\:)|([a-zA-Z])|(\.))/g,""),
+                timeSpan: "20201125081852952"
+            };
+            //_obj.timeSpane.replace(/((\-)|(\:)|([a-zA-Z])|(\.))/g,"")
+            var _keyHash = _obj.phoneNumber + _keyMer + _keySecret;
+
+            var t = JSON.stringify(_obj);
+
+            var tep = CryptoJS.HmacSHA256(t, _keyHash).toString();
+            console.log(tep);
+            //var hash = CryptoJS.HmacSHA256("message", "secret");
+            var hash = CryptoJS.HmacSHA256(t, _keyHash);
+            var hashInBase64 = CryptoJS.enc.Base64.stringify(hash);
+            document.getElementById('output').innerHTML = hashInBase64;
+
+
+
+
+
+            var pkl = "MDkwOTAwMDAwMmFwcF9waHVfaHV5bmgkdGFyZ2V0I0AhUHVyc2UpKA==";
+
+
+            var prehash = CryptoJS.enc.Utf8.parse(t);
+            var keyByte = CryptoJS.enc.Base64.parse(pkl);
+            var hash224 = CryptoJS.HmacSHA256(prehash, keyByte);
+            console.log("Hello: " + hash224.toString());
+
+        }
+
+        function genCode_V2() {
+            var apiKey = "SBB3aWxsIG1ha2UgbXbcQVBJIHN|Y3VyZQ==";
+            var apiSecret = "QaTW3xlf1U5ljdlAJSdltzT71fFF+eZ=";
+
+            apiKey = "0909000002" + "app_phu_huynh" + "$target#@!Purse)(";
+
+            // var key = Convert.FromBase64String(apiSecret);
+            var key = CryptoJS.enc.Base64.parse(apiSecret);
+            console.log('key:' + key);
+
+            // var prehash = Encoding.UTF8.GetBytes(apiKey);
+            var prehash = CryptoJS.enc.Utf8.parse(apiKey);
+            console.log('Pre-hash:' + prehash);
+
+            // var provider = new System.Security.Cryptography.HMACSHA256(key);
+            // var hash = provider.ComputeHash(prehash);
+            var hash = CryptoJS.HmacSHA256(prehash, key);
+            console.log('hash:' + hash);
+
+            //var signature = Convert.ToBase64String(hash);
+            var signature = hash.toString(CryptoJS.enc.Base64);
+            console.log('signature:' + signature);
+        }
+
+    </script>
+</head>
+
+<body>
+    <div id="output">
+
+    </div>
+    <br />
+    <button onclick="genHMAX()">Click me</button>
+    <button onclick="genCode_V2()">Click me 2</button>
+</body>
+
+</html>

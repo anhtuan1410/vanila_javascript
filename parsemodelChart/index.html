@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script>
+    
+        function convert(){
+            var t = {
+                donvi: "đồng",
+kq: [["Ban Giám Đốc",1],
+[" Accounting Dep’t",0],
+["Information Technology Dep’t",4],
+["Human Resource Dep’t",4],
+["Customer Service Dep’t",1],
+["Product Development Dep’t",0]],
+realdata: [
+    {bophan: "Ban Giám Đốc", kq: "1"},
+    {bophan: " Accounting Dep’t", kq: "0"},
+    {bophan: "Information Technology Dep’t", kq: "4"},
+    {bophan: "Human Resource Dep’t", kq: "4"},
+    {bophan: "Customer Service Dep’t", kq: "1"},
+    {bophan: "Product Development Dep’t", kq: "0"},
+],
+sonv: ""
+            }
+
+            var data3 = [];
+            data3.push(["Bộ phận", "Kết quả"]);
+
+            t.realdata.map((item, index) => {
+
+                data3.push([item.bophan, +item.kq]);
+
+            });
+
+            console.log(data3);
+
+        }
+        
+    </script>
+</head>
+<body>
+    <button onclick="convert()">Click me</button>
+</body>
+</html>

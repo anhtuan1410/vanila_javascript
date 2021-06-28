@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Indexed DB</title>
+  <script>
+
+                // Khởi tạo một số hằng sử dụng nhiều lần
+const dbName = "myDB";
+const collection = "notes";
+var db = null;
+var _vue = {
+    el: "#app",
+  data: {
+    db: null,
+    notes: [],
+    futureNote: null
+  }
+};
+
+//khỏi tạo
+// Kết nối DB
+var mounted = () => {
+var request = window.indexedDB.open(dbName, 1);
+
+// Nếu thành công. Tiến hành lấy notes về
+request.onsuccess = event => {
+  db = request.result;
+//   this.methods.getNotes();
+};
+
+// Kết nối lần đầu. Tiến hành khởi tạo objectStore với tên collection
+request.onupgradeneeded = event => {
+  db = event.target.result;
+  db.createObjectStore(collection, {
+    autoIncrement: true
+  });
+};
+}
+
+var methods = {
+    // Thêm note mới
+    addNote() {
+      // Tạo transaction với mode readwrite
+      var request = db
+        .transaction(collection, "readwrite")
+        .objectStore(collection)
+        .add({
+          content: document.getElementById("_v").value,
+          completed: false
+        });
+      this.futureNote = null;
+      request.onsuccess = event => {
+        // Lấy lại notes sau khi đã thêm giá trị mới
+        this.getNotes();
+      };
+    },
+    showNote(key) {
+      var objectStore = db.transaction(collection).objectStore(collection);
+      var request = objectStore.get(key);
+
+      request.onsuccess = function(event) {
+        // Giá trị value trong DB chính là event.target.result
+        alert(
+          `Note detail: ${event.target.result.content}. Completed: ${event
+            .target.result.completed}`
+        );
+      };
+    },
+    markComplete(key) {
+      var objectStore = db
+        .transaction(collection, "readwrite")
+        .objectStore(collection);
+      var request = objectStore.get(key);
+
+      request.onsuccess = event => {
+        var data = event.target.result;
+        data.completed = true;
+
+        // Update dữ liệu mới
+        var requestUpdate = objectStore.put(data, key);
+
+        // Lấy dữ liệu mới sau khi update
+        requestUpdate.onsuccess = event => {
+          this.getNotes();
+        };
+      };
+    },
+    getNotes() {
+      this.notes = [];
+      var objectStore = db.transaction(collection).objectStore(collection);
+
+      // Sử dụng cursor để lấy lần lượt dữ liệu
+      objectStore.openCursor().onsuccess = event => {
+        var cursor = event.target.result;
+
+        if (cursor) {
+          // Nếu có cursor. Push dữ liệu và tiếp tục với record tiếp theo
+          this.notes.push({
+            id: cursor.key,
+            value: cursor.value
+          });
+          cursor.continue();
+        }
+      };
+    },
+
+    // Xóa dữ liệu
+    deleteNote(key) {
+      var request = db
+        .transaction(collection, "readwrite")
+        .objectStore(collection)
+        .delete(key);
+
+      request.onsuccess = event => {
+        this.getNotes();
+      };
+    }
+  }
+
+  mounted();
+
+  function genNode(){
+
+  }
+
+// // Mount Vue component vào #app
+// new Vue({
+//   el: "#app",
+//   data: {
+//     db: null,
+//     notes: [],
+//     futureNote: null
+//   },
+
+//   mounted() {
+
+//     // Kết nối DB
+//     var request = window.indexedDB.open(dbName, 1);
+
+//     // Nếu thành công. Tiến hành lấy notes về
+//     request.onsuccess = event => {
+//       this.db = request.result;
+//       this.getNotes();
+//     };
+
+//     // Kết nối lần đầu. Tiến hành khởi tạo objectStore với tên collection
+//     request.onupgradeneeded = event => {
+//       this.db = event.target.result;
+//       this.db.createObjectStore(collection, {
+//         autoIncrement: true
+//       });
+//     };
+
+//   },
+
+
+//   methods: {
+//     // Thêm note mới
+//     addNote() {
+//       // Tạo transaction với mode readwrite
+//       var request = this.db
+//         .transaction(collection, "readwrite")
+//         .objectStore(collection)
+//         .add({
+//           content: this.futureNote,
+//           completed: false
+//         });
+//       this.futureNote = null;
+//       request.onsuccess = event => {
+//         // Lấy lại notes sau khi đã thêm giá trị mới
+//         this.getNotes();
+//       };
+//     },
+//     showNote(key) {
+//       var objectStore = this.db.transaction(collection).objectStore(collection);
+//       var request = objectStore.get(key);
+
+//       request.onsuccess = function(event) {
+//         // Giá trị value trong DB chính là event.target.result
+//         alert(
+//           `Note detail: ${event.target.result.content}. Completed: ${event
+//             .target.result.completed}`
+//         );
+//       };
+//     },
+//     markComplete(key) {
+//       var objectStore = this.db
+//         .transaction(collection, "readwrite")
+//         .objectStore(collection);
+//       var request = objectStore.get(key);
+
+//       request.onsuccess = event => {
+//         var data = event.target.result;
+//         data.completed = true;
+
+//         // Update dữ liệu mới
+//         var requestUpdate = objectStore.put(data, key);
+
+//         // Lấy dữ liệu mới sau khi update
+//         requestUpdate.onsuccess = event => {
+//           this.getNotes();
+//         };
+//       };
+//     },
+//     getNotes() {
+//       this.notes = [];
+//       var objectStore = this.db.transaction(collection).objectStore(collection);
+
+//       // Sử dụng cursor để lấy lần lượt dữ liệu
+//       objectStore.openCursor().onsuccess = event => {
+//         var cursor = event.target.result;
+
+//         if (cursor) {
+//           // Nếu có cursor. Push dữ liệu và tiếp tục với record tiếp theo
+//           this.notes.push({
+//             id: cursor.key,
+//             value: cursor.value
+//           });
+//           cursor.continue();
+//         }
+//       };
+//     },
+//     // Xóa dữ liệu
+//     deleteNote(key) {
+//       var request = this.db
+//         .transaction(collection, "readwrite")
+//         .objectStore(collection)
+//         .delete(key);
+
+//       request.onsuccess = event => {
+//         this.getNotes();
+//       };
+//     }
+//   }
+
+
+
+
+
+
+  </script>
+</head>
+
+<body>
+  <div class="container d-flex justify-content-center">
+    <div class="col-md-6 mt-5" id="app">
+        <div id="btn">
+            <input type="text" id="_v" class="form-control" type="text" v-model="futureNote" @keyup.enter="addNote">
+            <button class="input-group-addon bg-primary text-white" onclick="methods.addNote();">Add</button>
+        </div>
+        <div>
+            <ul class="list-group" id="content">
+
+                <li class="list-group-item" v-for="note in notes">
+                  <span v-html="note.value.completed ? `<s>${note.value.content}</s>` : note.value.content"></span>
+                  <span @click="markComplete(note.id)">(mark complete)</span>
+                  <span @click="showNote(note.id)">(show)</span>
+                  <span @click="deleteNote(note.id)">(x)</span>
+                </li>
+              </ul>
+        </div>
+
+    </div>
+  </div>
+
+</body>
+
+</html>

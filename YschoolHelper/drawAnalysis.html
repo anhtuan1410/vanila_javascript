@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        .pie {
+        width: 400px;
+        height: 400px;
+        background: conic-gradient(lime 40%, yellow 0 70%, red 0);
+        border-radius: 50%
+        }
+
+        .pie{
+            background-image: conic-gradient();
+        }
+
+        .pie {
+    width: 336px;
+    height: 336px;
+    background: conic-gradient(lime 10%, yellow 0 20%, 
+    red 0 40%, pink 0 51%, 
+    green 0 67%, black 0);
+    border-radius: 50%;
+        }
+
+    </style>
+    <script>
+        function draw(){
+            var maxValue = 100;
+            var t = [
+                {
+                    "name":"Không SSC",
+                    "amount":73
+                },
+                {
+                    "name":"Có SSC",
+                    "amount":17
+                },
+            ];          
+
+            t.map((it, ind) => {
+                it["percent"] = calcVal(it.amount);
+
+            });
+
+        };
+
+        function calcVal(q){
+            return 73 * q / 100;
+        }
+
+    </script>
+</head>
+<body>
+    <div id="draw-analysis">
+
+    </div>
+
+    <div id="drawPirce" class="pie">
+
+    </div>
+
+    <input type="text" onkeypress="" />
+
+    <button class="btnValidate">asdasdad</button>
+    <input class="btnValidate" type="submit" value="ooooo" />
+    <input class="btnValidate" type="button" value="pkll" />
+    <span class="btnValidate">PKASDASD</span>
+
+</body>
+</html>

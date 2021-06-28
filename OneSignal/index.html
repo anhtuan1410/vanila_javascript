@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <script>
+        var element = document.getElementById("imageDIV"); // global variable
+        var getCanvas; // global variable
+        $('document').ready(function(){
+        html2canvas(element, {
+            onrendered: function (canvas) {
+            $("#previewImage").append(canvas);
+            getCanvas = canvas;
+            }
+        });
+
+    
+
+        });
+
+        function click(){
+            var imgageData = getCanvas.toDataURL("image/png");
+            // Now browser starts downloading it instead of just showing it
+            var newData = imageData.replace(/^data:image\/png/, "data:application/octet-stream");
+            var p = document.getElementById("download");
+            p.attributes.setNamedItem("download")
+            p.attributes["download"] = "image.png";
+
+            p.attributes.setNamedItem("href")
+            p.attributes["href"] = newData;
+
+        }
+
+        // $("#download").on('click', function () {
+        
+        // $("#download").attr("download", "image.png").attr("href", newData);
+        // });
+    </script>
+    
+</head>
+<body>
+
+    <div id="imageDIV">
+        Hello World
+    </div>
+
+    <button id="download" onclick="click()">Download</button>
+
+    <div style="display: none" id="previewImage">
+
+    </div>
+    
+</body>
+</html>

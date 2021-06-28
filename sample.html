@@ -1,0 +1,314 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+    <script src="http://phrogz.net/JS/ArraySetMath.js" type="text/javascript" ></script>
+    <!-- <script src="js/abc.js" type="text/javascript"></script> -->
+    <!-- <script src="js/demo.js" type="text/javascript"></script> -->
+    <script src="js/tmp.js" type="text/javascript"></script>
+    <link href="css/bootstrap.css" type="text/css" />
+    <script>
+
+        $(document).ready(function(){
+
+            $('#decimal').keyup(function(){
+                var val = $(this).val();
+                if(isNaN(val)){
+                    val = val.replace(/[^0-9\.]/g,'');
+                    if(val.split('.').length>2) 
+                        val =val.replace(/\.+$/,"");
+                }
+                $(this).val(val); 
+            });
+
+            $('.inp-nbr').keypress(function(){
+                return isNumberKey(this);
+            });
+
+        });
+
+    </script>
+    <style type="text/css">
+        .inp{
+            width: 100px;
+            height: 100px;
+            background-color: gray;
+        }
+    </style>
+
+
+    <script>
+    
+      
+$(document).ready(function(){
+
+    function runHTML(){
+        var r = document.getElementById("divHTML");
+        r.innerHTML = "<h1> &lt; Khoa</h1>";
+    }
+
+    runHTML();
+
+
+jQuery(".hp-txt").keydown(function(event){
+    
+    let obj, lenVal, maxLength, nbr;
+    function checkKeyCode(n)
+    {
+        if( 
+            ( n >= 48 && n <= 57 ) // 0 - 9
+
+                    || ( n >= 65 && n <= 90 ) // a - z
+                    || ( n >= 96 && n <= 111 ) //numlock number and */+-
+                    || (n >= 186 && n <= 222) //cac1 ki1 tu75 trong unicode
+        )
+            return true;
+        return false;
+    };
+
+    obj = jQuery(this);
+    lenVal = obj.val().length;
+    maxLength = obj
+        .attr("class").trim()
+        .match(/huypad-\d{1,15}/)[0].trim()
+        .split("-")[1];
+    
+    nbr = Number(maxLength);
+    if (lenVal >= nbr){
+        if(checkKeyCode(event.keyCode))
+          event.preventDefault();
+    }
+});
+
+});
+
+
+
+
+    </script>
+
+</head>
+<body>
+    
+    <div class="modal-header">
+        <button type="button" class="close" ng-click="cancel()" aria-hidden="true"></button>
+        <h3 class="modal-title">{{modalTitle}}</h3>
+    </div>
+    <div class="modal-body">
+    
+    </div>
+    <div class="modal-footer">
+    
+    </div>
+    <div class='scroll-box' style='width: calc(100% - 54px * 2);height: auto;background-color: transparent; z-index: 99999;position: fixed;bottom: 0;left: 42px;overflow-x: scroll;overflow-y: hidden;'>
+        <div class='scroll-ao' style='height: 1px;background-color: transparent;width: 1753px;'></div>
+    </div>
+
+    <div class="inp"></div>
+
+    <textarea id="hpTextBox" class="hp-txt huypad-4" onkeydown="console.log('Hello world');"></textarea>
+    <textarea id="hpTextBox2" class="hp-txt huypad-2"></textarea>
+
+    <table class="">
+
+    </table>
+
+
+
+    <div id="divHTML" #pkl>
+
+    </div>
+
+
+
+    
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+<!-- void UpdateHinhAnh()
+{
+    using (DpsConnection cnn = new DpsConnection("BMSAppConnectionString", true))
+    {
+
+        string sqlq = @"select * 
+                                     from Vb_MatHang mh
+                                                    left join NhanHieu nh on nh.IDNhanHieu = mh.IDNhanHieu
+                                                    left join XuatXu xx on xx.IDXuatXu = mh.IDXuatXu
+                                                    left join Vb_DonViTinh dv on dv.IDDVT = mh.IDDVCB
+                                                    left join Vb_DonViTinh dvch on dvch.IDDVT = mh.IDDVTCapHai
+                                                    left join Vb_LoaiMatHang l on l.IDLoaiMatHang = mh.IDLoaiMatHang 
+                                    where NgungKinhDoanh = 0 AND mh.IDKHDPS = 2599
+AND mh.IDMatHang IN (23424,
+23428,
+23429,
+23430,
+23431,
+23432,
+23433,
+23434,
+23435,
+23436,
+23437,
+23438,
+23439,
+23440,
+23441,
+23442,
+23443,
+23444,
+23445,
+23446,
+23447,
+23448,
+23449,
+23450,
+23451,
+23452,
+23453,
+23454,
+23455,
+23456,
+23457,
+23458,
+23459,
+23460,
+23461,
+23462,
+23463,
+23464,
+23465,
+23466,
+23467,
+23468,
+23469,
+23470,
+23471,
+23472,
+23473,
+23474,
+23475,
+23476,
+23477,
+23478,
+23479,
+23480,
+23481,
+23482,
+23483,
+23484,
+23485,
+23486,
+23487,
+23488,
+23489,
+23490,
+23491,
+23492,
+23493,
+23494,
+23495,
+23496,
+23497,
+23498,
+23499,
+23500,
+23501,
+23502,
+23503,
+23504,
+23505,
+23506,
+23507,
+23508,
+23509,
+23510,
+23511,
+23512,
+23513,
+23514,
+23515,
+23516,
+23517,
+23518,
+23519,
+23520,
+23521,
+23522,
+23523,
+23524,
+23525,
+23526,
+23527,
+23528,
+23529,
+23530,
+23531,
+23532,
+23533,
+23534,
+23535,
+23536,
+23537,
+23538,
+23539,
+23540,
+23541,
+23542,
+23543)
+                                ";
+        DataTable datontai = cnn.CreateDataTable(sqlq);
+
+        foreach (DataRow dr in datontai.Rows)
+        {
+            if (cnn.Insert(new Hashtable {
+                        { "IDMatHang", dr["IDMatHang"] },
+                        { "HinhAnh", $@"/dulieu/2599/hinhanh/mathang/{dr["MaHang"]}.jpeg" },
+                        { "TieuDe","" },
+                        { "CreatedDate",DateTime.Now },
+                    }, "HinhAnhMatHang") > 0)
+            {
+
+            }
+
+        }
+
+        //string _nextID = "0";
+        //if (cnn.LastError == null)
+        //{
+        //    if (datontai == null && datontai.Rows.Count == 0)
+        //    {
+        //        cnn.BeginTransaction();
+        //        if (cnn.Insert(new Hashtable {
+        //                { "DonVi", vLMH },
+        //                 { "ID_KH_DPS", p_loginData.IDKHDPS },
+        //                { "GhiChu","Map Import Excel" }
+        //            }, "DM_DON_VI_TINH") > 0)
+        //        {
+        //            _nextID = cnn.ExecuteScalar("SELECT ISNULL(MAX(DVT_ID),0) FROM DM_DON_VI_TINH").ToString();
+        //        }
+        //    }
+        //    else
+        //        _nextID = datontai.Rows[0]["DVT_ID"].ToString();
+
+        //    p_lstImport.Where(x => x.DonViTinh.Equals(vLMH)).ToList()
+        //    .ForEach(y => y.IdDonViTinh = _nextID);
+        //}
+    }
+} -->

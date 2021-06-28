@@ -1,0 +1,316 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Google game</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+    <style>
+
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .scene{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background-color: red;
+        }
+
+        .scene .top{
+            width: 100%;
+            height: 80%;
+            background-color: green;
+            float: left;
+        }
+
+        .scene .bottom{
+            width: 100%;
+            height: 20%;
+            background-color: yellow;
+            float: left;
+        }
+
+        .bird{
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 0;
+            left: 50;
+            background-color: purple;
+        }
+
+    </style>
+
+    <script>
+        $(document).ready(() => {
+
+            var game = {
+                selector: '#bird',
+                bird: jQuery('#bird'),
+                topPosition:  jQuery('#bird').position().top,
+                rightPosition: jQuery('#bird').position().left,
+                limitHeight: jQuery('body').height() -  jQuery('#bird').height(),
+                gravity: function(){
+                    this.topPosition += 1;
+                },
+                jump: function(){
+                    this.topPosition -= 1;
+                },
+                eventKey: function(){
+
+                    jQuery('body').on('keydown', (e) => {
+                        if(e.keyCode == 38)//38 is up arrow
+                         {
+                             if(this.topPosition + jQuery(this.selector).height() >= this.limitHeight) return;
+                             this.topPosition -= 100;
+                         }
+                        if(e.keyCode == 39)//39 is right arrow
+                            this.rightPosition += 50;
+                        if(e.keyCode == 37)//37 is right arrow
+                            if(this.rightPosition != 0)
+                                this.rightPosition -= 50;
+                    });
+                },
+                setPosition: function(){
+                    this.bird.offset({
+                        top: this.topPosition,
+                        left: this.rightPosition
+                    });
+                },
+                run: function(){
+                    this.eventKey();
+                    setInterval( ()=> {  this.gravity(); this.setPosition(); }, 3 );                   
+                },
+            };
+
+            game.run();
+
+        });
+    </script>
+
+    <script>
+        $(document).ready(() => {
+
+function run(){
+
+    // $.ajax({
+    // type: "POST",
+    //     contentType: "application/x-www-form-urlencoded; charset=UTF-8", //this could be left out as it is the default content-type of an AJAX request
+    //     url: "http://localhost:54444/api/user/Login",
+    //     data: {  
+    //             UserName: "quanlycho",
+    //             Password:"123456"
+    //     }        
+    // });
+
+    let data = {
+        UserName: "quanlycho",
+        Password:"123456"
+    }
+
+    // let reques = new Request("http://localhost:54444/api/user/Login",{
+    //     method:'POST',
+    //     headers: new Headers({
+    //         // 'Content-Type': 'application/json'
+    //         'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
+    //     }),
+    //     body: 'UserName=quanlycho&Password=456789'
+    // });
+
+    // fetch(reques)
+    // .then( (res) => { return res.text(); } )
+    // .then( (resTxt) => { console.log(resTxt); } )
+
+
+    class QueryParamsModel{
+        constructor(_filter = {},
+		_sortOrder = 'asc',
+		_sortField = '',
+		_pageNumber = 0,
+		_pageSize = 10,
+        _more = false) 
+        {
+
+		this.filter = _filter;
+		this.sortOrder = _sortOrder;
+		this.sortField = _sortField;
+		this.pageNumber = _pageNumber;
+		this.pageSize = _pageSize;
+		this.more = _more;
+
+        }        
+    }
+
+    
+
+    // let myHeaders = new Headers();
+    // myHeaders.append('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
+    // myHeaders.append('Token', 'fa8e4014-afe4-4d30-bf40-15a4a1f4d841');
+
+    // let str = "filter.keys=keyword&filter.vals=00008&sortOrder=_sortOrder&sortField=_sortField&pageNumber=_pageNumber&pageSize=_pageSize&more=true";
+    // let reques2 = new Request("http://localhost:54444/api/sap/DSSapByNhanVien?"+str,{
+    //     method:'GET',
+    //     // mode: 'no-cors',
+    //     headers: myHeaders,
+    //     // headers: new Headers({
+    //     //     'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8',
+    //     //     'Token': '30b97f9e-8f1e-4bf5-acb0-3f51b56c2572'
+    //     // }),
+    //     //body: 'filter=abc&sortOrder=_sortOrder&sortField=_sortField&pageNumber=_pageNumber&pageSize=_pageSize&more=true'
+    // });
+
+    // fetch(reques2)
+    // .then( (res) => { return res.text(); } )
+    // .then( (resTxt) => { console.log(resTxt); } )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // class QueryParamsModel{
+
+    //     constructor(_filter = {}, _sortOrder = 'asc',	_sortField = '',_pageNumber = 0,_pageSize = 10, _more = false) 
+    //     {
+    //         this.filter = _filter;
+    //         this.sortOrder = _sortOrder;
+    //         this.sortField = _sortField;
+    //         this.pageNumber = _pageNumber;
+    //         this.pageSize = _pageSize;
+    //         this.more = _more;
+    //     }        
+    // }    
+
+    let myHeaders1 = new Headers();
+    myHeaders1.append('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
+    myHeaders1.append('Token', '0d01141f-240f-45e8-a53a-bca63e491e07');
+
+    let str2 = "filter.keys=keyword&filter.vals=00008&sortOrder=_sortOrder&sortField=_sortField&pageNumber=_pageNumber&pageSize=_pageSize&more=true";
+    
+    let str4 = "page=1&record=10&filter.keys=keyword&filter.vals=000008";
+    //localhost:54444
+    let reques3 = new Request("http://localhost:54444/api/sap/DSSapByNhanVien?"+str4,{
+        method:'GET',
+        // mode: 'no-cors', -> ko thể bỏ body, vì thể bỏ config dòng này
+        headers: myHeaders1
+    });
+
+    fetch(reques3)
+    .then( (res) => { return res.text(); } )
+    .then( (resTxt) => { console.log(resTxt); } )
+
+
+    ///http://localhost:54444//api/cho/DSChoTheoDiaDiem?filter.keys=IdTT&%26filter.vals=1
+
+
+
+
+    fetch('https://rallycoding.herokuapp.com/api/music_albums',{
+            method: 'GET'
+        })
+        .then((v_respone) => {
+            return v_respone.json();
+        })
+        .then((v_data) => {
+            console.log("Data: "+v_data);
+        });
+
+
+//         fetch('https://rallycoding.herokuapp.com/api/music_albums')
+//   .then(function(response) {
+//     return response.json();
+//   })
+//   .then(function(myJson) {
+//     console.log(JSON.stringify(myJson));
+//   });
+
+function checkLoginSession()  {
+		
+		
+        const token = 'asdasdasdasd';
+        //'https://bms-api.webcore.vn/api' ? 'http://localhost:54223/API/homeaccount'
+		let reques = new Request( 'https://bms-api-v2.webcore.vn/API/homeaccount' + "/LayMenuChucNang",{
+				 method:'GET',
+				headers: new Headers({					
+					'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
+				})
+			 });
+
+		fetch(reques)
+
+			.then((res) => {
+				return res.text();//giá trị trả về convert về dạng text
+			})
+
+			//trả về giá trị, succes hay ko vào đây check
+			.then((resTxt) => {
+				debugger
+				console.log("ok ok");
+				return JSON.parse(resTxt);
+			})	
+
+			//catch nếu có Exception văng ra
+			.catch((error) => { 
+				console.log("Lỗi! ");
+				return error
+            });
+            
+
+
+
+    }
+    checkLoginSession();
+
+
+
+
+}
+
+run();
+
+        });
+    </script>
+
+</head>
+
+<body>
+    
+    <div class="scene">
+
+        <div class="top">
+
+            <div id="bird" class="bird"></div>
+
+        </div>
+
+        <div class="bottom">
+
+        </div>
+
+    </div>
+
+</body>
+</html>

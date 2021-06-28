@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script>
+        function genErrorCode(){
+
+            var t = document.getElementById("txt");
+            if(t)
+            {
+                let q = t.value.split('\n');
+                let r = "";
+                q.forEach(element => {
+                    let w = element.split(":");
+                    if(w.length == 2) 
+                    r += `{ ${w[0].trim()}, "${w[1].trim()}" },`
+                });
+
+                console.log(r);
+            }
+
+            var p = `0 : Thành công
+6 : User không tồn tại
+7 : User bị khóa tài khoản
+9 : Ví bị khóa
+10 : Sai Otp
+18 : Xác nhận Otp ngân hàng
+20 : Liên kết đã tồn tại
+22 : Giao dịch ngân hàng thất bại
+23 : Ví không tồn tại
+24 : Tên chủ thẻ và chủ ví không khớp
+27 : Liên hệ ngân hàng để hỗ trợ
+28 : Giao dịch ngân hàng lỗi
+29 : Số thẻ không tồn tại
+30 : Ngân hàng lỗi hoàn tiền
+31 : Chưa đăng ký dịch vụ giao dịch trực tuyến
+32 : Không đủ số dư để giao dịch
+33 : Giao dịch quá hạn mức
+34 : Giao dich ngan hàng timeout
+35 : Sai otp nhiều lần
+37 : Ngân hàng chưa được hỗ trợ
+45 : Mở link liên kết NAPAS
+47 : Thẻ và ngân hàng chọn khi liên kết không khớp
+100 : Lỗi hệ thống
+1000 : Timeout
+1001 : Lỗi kết nối API
+`;
+           
+        }
+    </script>
+</head>
+<body>
+
+    <textarea id="txt">
+
+    </textarea>
+    <button onclick="genErrorCode()">
+        Click
+    </button>
+    
+</body>
+</html>
+
+
+
+Bạn chưa cập nhật đủ thông tin định danh, vui lòng cập nhật để tiếp tục
+
+Bạn chưa cung cấp hình ảnh CMND/hộ chiếu để Yopayment phê duyệt định danh, vui lòng cung cấp để tiếp tục sử dụng ví
+
+Ví Yopayment của bạn chưa liên kết tài khoản/thẻ ngân hàng, vui lòng liên kết để tiếp tục sử dụng ví
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

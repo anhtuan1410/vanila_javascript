@@ -1,0 +1,134 @@
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />     -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" type="text/javascript"></script>
+    <script src="http://phrogz.net/JS/ArraySetMath.js" type="text/javascript" ></script> -->
+    <!-- <script src="js/abc.js" type="text/javascript"></script> -->
+    <!-- <script src="js/demo.js" type="text/javascript"></script> --> 
+    <!-- <script src="js/tmp.js" type="text/javascript"></script> -->
+    <!-- <link href="css/bootstrap.css" type="text/css" /> -->
+    <link 
+    href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" 
+    rel="stylesheet" />
+    <style>
+        .begin-print {
+            border: 1px solid red;
+            font-weight: 400;
+            font-size: 15px;
+        }
+    
+        .row.row-info > div[class*='col-md']{
+            text-align:left;
+        }
+    
+        .tien-chu-1::first-letter,
+        .tien-chu-2::first-letter{
+            text-transform:uppercase;
+        }
+    
+        [class*='tien-chu']:last-child{
+            font-style:italic;
+        }
+    
+        .col-title{
+            font-size:25px;
+        }
+    
+        .col-nguoinop{
+            text-transform:capitalize;
+            font-weight:bold;
+        }
+    
+        .row.row-khungky{
+            padding-bottom:130px;
+        }
+    
+        @media print {
+            /* insert your style declarations here */
+            /*div.begin-print {
+                page-break-after: always; 
+            }*/
+    
+            .Footer {
+                position: fixed;
+                bottom: 0;
+            }
+    
+            .Header {
+                position: fixed;
+                top: 0;
+            }
+    
+        }
+    
+        
+    
+    </style>
+    <script>
+
+        function getBase64FromImageUrl(url) {
+            let baseImage = new Image;
+            baseImage.setAttribute('crossOrigin', 'anonymous');
+            baseImage.src = url;
+
+            var canvas = document.createElement("canvas");
+            canvas.width = baseImage.width;
+            canvas.height = baseImage.height;
+            var ctx = canvas.getContext("2d");
+            ctx.drawImage(baseImage, 0, 0);
+            var dataURL = canvas.toDataURL("image/png");
+            return dataURL;
+        }
+
+        function getBase64(){
+            var url = "https://randomuser.me/api/portraits/men/65.jpg";   
+            //var base64 = getBase64FromImageUrl(url);
+            //var base64 = getBase64FromImage2(url);
+            startDownload();
+            console.log(base64);
+        }
+
+        function startDownload(url) {
+            let imageURL = url;                
+            objImg = new Image();
+            objImg.crossOrigin = "Anonymous";
+            objImg.addEventListener("load", docAnhBase64, false);
+            objImg.src = imageURL;
+        }
+
+        function docAnhBase64() {
+            let canvas = document.createElement("canvas");
+            let context = canvas.getContext("2d");
+            canvas.width = downloadedImg.width;
+            canvas.height = downloadedImg.height;                
+            context.drawImage(downloadedImg, 0, 0);                
+            try {
+                var r = canvas.toDataURL("image/png");
+                console.log("Ảnh ra base64: "+r);
+                //localStorage.setItem("saved-image-example", canvas.toDataURL("image/png"));
+            }
+            catch(err) {
+                console.log("Error: " + err);
+            }  
+        }
+
+    </script>
+
+</head>
+<body>
+    
+    <img id="imageid" src="https://randomuser.me/api/portraits/men/65.jpg" onload="getBase64()" />
+
+</body>
+</html>
+
+

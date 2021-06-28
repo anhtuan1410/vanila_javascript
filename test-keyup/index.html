@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script>
+
+function getMaHang(){
+    let q = `MDRT-1D6-900
+MDRT-2D6-1200
+MDRT-2D6-1350
+MDRT-2D6-1500
+MDRT-2D6-1650
+MDRT-2D6-1800
+MDRT-3D6-1800
+MDRT-1D7-900
+MDRT-2D7-1200
+MDRT-2D7-1350
+MDRT-2D7-1500
+MDRT-2D7-1650
+MDRT-2D7-1800
+MDRT-3D7-1800
+MBRT-4W7-1200
+MBRT-4W7-1500
+MBRT-6W7-1800
+MDRT-4W7-1200
+MDRT-4W7-1350
+MDRT-4W7-1500
+MDRT-6W7-1800
+MPRT-4D7-1200
+ MPRT-4D7-1500
+MPRT-6D7-1800
+MDST-1D6-900
+MDST-2D6-1200
+MDST-2D6-1500
+MDST-3D6-1800
+MDST-1D7-900
+MDST-2D7-1200
+MDST-2D7-1500
+MDST-3D7-1800
+MGRT-1D6-900
+MGRT-2D6-1200
+MGRT-2D6-1500
+MGRT-3D6-1800
+MGRT-1D7-900
+MGRT-2D7-1200
+MGRT-2D7-1500
+MGRT-3D7-1800
+MDS-520R1
+MDS-1040R1
+MDS-1660R1
+ MLP-1043R
+MHRT-2D5-560G
+MHRT-2D5-708G
+ MHRT-2D5-560M
+MHRT-2D5-708M
+MSOA-900
+MSOA-1200
+MSOA-1500
+MSOA-1800
+MSCD-900D
+MSCD-1200D
+MSCD-1500D
+MSOS-900
+MSOS-1200
+MSOS-1500
+MSOS-1800
+MSBC-1500RD
+MSBC-1800RD
+MDFT-1D6-900
+MDFT-2D6-1200
+MDFT-2D6-1350
+MDFT-2D6-1500
+MDFT-2D6-1650
+MDFT-2D6-1800
+MDFT-3D6-1800
+MDFT-1D7-900
+MDFT-2D7-1200
+MDFT-2D7-1350
+MDFT-2D7-1500
+MDFT-2D7-1650
+MDFT-2D7-1800
+MDFT-3D7-1800
+MBFT-4W7-1200
+MBFT-4W7-1500
+MBFT-6W7-1800
+MDFT-4W7-1200
+MDFT-4W7-1350
+MDFT-4W7-1500
+MDFT-6W7-1800
+MPFT-4D7-1200
+MPFT-4D7-1500
+MPFT-6D7-1800
+MDS-520F1
+MDS-1040F1
+MDS-1660F1
+MDS-1040HRF1
+MDS-1040RF1
+MDS-1660RF1
+MSM 2-OB
+MSM 4-OB
+MSM 6-OB
+MSM 4-OV
+MSM 6-OV
+MSM 24-CB
+MSM 36-CB
+HP-3000
+HP-6000
+HP-1003
+HP-1004
+DFG-4000
+DFG-8000
+DFT-3000
+DF-3000
+DFT-6000
+DF-6000
+CBHP-1000
+MSM-301
+MSM-401
+MS - 20 (L)
+MS - 30 (L)
+MS - 40 (L)
+MS - 50 (L)
+TI-2020
+`;
+
+    let s = q.split('\n');
+    let p = "", w = "";
+    s.map((item, index) => {
+        if(item.trim().length > 0){
+            p+= `
+            UPDATE MAT_HANG
+            SET HinhAnh = ( SELECT TOP 1 HinhAnh FROM HinhAnhMatHang WHERE IDMatHang = (SELECT TOP 1 MH_ID FROM MAT_HANG WHERE Model = '${item.trim()}' AND IDKHDPS = 2599)   )
+            WHERE MH_ID = (SELECT TOP 1 MH_ID FROM MAT_HANG WHERE Model = '${item.trim()}' AND IDKHDPS = 2599) AND IDKHDPS = 2599
+            
+            `;
+
+            w += `'${item.trim()}' , `
+
+        }
+    });
+
+    //console.log(p);
+    console.log(w);
+
+}
+
+        function onkeyUp(event)
+        {
+            //if (!event.target.value.includes(',')) { console.log('ok ok'); return; }
+            //(event.key == ',' && (event.target.value.includes(',') || event.target.value.includes('.'))) ||
+            if(event.key == ','){if(event.target.value.includes(',')){event.preventDefault(); return;}if(!event.target.value.includes(',')){return; }}
+
+            if (
+                (
+                    event.key == ',' 
+                    && 
+                    (
+                        event.target.value.includes(',') 
+                        || event.target.value.includes('.')
+                    )
+                ) 
+                || (event.key == '-') 
+                || 
+                (
+                    event.key == '.' 
+                    && 
+                    (
+                        event.target.value.includes('.') 
+                        || event.target.value.includes(',')
+                    )
+                )
+            ) 
+            { 
+                event.preventDefault(); return; 
+            } 
+            
+            if (event.keyCode === 46 
+            || event.keyCode === 37 
+            || event.keyCode === 39 
+            || event.keyCode === 8 
+            || event.keyCode === 9) 
+            { return; } 
+            
+            if (
+                isNaN(event.key) 
+                && !event.ctrlKey 
+                && event.key !== ',' 
+                && event.key !== '.' 
+                && event.key !== '-') 
+                { event.preventDefault(); }
+            
+            if (event.target.value.length == 19) 
+            {  event.preventDefault(); return; }
+        }
+    </script>
+</head>
+<body>
+    <input type="text" onkeydown="onkeyUp(event)" />
+
+    <input matInput placeholder="Nhập sản lượng"
+    onkeydown="if (event.key == ',') { if (event.target.value.includes(',')) { event.preventDefault(); return; } else{ return; }  } if (  (event.key == '-') || (event.key == '.' && (event.target.value.includes('.') || event.target.value.includes(',')))) { event.preventDefault(); return; } if (event.keyCode === 46 || event.keyCode === 37 || event.keyCode === 39 || event.keyCode === 8 || event.keyCode === 9) { return; } if (isNaN(event.key) && !event.ctrlKey && event.key !== ',' && event.key !== '.' && event.key !== '-') { event.preventDefault(); } if (event.target.value.length == 19) { event.preventDefault(); return; }"
+    pattern="(^[0-9]+(\.[0-9]{1,3})+(\.[0-9]{1,3})+(\,[0-9]{1,3})?$)|(^([0-9]{1,3})+(\,[0-9]{1,3})?$)"
+    class="mat-form-field mat-form-field-fluid chk-valid"
+    (input)="numberChanged_vn('sanLuong', $event.target.value)"
+                                       formControlName="sanLuong">
+                                       
+    <button onclick="getMaHang()">Click me</button>
+
+    <!-- SO CO , thap phan
+    <input matInput placeholder="Nhập sản lượng"
+									   onkeydown="if (event.key == ',') { if (event.target.value.includes(',')) { event.preventDefault(); return; } else { return; } } if ( (event.key == ',' && ( event.target.value.includes(',') || event.target.value.includes('.') ) ) || (event.key == '-') || (event.key == '.' && (event.target.value.includes('.') || event.target.value.includes(',')))) { event.preventDefault(); return; } if (event.keyCode === 46 || event.keyCode === 37 || event.keyCode === 39 || event.keyCode === 8 || event.keyCode === 9) { return; } if (isNaN(event.key) && !event.ctrlKey && event.key !== ',' && event.key !== '.' && event.key !== '-') { event.preventDefault(); } if (event.target.value.length == 19) { event.preventDefault(); return; }"
+									   pattern="(^[0-9]+(\.[0-9]{1,3})+(\,[0-9]{1,3})?$)|(^([0-9]{1,3})+(\,[0-9]{1,3})?$)"
+									   class="mat-form-field mat-form-field-fluid chk-valid"
+									   (input)="numberChanged_vn('sanLuong', $event.target.value)"
+                                       formControlName="sanLuong">
+                                       
+                                       f_number_vn(value: any) {
+                                        debugger
+                                        return Number((value + '').replace(/\./g, "").replace(/\,/g, "."));
+                                    }
+
+                                    f_currency_vn(value: any, args?: any): any {
+                                        debugger
+                                        var pn = (value + '').trim(), tp = '0', r = '0';
+                                        let h: boolean = false;
+                                        if (pn.includes(',')) {
+                                            var q = pn.split(','); pn = q[0]; tp = q[1];
+                                            h = true;
+                                        }
+                                        r = (Number((pn + '').replace(/\./g, "")) + '').replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.");		
+                                        //let nbr = Number((value + '').replace(/\./g, "").replace(/\,/g, "."));
+                                        r = r + (h ? ','+tp : '');
+                                        return r;
+                                    } 
+                                -->
+
+
+</body>
+</html>
+
+
+
+
+
+<!-- BaoBao2\4075	314152.00
+BaoBao2\4076	54000.00
+BaoBao2\4085	548400.00
+HoaiBao\101	1766851.00
+HoaiBao\66	10883369.00
+HoaiBao\91	2665207.00
+HoaiBao\93	1918568.00
+HoaiBao\98	1952036.00
+NTNTHU01\13485	2862749.00
+NTNTHU01\13488	667619.00
+NTNTHU01\13501	12783387.00
+NTNTHU01\13506	2256480.00
+NTNTHU01\13507	12954048.00
+NTNTHU01\13513	1874016.00
+BaoBao2\4070	548400.00
+BaoBao2\4071	548400.00
+BaoBao2\4072	548400.00
+BaoBao2\4073	54000.00
+BaoBao2\4078	108647.00
+BaoBao2\4080	675000.00
+BaoBao2\4082	438000.00
+BaoBao2\4083	1223400.00
+BaoBao2\4084	548400.00
+BaoBao2\4088	57950.00
+BaoBao2\4089	438000.00
+BaoBao2\4097	100000.00
+BaoBao2\4104	100000.00
+BLinh-nt\49	1660014.00
+HoaiBao\106	2304701.00
+HoaiBao\67	4120331.00
+HoaiBao\95	1843434.00
+NTNTHU01\13486	1357160.00
+NTNTHU01\13499	1094432.00
+BaoBao2\4066	1223400.00
+BaoBao2\4067	438000.00
+BaoBao2\4091	108000.00
+BaoBao2\4106	84000.00
+BéLinh01\196428	450000.00
+BLinh-nt\48	1509441.00
+HoaiBao\100	2081796.00
+HoaiBao\103	2250942.00
+HoaiBao\104	2589334.00
+HoaiBao\62	7303695.00
+HoaiBao\64	1186560.00
+HoaiBao\69	1237160.00
+HoaiBao\70	1386726.00
+HoaiBao\73	1094842.00
+HoaiBao\78	697844.00
+HoaiBao\81	4480746.00
+HoaiBao\83	927212.00
+HoaiBao\88	1532612.00
+NTNTHU01\13480	1521207.00
+NTNTHU01\13500	1048020.00
+NTNTHU01\13502	3727219.00
+NTNTHU01\13514	42789060.00
+UT_NGOAITRU\118	1451523.00
+BaoBao2\4068	1223400.00
+BaoBao2\4094	100000.00
+BaoBao2\4099	158340.00
+BaoBao2\4102	109000.00
+BLinh-nt\50	1330989.00
+HoaiBao\108	4036503.00
+HoaiBao\75	2401570.00
+NTNTHU01\13482	367000.00
+NTNTHU01\13487	763114.00
+NTNTHU01\13493	3064271.00
+NTNTHU01\13494	3242106.00
+BaoBao2\4062	548400.00
+BaoBao2\4063	548400.00
+BaoBao2\4064	438000.00
+BaoBao2\4069	548400.00
+BaoBao2\4077	54000.00
+BaoBao2\4086	548400.00
+BaoBao2\4087	990000.00
+HoaiBao\76	892869.00
+HoaiBao\86	5140952.00
+HoaiBao\92	1901774.00
+HoaiBao\94	2470570.00
+HoaiBao\99	2301536.00
+NTNTHU01\13489	5820405.00
+NTNTHU01\13495	14441269.00
+NTNTHU01\13498	9890449.00
+NTNTHU01\13510	1765544.00
+NTNTHU01\13512	800954.00
+NTNTHU01\13515	1278153.00
+UT_N?ITRÚ\1575	1225917.00
+BaoBao2\4074	215999.00
+BaoBao2\4079	54000.00
+BaoBao2\4095	108000.00
+BaoBao2\4096	109000.00
+BaoBao2\4100	209000.00
+BaoBao2\4101	100000.00
+BLinh-nt\51	1671848.00
+HoaiBao\65	1382527.00
+HoaiBao\71	748553.00
+HoaiBao\72	4683759.00
+HoaiBao\74	1539183.00
+HoaiBao\79	495387.00
+HoaiBao\82	2770718.00
+HoaiBao\84	1005221.00
+HoaiBao\85	3019869.00
+HoaiBao\89	13020776.00
+HoaiBao\96	978688.00
+NTNTHU01\13483	2250684.00
+NTNTHU01\13484	9175095.00
+NTNTHU01\13490	1937738.00
+NTNTHU01\13491	1067114.00
+NTNTHU01\13505	14559481.00
+NTNTHU01\13511	1506048.00
+NTNTHU01\13516	3606082.00
+NTNTHU01\13517	1946149.00
+UT_N?ITRÚ\1574	2381133.00
+UT_NGOAITRU\119	460000.00
+BaoBao2\4065	548400.00
+BaoBao2\4090	548400.00
+BaoBao2\4092	161999.00
+BaoBao2\4093	54000.00
+BaoBao2\4098	84000.00
+BaoBao2\4105	100000.00
+BLinh-nt\53	2389323.00
+HoaiBao\102	4610006.00
+HoaiBao\90	17861236.00
+HoaiBao\97	1290765.00
+NTNTHU01\13492	2302746.00
+NTNTHU01\13497	1488535.00
+NTNTHU01\13504	3733432.00
+NTNTHU01\13509	1732695.00
+NTNTHU01\13518	1598280.00
+tkm002\1228	666089.00
+BaoBao2\4081	100000.00
+BaoBao2\4103	100000.00
+BLinh-nt\52	478528.00
+HoaiBao\105	921543.00
+HoaiBao\107	2050898.00
+HoaiBao\109	476001.00
+HoaiBao\60	1129740.00
+HoaiBao\61	2373027.00
+HoaiBao\63	1275413.00
+HoaiBao\68	5524736.00
+HoaiBao\77	1280904.00
+HoaiBao\80	4183101.00
+HoaiBao\87	3974580.00
+NTNTHU01\13481	1577542.00
+NTNTHU01\13496	1771677.00
+NTNTHU01\13503	9040413.00
+NTNTHU01\13508	2240952.00
+NTNTHU01\13519	2615772.00 -->

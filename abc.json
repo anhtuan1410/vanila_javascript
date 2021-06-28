@@ -1,0 +1,32 @@
+[
+    {
+        "first-class":[
+            {
+                "name":"Burp Proxy",
+                "describes":"Watch HTTP(s) communication on Internet"
+            },
+            {
+                "name":"FireFox",
+                "describes":"so many things you can do"
+            },
+            {
+                "end":"12/06/2019 - 12:14:AM",
+                "lesson":"The web in depth"
+            }
+
+        ],
+
+        "tools":[
+            "IDA PRO",
+            "Hopper",
+            "Ghidra",
+            "objdump",
+            "ODA",
+            "Radare2",
+            "gdb",
+            "WinDbg",
+            "0xED",
+            "HxD"
+        ]
+    }
+]

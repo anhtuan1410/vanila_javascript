@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript">
+        var w = window.open("https://tripu.vn/");
+        // Now wait a while, hoping they'll start using the newly opened window.
+        // After 10 seconds, let's try to see what URL they're looking at!
+        var snoopedURL;
+        //setTimeout("snoopedURL = w.location.href)", 10 * 1000);
+    </script>
+    <script>
+
+        function mouseUpTo(event){
+            var r = event;
+        }
+        
+        function foCusTxt(event){
+            var r = event;
+        }
+
+        function keyPressTxt(e){
+            var strIn = String.fromCharCode(e.charCode);
+  
+            // The current cursor position is stored as: e.target.selectionStart
+            if(e.target.selectionStart == 0) {
+                // Setup our pattern, excluding anything other than a-zA-Z
+                var patt = /[a-zA-Z]/gi;
+            } else {
+                // Setup our pattern to allow alpha, spaces and dashes
+                var patt = /[a-zA-Z\s\-]/gi;
+            }
+            
+            // Return the test result
+            console.log( patt.test(strIn));
+        }
+
+        function inpuText(event){
+
+            var t = event.currentTarget.value;
+            var r = event.currentTarget.value.length; //lấy text của input, độ dài text
+            var selStart = event.currentTarget.selectionStart; //lấy vị trí bắt dầu của dấu nháy
+            var selEnd = event.currentTarget.selectionEnd;//lấy vị trí kết thúc của dấu nháy
+            var x = '';
+            console.log(selStart+' - '+selEnd);
+            switch(event.key){
+                
+                case '-':
+                    if(selStart == selEnd == 0) //con trỏ phải nằm index 0 của chuỗi mới cho nhập số âm
+                    {
+                        var regex1 = RegExp('/-');
+                        if(regex1.test(t))
+                            event.preventDefault();
+                    }
+                    else
+                        event.preventDefault();
+                    break;
+
+                //nhập dấu . và dấu , 
+                case '.':
+                    if(r === 0)//chuỗi chưa có gì hết, nên ko cho nhập , vs .
+                        event.preventDefault();
+                    else //text có độ dài lớn
+                    {
+                        var regex1 = RegExp('/.');
+                        if(regex1.test(t))
+                            event.preventDefault();
+                    }
+                    break;
+                case ',':
+                    
+                break;
+            }
+            
+            if(event.key==='.' || event.key===','){event.preventDefault();}
+            console.log("key chnaged");
+        }
+        
+        function keyDown(event, k){
+
+            setTimeout(function(){
+
+                var t = event.target.value;
+
+                let chkAm = t.includes('-');//check có dấu âm hay ko?    
+                let chkDeciaml = t.includes('.');//check phải số thập phân ko?   
+
+                var d = '', n = '';
+                //tách làm 2 phần, trước decimal và sau decimal
+                if(chkDeciaml)
+                {  
+                      d = t.substr(t.indexOf('.') + 1).replace(/[^0-9]*/g,''); //cắt lấy phần sau decimal  
+                      n = t.substr(0, t.indexOf('.') );
+                }
+                else
+                {
+                    n = t.substr(0); //cắt lấy phần trước decimal 
+                }
+
+                d = d.replace(/\./g, '').replace(/[^0-9]*/g,'');//thay thế tất cả dấu chấm của phần decimal thành null
+                n = n.replace(/\,/g, '').replace(/\-/g, '').replace(/[^0-9]*/g,'');//thay thế tất cả dấu phẩy của phần nguyên thành null
+
+                t = t.replace(/[^0-9]*/g,'');//cuỗi chuẩn ko dấu, chỉ lấy số
+                
+                //( d!=='' ? d : '0' ) )
+                event.target.value = ( chkAm ? '-' : '' )+( n.replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1,") )+(chkDeciaml ? ( '.' +d ) : '');
+
+                console.log(event.target.value);
+	},0);
+
+
+
+
+}
+
+
+function keyDown2(event, k){
+
+setTimeout(function(){
+
+    var w = k;
+
+    var t = event.target.value;
+var r = event.target.value.length; //lấy text của input, độ dài text
+var selStart = event.target.selectionStart; //lấy vị trí bắt dầu của dấu nháy
+var selEnd = event.target.selectionEnd;//lấy vị trí kết thúc của dấu nháy
+var x = '';
+console.log(selStart+' - '+selEnd);
+
+
+
+switch(event.key){
+
+case '-':
+if(selStart == selEnd == 0) //con trỏ phải nằm index 0 của chuỗi mới cho nhập số âm
+{
+var regex1 = RegExp('/-');
+if(regex1.test(t))
+    event.preventDefault();
+}
+else
+event.preventDefault();
+break;
+
+//nhập dấu . và dấu , 
+case '.':
+if(r === 0)//chuỗi chưa có gì hết, nên ko cho nhập , vs .
+event.preventDefault();
+else //text có độ dài lớn
+{
+var regex1 = RegExp('/.');
+if(regex1.test(t))
+    event.preventDefault();
+}
+break;
+case ',':
+
+break;
+}
+
+if(event.key==='.' || event.key===','){event.preventDefault();}
+
+
+
+console.log("key chnaged");
+
+
+},0)
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+        function upHandler(e){
+            var r = e;
+        }
+
+        function gotpointercapture(e)
+        {
+            var r = e;
+        }
+
+        function inpTxt(e){
+            
+            console.log("inp chnaged");
+        }
+        function txtChanged(e){
+            
+            console.log("txt changed");
+        }
+    </script>
+</head>
+<body>
+    <input type="number"  
+    
+    onkeydown="keyDown(event)" 
+    onchange="txtChanged(event)"
+    oninput="inpTxt(event)"
+    />
+    <input type="text" 
+        oninput="inpTxt(event)"
+    />
+
+    <h1>
+        Test keydown input number số âm, định dạng tiền tệ, thập phân
+    </h1>
+
+    <!-- <input type="number" class="inp-2" 
+    onmouseup="mouseUpTo(event)"
+    onfocus="foCusTxt(event)" 
+    onkeydown="keyDown(event)"
+    oninput="inpuText(event)"
+    onkeypress="keyPressTxt(event)" 
+     onpointerup="upHandler(event)"
+      oninput="inpuText(event)"
+      ongotpointercapture="gotpointercapture(event)"
+    /> -->
+
+    <input type="text" class="t-number" class="inp-2" 
+   
+    onkeydown="keyDown(event, this)"
+    oninput="upHandler(event)"
+    />
+
+    <h1>---------------------End ----------------------------------</h1>
+
+
+    <h1>
+        Text number
+    </h1>
+    <input type="number" />
+
+    <br />
+
+
+
+
+    <input type="text" id="text-element" onkeydown="keyDown(event)" />
+<!-- Or a textarea
+<textarea id="text-element"></textarea>
+-->
+<input type="button" id="trigger" value="Check"/>
+
+<script>
+    document.getElementById("trigger").addEventListener("click", function(){
+        var myElement = document.getElementById('text-element');
+        var startPosition = myElement.selectionStart;
+        var endPosition = myElement.selectionEnd;
+        
+        // Check if you've selected text
+        if(startPosition == endPosition){
+            alert("The position of the cursor is (" + startPosition + "/" + myElement.value.length + ")");
+        }else{
+            alert("Selected text from ("+ startPosition +" to "+ endPosition + " of " + myElement.value.length + ")");
+        }
+    },false);
+</script>
+
+</body>
+</html>

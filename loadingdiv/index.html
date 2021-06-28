@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <style type="text/css">
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        @keyframes gradient { 
+            0%   { background-position: 0 0; }
+            100% { background-position: -200% 0; }
+        }
+        .animate-waiting{
+            width: 100%;
+            background: repeating-linear-gradient(to right, white, #dddddf 60%, white);
+            background-size: 200%;
+            background-position: 0 100%;
+            animation: gradient 3s infinite;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="animate-waiting">hi</div>
+    
+</body>
+</html>

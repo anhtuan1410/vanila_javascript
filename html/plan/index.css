@@ -1,0 +1,405 @@
+html{
+    height: 100%;
+    min-height: 100%;
+}
+
+:root, body{
+    padding: 0;
+    margin: 0;
+}
+
+body, .container, .btn{
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+body{
+    height: 100vh;
+}
+
+.btn{
+    height: 10%;
+}
+
+.container {
+    height: 90%;
+    position: relative;
+    left: 0;
+    top: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+}
+
+.container img{
+    position: absolute;
+    left: 0%;
+}
+
+.btn{
+    text-align: center;    
+}
+
+.btn button{
+    background-color: blueviolet;
+    color: white;
+    font-weight: bold;
+    opacity: 0.5;
+}
+
+/* ========================================== PLANE FLY ================================ */
+
+.div-cloud{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+}
+
+img.img-cloud{
+    position: absolute;
+    width: 10em;
+    z-index: 9999;
+    opacity: 0.7;
+}
+
+img.img-cloud:first-child{
+    top: 15px;
+    left: 3%;
+    /* animation: cloud-float-right 20s infinite  ; */
+}
+
+img.img-cloud:nth-child(2){
+    top: 240px;
+    left: 20%;
+    animation: cloud-float-left 20s infinite  ;
+}
+
+img.img-cloud:nth-child(3){
+    top: 100px;
+    left: 40%;
+    /* animation: cloud-float-right 40s infinite ; */
+}
+
+img.img-cloud:nth-child(4){
+    top: 80px;
+    left: 60%;
+    animation: cloud-float-left 40s infinite ;
+}
+
+img.img-cloud:nth-child(5){
+    top: 90px;
+    left: 85%;
+    /* animation: cloud-float-right 60s infinite ; */
+}
+
+
+img.img-cloud:nth-child(6){
+    top: 10px;
+    left: 50%;
+    animation: cloud-float-left 60s infinite ;
+}
+
+img.img-cloud:nth-child(7){
+    top: 60px;
+    left: 30%;
+    /* animation: cloud-float-right 40s infinite ; */
+}
+
+img.img-cloud:nth-child(8){
+    top: 44px;
+    left: 73%;
+    animation: cloud-float-left 30s infinite ;
+}
+
+img.img-cloud:nth-child(9){
+    top: 20px;
+    left: 45%;
+    animation: cloud-float-right 800s infinite ;
+}
+
+@keyframes plane-move{
+    0%{
+        margin-left: 0%;
+        transform: rotateZ(0deg);
+        bottom: 0%;
+    }
+    40%{
+        margin-left: 40%;
+        transform: rotateZ(-18deg);
+        bottom: 0%;
+    }
+    /* 60%{
+        margin-left: calc(70% - 16%);
+        transform: rotateZ(-8deg);
+        bottom: 35%;
+    } */
+    100%{
+        margin-left: calc(100%);
+        transform: rotateZ(-20deg);
+        /* top: 0%; */
+        bottom: 80%;
+    }
+}
+
+@keyframes plane-takeing-off{
+    from{
+        margin-left: calc(40% - 16%);
+        transform: rotateZ(0deg);
+        /* top: 0%; */
+        bottom: 0%;
+    }
+    to{
+        margin-left: calc(100% - 16%);
+        transform: rotateZ(-15deg);
+        /* top: 0%; */
+        bottom: 70%;
+    }
+}
+
+@keyframes cloud-float-right{
+
+    0% {
+        left: -15%;
+    }
+
+    100% {
+        left: 120%;
+    }
+}
+
+
+
+@keyframes cloud-float-left{
+
+    0% {
+        left: 120%
+    }
+
+    100% {
+        left: -15%;
+    }
+}
+
+@keyframes Plane-take-off{
+    0% {
+        margin-left: 0%;
+        transform: rotateZ(0deg);
+        bottom: 0%;
+    }
+
+    100% {
+        margin-left: calc(100% - 16%);
+        transform: rotateZ(-15deg);
+        /* top: 0%; */
+        bottom: 70%;
+    }
+}
+
+@keyframes Prepare-take-off{
+    0% {
+        margin-left: 0%;
+        transform: rotateZ(0deg);
+        bottom: 0%;
+    }
+
+    100% {
+        margin-left: calc(40% - 16%);
+        transform: rotateZ(0deg);
+        /* top: 0%; */
+        bottom: 0%;
+    }
+}
+
+@keyframes Taking-off{
+    0% {
+        margin-left: calc(40% - 16%);
+        transform: rotateZ(0deg);
+        /* top: 0%; */
+        bottom: 0%;
+    }
+
+    100% {
+        margin-left: calc(100% - 16%);
+        transform: rotateZ(-15deg);
+        /* top: 0%; */
+        bottom: 70%;
+    }
+}
+
+@-o-keyframes Plane-take-off{
+    0% {
+        margin-left: 0%;
+        transform: rotateZ(0deg);
+        bottom: 0%;
+    }
+
+    100% {
+        margin-left: calc(100% - 16%);
+        transform: rotateZ(-15deg);
+        /* top: 0%; */
+        bottom: 70%;
+    }
+}
+
+@-moz-keyframes Plane-take-off{
+    0% {
+        margin-left: 0%;
+        transform: rotateZ(0deg);
+        bottom: 0%;
+    }
+
+    100% {
+        margin-left: calc(100% - 16%);
+        transform: rotateZ(-15deg);
+        /* top: 0%; */
+        bottom: 70%;
+    }
+}
+
+@-webkit-keyframes Plane-take-off{
+    0% {
+        margin-left: 0%;
+        transform: rotateZ(0deg);
+        bottom: 0%;
+    }
+
+    100% {
+        margin-left: calc(100% - 16%);
+        transform: rotateZ(-15deg);
+        /* top: 0%; */
+        bottom: 70%;
+    }
+}
+
+.take-off{
+
+    /* animation: plane-move 1s infinite alternate  ; */
+
+    animation-name: plane-move;
+    animation-duration: 10s;
+
+    /* animation-delay: 1s; */
+    animation-timing-function: linear;
+    /* animation-iteration-count: infinite; */
+
+    /* animation: Plane-take-off 1s forwards;
+    -moz-animation: Plane-take-off 1s forwards;
+    -o-animation: Plane-take-off 1s forwards;
+    -webkit-animation: Plane-take-off 1s forwards; */
+
+    /* animation-name: Plane-take-off;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0s; */
+
+}
+
+
+/*  ==========================================================================================  */
+
+
+/* ========== RAIN ==================== */
+
+
+.layer-rain{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+}
+
+.stem{    
+    width: 1px;
+    height: 100vh;
+    /* background: linear-gradient(to bottom, red, black); */
+    position: relative;
+    float: left;
+    top: 0;
+}
+
+div[class*='stem-child']{
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation-name: rain-pouring;
+    /* animation-duration: 0.5s; */
+    animation-iteration-count:infinite;
+}
+
+.stem-child{
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background: linear-gradient(to bottom, transparent,black 400%); */
+    animation-name: rain-pouring;    
+    animation-iteration-count:infinite;
+}
+
+/* .stem-pouring{    
+    width: 10px;
+    height: 100vh;
+    background-color: black;
+    transform: translateY(50%);
+    background: linear-gradient(to bottom, red 5%, black 20%, red 50%);
+     animation-name: rain-pouring;
+    animation-duration: 2s;
+    animation-iteration-count:infinite;
+    animation-timing-function: ; 
+} */
+
+@keyframes rain-pouring{
+    0% {
+        top: 0%;
+    }
+    100% {
+        top: 100%;
+    }
+}
+
+.div-test {
+    background: linear-gradient(red, red),
+                linear-gradient(blue , blue),
+                linear-gradient(green, green);
+    background-size: 30% 50%,
+                     30% 60%,
+                     40% 80%;
+    background-position: 0% top,
+                         calc(30% * 100 / (100 - 30)) top,
+                         calc(60% * 100 / (100 - 40)) top;
+    background-repeat: no-repeat;
+}
+
+
+.drop {
+
+    background:-webkit-gradient(linear,0% 0%,0% 100%, 
+    from(rgba(13,52,58,1) ), 
+    to(rgba(255,255,255,0.6))  
+    );
+    background: -moz-linear-gradient(top, rgba(13,52,58,1) 0%, rgba(255,255,255,.6) 100%);
+
+     width:1px;
+      height:89px;
+      position: absolute;
+      bottom:200px;
+      -webkit-animation: fall .63s linear infinite;
+    -moz-animation: fall .63s linear infinite;
+    
+  }
+  
+  /* animate the drops*/
+  @-webkit-keyframes fall {
+      to {margin-top:900px;}
+  }
+  @-moz-keyframes fall {
+      to {margin-top:900px;}
+  }

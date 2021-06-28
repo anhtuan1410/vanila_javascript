@@ -1,0 +1,915 @@
+
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000715', '07YS07.3-4C', '07YS07', N'Thái Gia An','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000716', '07YS07.3-4C', '07YS07', N'Phan Bảo An An','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000717', '07YS07.3-4C', '07YS07', N'Huỳnh Thùy Phúc An','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000721', '07YS07.3-4C', '07YS07', N'Lưu Thiên Ân','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000718', '07YS07.3-4C', '07YS07', N'Phạm An Bình','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000722', '07YS07.3-4C', '07YS07', N'Nguyễn Ngọc Hoàng Dung','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000723', '07YS07.3-4C', '07YS07', N'Lê Huỳnh Thanh Đạt','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000724', '07YS07.3-4C', '07YS07', N'Đặng Đỗ Viết Đức','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000725', '07YS07.3-4C', '07YS07', N'Huỳnh Ngọc Hà','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000726', '07YS07.3-4C', '07YS07', N'Lê Ngọc Hân','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000728', '07YS07.3-4C', '07YS07', N'Lê Nguyễn Gia Hân','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000729', '07YS07.3-4C', '07YS07', N'Phạm Đinh Gia Hân','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000730', '07YS07.3-4C', '07YS07', N'Lê Phúc Hân','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000731', '07YS07.3-4C', '07YS07', N'Nguyễn Khánh Hưng','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000735', '07YS07.3-4C', '07YS07', N'Đặng Mai Khôi','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000727', '07YS07.3-4C', '07YS07', N'Huỳnh Tuấn Kiệt','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000734', '07YS07.3-4C', '07YS07', N'Lâm hiểu Kỳ','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000736', '07YS07.3-4C', '07YS07', N'Lưu Tuệ Lâm','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000732', '07YS07.3-4C', '07YS07', N'Hồ Thảo Nguyên Linh Linh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000737', '07YS07.3-4C', '07YS07', N'Nguyễn Diệp Trúc Linh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000738', '07YS07.3-4C', '07YS07', N'Phạm Đinh Gia Linh Linh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000739', '07YS07.3-4C', '07YS07', N'Nguyễn Hoàng Nam','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000733', '07YS07.3-4C', '07YS07', N'Đặng Hoàng Bảo Ngân','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000740', '07YS07.3-4C', '07YS07', N'Lê Đông Nghi','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000741', '07YS07.3-4C', '07YS07', N'Vương Khánh Ngọc','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000742', '07YS07.3-4C', '07YS07', N'Phan Nguyễn Tấn Phát','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000745', '07YS07.3-4C', '07YS07', N'Đinh Xuân Phú','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000746', '07YS07.3-4C', '07YS07', N'Đặng Trần Gia Phúc','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000747', '07YS07.3-4C', '07YS07', N'Khưu Ngọc Minh Phúc Phúc','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000748', '07YS07.3-4C', '07YS07', N'Trần Thiện Gia Phúc Phúc','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000749', '07YS07.3-4C', '07YS07', N'Nguyễn Trần Khánh Phương','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000743', '07YS07.3-4C', '07YS07', N'Huỳnh Nhật Quang','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000750', '07YS07.3-4C', '07YS07', N'Trần Võ Phương Quỳnh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000751', '07YS07.3-4C', '07YS07', N'Nguyễn Sang Sang','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000744', '07YS07.3-4C', '07YS07', N'Dương Thiên Sơn','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000752', '07YS07.3-4C', '07YS07', N'Phạm Anh Thái','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000753', '07YS07.3-4C', '07YS07', N'Nguyễn Thị Thanh Thảo','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000754', '07YS07.3-4C', '07YS07', N'Nguyễn Ngọc Phương Thảo','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000755', '07YS07.3-4C', '07YS07', N'Lê Trí Thiện','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000756', '07YS07.3-4C', '07YS07', N'Vũ Tiến Thịnh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000757', '07YS07.3-4C', '07YS07', N'Lê Huỳnh Anh Thư','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000758', '07YS07.3-4C', '07YS07', N'Huỳnh Đan Trà','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000759', '07YS07.3-4C', '07YS07', N'Vũ Lương Minh Triết','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000760', '07YS07.3-4C', '07YS07', N'Lý Thanh Trúc','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000761', '07YS07.3-4C', '07YS07', N'Nguyễn Thành Vinh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000631', '07YS07.3-4A', '07YS07', N'Lý Phúc An An','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000632', '07YS07.3-4A', '07YS07', N'Bùi Bảo An','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000633', '07YS07.3-4A', '07YS07', N'Lê Nguyễn Hoàng An','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000634', '07YS07.3-4A', '07YS07', N'Võ Ngọc Trâm Anh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000635', '07YS07.3-4A', '07YS07', N'Lê Nhật Trâm Anh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000636', '07YS07.3-4A', '07YS07', N'Lê Nguyệt Phương Anh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000637', '07YS07.3-4A', '07YS07', N'Cao Nguyễn Bảo Anh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000639', '07YS07.3-4A', '07YS07', N'Nguyễn Thùy Minh Anh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000640', '07YS07.3-4A', '07YS07', N'Tăng Phương Anh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000638', '07YS07.3-4A', '07YS07', N'Nguyễn Hoàng Bảo','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000641', '07YS07.3-4A', '07YS07', N'Trương Nhật Bình','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000642', '07YS07.3-4A', '07YS07', N'Hoàng Ngọc Minh Châu','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000647', '07YS07.3-4A', '07YS07', N'Nguyễn Hoàng Minh Châu','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000648', '07YS07.3-4A', '07YS07', N'Nguyễn Đỗ Băng Châu','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000649', '07YS07.3-4A', '07YS07', N'Trần Nguyễn Linh Chi','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000643', '07YS07.3-4A', '07YS07', N'Đinh Phan Quốc Dĩ','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000650', '07YS07.3-4A', '07YS07', N'Tuấn Trần Nam Đăng','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000651', '07YS07.3-4A', '07YS07', N'Nguyễn Quang Đăng','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000644', '07YS07.3-4A', '07YS07', N'Trần Thanh Trúc Giang','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000645', '07YS07.3-4A', '07YS07', N'Trần Ngọc Hân','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000646', '07YS07.3-4A', '07YS07', N'Nguyễn Bảo Hân','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000652', '07YS07.3-4A', '07YS07', N'Nguyễn Khả Hân','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000653', '07YS07.3-4A', '07YS07', N'Võ Nguyễn Hoàng','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000654', '07YS07.3-4A', '07YS07', N'Trịnh Xuân Hùng','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000658', '07YS07.3-4A', '07YS07', N'Nguyễn Gia Huy','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000659', '07YS07.3-4A', '07YS07', N'Phạm Gia Hưng','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000656', '07YS07.3-4A', '07YS07', N'Ưng Nhật Khang','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000657', '07YS07.3-4A', '07YS07', N'Bùi Xuân Khánh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000660', '07YS07.3-4A', '07YS07', N'Nguyễn Ngọc Minh Khuê','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000655', '07YS07.3-4A', '07YS07', N'Mạc Thiên Kim','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000661', '07YS07.3-4A', '07YS07', N'Nguyễn Ngọc Tường Lam','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000664', '07YS07.3-4A', '07YS07', N'Nguyễn Trúc Linh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000665', '07YS07.3-4A', '07YS07', N'Nguyễn Phương Linh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000666', '07YS07.3-4A', '07YS07', N'Nguyễn Trần Duy Linh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000667', '07YS07.3-4A', '07YS07', N'Trương Nhật Minh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000668', '07YS07.3-4A', '07YS07', N'Nguyễn Trần Nhuận Phát','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000662', '07YS07.3-4A', '07YS07', N'Lê Lâm Xuân Thắm','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000663', '07YS07.3-4A', '07YS07', N'Liêu Hữu Thuận','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000670', '07YS07.3-4A', '07YS07', N'Nguyễn Ngọc Bảo Trân','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000669', '07YS07.3-4A', '07YS07', N'Lương Tuấn Tú','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000671', '07YS07.3-4A', '07YS07', N'Trương Hoàng Yến','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000672', '07YS07.3-4B', '07YS07', N'Đặng Hồ Duy Anh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000673', '07YS07.3-4B', '07YS07', N'Diệp Quốc Anh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000677', '07YS07.3-4B', '07YS07', N'Huỳnh Thiên Ân','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000678', '07YS07.3-4B', '07YS07', N'Nguyễn Gia Cát','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000674', '07YS07.3-4B', '07YS07', N'Trần Nguyễn Bảo Châu','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000675', '07YS07.3-4B', '07YS07', N'Huỳnh Phương Di','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000676', '07YS07.3-4B', '07YS07', N'Nguyễn Mai Ánh Dương','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000679', '07YS07.3-4B', '07YS07', N'Nguyễn Lâm Tri Đoan','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000680', '07YS07.3-4B', '07YS07', N'Đoàn Minh Hiền','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000681', '07YS07.3-4B', '07YS07', N'Trần Bảo Huy','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000687', '07YS07.3-4B', '07YS07', N'Nguyễn Hoàng Khải','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000682', '07YS07.3-4B', '07YS07', N'Tô Phước Khang','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000688', '07YS07.3-4B', '07YS07', N'Nguyễn Lê Phúc Khang','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000685', '07YS07.3-4B', '07YS07', N'Đinh Chí Kiên','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000686', '07YS07.3-4B', '07YS07', N'Tăng Chí Kiên','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000683', '07YS07.3-4B', '07YS07', N'Nguyễn Ngọc Khánh Linh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000689', '07YS07.3-4B', '07YS07', N'Nguyễn Tấn Lộc','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000684', '07YS07.3-4B', '07YS07', N'Sa Ti Ha Mi','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000690', '07YS07.3-4B', '07YS07', N'Nguyễn Lê Hồng Minh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000691', '07YS07.3-4B', '07YS07', N'Phan Trí Minh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000692', '07YS07.3-4B', '07YS07', N'Nguyễn Hải Nam','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000695', '07YS07.3-4B', '07YS07', N'Lê Xuân Hoàng Nam','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000696', '07YS07.3-4B', '07YS07', N'Lê Thị Kim Ngân','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000697', '07YS07.3-4B', '07YS07', N'Nguyễn Ngọc Khả Ngân','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000698', '07YS07.3-4B', '07YS07', N'Nguyễn Vũ Phương Nghi','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000693', '07YS07.3-4B', '07YS07', N'Đặng Võ Bảo Ngọc','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000699', '07YS07.3-4B', '07YS07', N'Trần Khánh Ngọc','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000694', '07YS07.3-4B', '07YS07', N'Trần Phúc Nguyên','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000700', '07YS07.3-4B', '07YS07', N'Nguyễn Phạm Khôi Nguyên','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000701', '07YS07.3-4B', '07YS07', N'Cái Đặng Ý Nhi','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000702', '07YS07.3-4B', '07YS07', N'Nguyễn Ngọc An Nhiên','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000703', '07YS07.3-4B', '07YS07', N'Trần Thái An Nhiên Nhiên','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000704', '07YS07.3-4B', '07YS07', N'Từ Gia Phát','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000705', '07YS07.3-4B', '07YS07', N'Nguyễn Hoàng Phúc','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000706', '07YS07.3-4B', '07YS07', N'Nguyễn Thu Phương','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000707', '07YS07.3-4B', '07YS07', N'Nguyễn Bảo Thiên Quân','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000708', '07YS07.3-4B', '07YS07', N'Võ Tấn Hoàng Quân Quân','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000710', '07YS07.3-4B', '07YS07', N'Nguyễn Vũ Minh Quân Quân','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000709', '07YS07.3-4B', '07YS07', N'Huỳnh Phương Thảo','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000711', '07YS07.3-4B', '07YS07', N'Nguyễn Hồng Minh Thư','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000712', '07YS07.3-4B', '07YS07', N'Nguyễn Thanh Trúc','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000719', '07YS07.3-4B', '07YS07', N'Đặng Lê Phương Uyên','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000713', '07YS07.3-4B', '07YS07', N'Nguyễn Đăng Vinh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000714', '07YS07.3-4B', '07YS07', N'Nguyễn Ngọc Phương Vy','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000720', '07YS07.3-4B', '07YS07', N'Lương Mỹ Xuân','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000762', '07YS07.4-5A', '07YS07', N'Nguyễn Bảo Anh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000763', '07YS07.4-5A', '07YS07', N'Nguyễn Lê Minh Anh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000776', '07YS07.4-5A', '07YS07', N'Phan Hà Anh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001007', '07YS07.4-5A', '07YS07', N'Nguyễn Hoàng Như Anh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001028', '07YS07.4-5A', '07YS07', N'Trần Nguyễn Thiên Ân','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000779', '07YS07.4-5A', '07YS07', N'Nguyễn Lê Gia Bảo','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001008', '07YS07.4-5A', '07YS07', N'Huỳnh Gia Bảo','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000785', '07YS07.4-5A', '07YS07', N'Nguyễn Quốc Cường','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001023', '07YS07.4-5A', '07YS07', N'Huỳnh Phương Hạnh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000784', '07YS07.4-5A', '07YS07', N'Nguyễn Quốc Hùng','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001009', '07YS07.4-5A', '07YS07', N'Lương Thành Hưng','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000770', '07YS07.4-5A', '07YS07', N'Trần Hà Thu Hương','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001025', '07YS07.4-5A', '07YS07', N'Thái Gia Hy','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000783', '07YS07.4-5A', '07YS07', N'Huỳnh Thanh Khiêm','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001027', '07YS07.4-5A', '07YS07', N'Trần Long Kiếm','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001019', '07YS07.4-5A', '07YS07', N'Trầm Minh Kiệt','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000768', '07YS07.4-5A', '07YS07', N'Đoàn Quang Thiện Minh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001010', '07YS07.4-5A', '07YS07', N'Bùi Ngọc Gia Minh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001024', '07YS07.4-5A', '07YS07', N'Đoàn Quang Nhật Minh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001011', '07YS07.4-5A', '07YS07', N'Nguyễn Le Huyền My','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000764', '07YS07.4-5A', '07YS07', N'Đinh Phương Nghi','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001012', '07YS07.4-5A', '07YS07', N'Trần Ngọc Xuân Nghi','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000786', '07YS07.4-5A', '07YS07', N'Hồ An Nhiên','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001013', '07YS07.4-5A', '07YS07', N'Võ Minh Phát','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000775', '07YS07.4-5A', '07YS07', N'Đỗ Nguyễn Anh Phúc','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001022', '07YS07.4-5A', '07YS07', N'Nguyễn Lâm Trúc Phương','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000772', '07YS07.4-5A', '07YS07', N'Lê Ngọc Quân','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001014', '07YS07.4-5A', '07YS07', N'Nguyễn Hồng Phương Quế','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001017', '07YS07.4-5A', '07YS07', N'Nguyễn Phương Quỳnh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000769', '07YS07.4-5A', '07YS07', N'Dương Trí Thành','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000771', '07YS07.4-5A', '07YS07', N'Bùi Nguyễn Anh Thư','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000778', '07YS07.4-5A', '07YS07', N'Đặng Lê Hoàng Tính','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000773', '07YS07.4-5A', '07YS07', N'Lâm Ngọc Phương Trà','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000765', '07YS07.4-5A', '07YS07', N'Lê Lâm Bảo Trân','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000767', '07YS07.4-5A', '07YS07', N'Nguyễn Phan Minh Triết','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001018', '07YS07.4-5A', '07YS07', N'Nguyễn Chung Minh Triết','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000774', '07YS07.4-5A', '07YS07', N'Bùi Trịnh Bảo Trúc','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000766', '07YS07.4-5A', '07YS07', N'Thái Vũ Xuân Trường','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001015', '07YS07.4-5A', '07YS07', N'Bùi Lê Anh Tuấn','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001016', '07YS07.4-5A', '07YS07', N'Bùi Anh Tuấn','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000777', '07YS07.4-5A', '07YS07', N'Trần Phong Vũ','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001020', '07YS07.4-5A', '07YS07', N'Đỗ Hoàng Tường Vy','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001021', '07YS07.4-5A', '07YS07', N'Tôn Dương Như Ý','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001026', '07YS07.4-5A', '07YS07', N'Nguyễn Hoàng Như Ý','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000787', '07YS07.4-5B', '07YS07', N'Bùi Ngọc Xuân An','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000797', '07YS07.4-5B', '07YS07', N'Nguyễn Hoàng Gia An','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000800', '07YS07.4-5B', '07YS07', N'Nguyễn Trần Minh An','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000780', '07YS07.4-5B', '07YS07', N'Tào Dương Gia Bảo','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001039', '07YS07.4-5B', '07YS07', N'Triệu Minh Châu','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001041', '07YS07.4-5B', '07YS07', N'Trần Nguyễn Mỹ Duyên','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000782', '07YS07.4-5B', '07YS07', N'Đặng Ngọc Hân','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000789', '07YS07.4-5B', '07YS07', N'Đỗ Ngọc Hân','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000796', '07YS07.4-5B', '07YS07', N'Trần Hoàng Gia Hân','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001047', '07YS07.4-5B', '07YS07', N'Trần Thanh Huy','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001048', '07YS07.4-5B', '07YS07', N'Bùi Trương Gia Huy','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001033', '07YS07.4-5B', '07YS07', N'Trần Tuấn Khải','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000790', '07YS07.4-5B', '07YS07', N'Nguyễn Minh Khang','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000801', '07YS07.4-5B', '07YS07', N'Trần An Khang','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001034', '07YS07.4-5B', '07YS07', N'Trần Tuấn Khang','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000791', '07YS07.4-5B', '07YS07', N'Nguyễn Nhã Khanh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000795', '07YS07.4-5B', '07YS07', N'Vũ Nguyễn Gia Khánh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000794', '07YS07.4-5B', '07YS07', N'Nguyễn Đăng Khoa','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000792', '07YS07.4-5B', '07YS07', N'Trương Minh Khôi','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001037', '07YS07.4-5B', '07YS07', N'Nguyễn Minh Khôi','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001040', '07YS07.4-5B', '07YS07', N'Lê Thị Tuyết Linh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000802', '07YS07.4-5B', '07YS07', N'Tống Bảo Long','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000793', '07YS07.4-5B', '07YS07', N'Nguyễn Phương Mai','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001045', '07YS07.4-5B', '07YS07', N'Lê Huỳnh Ngọc Mỹ','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001035', '07YS07.4-5B', '07YS07', N'Võ Lệ Khánh Ngân','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001029', '07YS07.4-5B', '07YS07', N'Nguyễn Đình Nguyên','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001049', '07YS07.4-5B', '07YS07', N'Nguyễn Đặng Khôi Nguyên','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001038', '07YS07.4-5B', '07YS07', N'Trần Lê Thiện Nhân','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000781', '07YS07.4-5B', '07YS07', N'Trần Quang Nhật','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001032', '07YS07.4-5B', '07YS07', N'Ưng Nhật Phong','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001031', '07YS07.4-5B', '07YS07', N'Trần Bách Phú','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000788', '07YS07.4-5B', '07YS07', N'Tô Xuân Quang','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001050', '07YS07.4-5B', '07YS07', N'Nguyễn Lê Thanh Thảo','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001051', '07YS07.4-5B', '07YS07', N'Phạm Khánh Thi','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001036', '07YS07.4-5B', '07YS07', N'Trần Kim Thủy','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001044', '07YS07.4-5B', '07YS07', N'Huỳnh Ngọc Minh Thư','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001043', '07YS07.4-5B', '07YS07', N'Bùi Trung Tiến','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000798', '07YS07.4-5B', '07YS07', N'Lê Trung Tính','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001046', '07YS07.4-5B', '07YS07', N'Phan Nhật Trung','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001042', '07YS07.4-5B', '07YS07', N'Sơn Cát Tường','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001030', '07YS07.4-5B', '07YS07', N'Nguyễn Doãn Nhã Uyên','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000803', '07YS07.4-5C', '07YS07', N'Đào Thiện An','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000799', '07YS07.4-5C', '07YS07', N'Đào Bảo Anh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000824', '07YS07.4-5C', '07YS07', N'Võ Chí Anh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000804', '07YS07.4-5C', '07YS07', N'Trần Quốc Bảo','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000806', '07YS07.4-5C', '07YS07', N'Nguyễn Ngọc Diệp','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000808', '07YS07.4-5C', '07YS07', N'Lê Hồng Diệp','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000828', '07YS07.4-5C', '07YS07', N'Nguyễn Tấn Dũng','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000805', '07YS07.4-5C', '07YS07', N'Nguyễn Hải Đăng','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001052', '07YS07.4-5C', '07YS07', N'Phan Huy Hoàng','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000829', '07YS07.4-5C', '07YS07', N'Lê Hoàng Huy','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001053', '07YS07.4-5C', '07YS07', N'Mã Gia Huy','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000809', '07YS07.4-5C', '07YS07', N'Trần Vũ Mai Hương','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000827', '07YS07.4-5C', '07YS07', N'Lê Minh Khang','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000826', '07YS07.4-5C', '07YS07', N'Nguyễn Đình Anh Khôi','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000831', '07YS07.4-5C', '07YS07', N'Nguyễn Hoàng Tuấn Kiệt','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001054', '07YS07.4-5C', '07YS07', N'Phùng Tuấn Kiệt','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001056', '07YS07.4-5C', '07YS07', N'Nguyễn Ngọc Mai','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000825', '07YS07.4-5C', '07YS07', N'Trần Hoàng Thảo My','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000807', '07YS07.4-5C', '07YS07', N'Trần Ngọc Yến Ngân','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001057', '07YS07.4-5C', '07YS07', N'Nguyễn Ngọc Kim Ngân','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001058', '07YS07.4-5C', '07YS07', N'Nguyễn Huỳnh Kim Ngân','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001055', '07YS07.4-5C', '07YS07', N'Trương Đại Nghĩa','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001059', '07YS07.4-5C', '07YS07', N'Nguyễn Bảo Ngọc','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000812', '07YS07.4-5C', '07YS07', N'Nguyễn Thiện Nhân','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000810', '07YS07.4-5C', '07YS07', N'Tăng Thanh Mẫn Nhi','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001060', '07YS07.4-5C', '07YS07', N'Đinh Phương Nhung','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000813', '07YS07.4-5C', '07YS07', N'Trương Tấn Phát','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001061', '07YS07.4-5C', '07YS07', N'Trần Thanh Phúc','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000830', '07YS07.4-5C', '07YS07', N'Nguyễn Ngọc Nhã Phương','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000814', '07YS07.4-5C', '07YS07', N'Võ Minh Quang','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000816', '07YS07.4-5C', '07YS07', N'Trần Thị Phương Thảo','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000819', '07YS07.4-5C', '07YS07', N'Trần Thanh Thảo','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000815', '07YS07.4-5C', '07YS07', N'Đào Dương Quỳnh Thư','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000817', '07YS07.4-5C', '07YS07', N'La văn Trung','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000811', '07YS07.4-5C', '07YS07', N'Dương Anh Tuấn','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000821', '07YS07.4-5C', '07YS07', N'Phạm Trọng Văn','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000820', '07YS07.4-5C', '07YS07', N'Lâm Ngọc Vân','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000818', '07YS07.4-5C', '07YS07', N'Lê Hải Vy','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000822', '07YS07.4-5C', '07YS07', N'Nguyễn Trần Tường Vy','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000823', '07YS07.4-5C', '07YS07', N'Lê Nhật Thanh Vy','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001062', '07YS07.4-5D', '07YS07', N'Triệu Hoàng Bảo An','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001090', '07YS07.4-5D', '07YS07', N'Nguyễn Khánh An','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001063', '07YS07.4-5D', '07YS07', N'Đặng Huyền Anh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001097', '07YS07.4-5D', '07YS07', N'Nguyễn Hưu Tâm Anh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001064', '07YS07.4-5D', '07YS07', N'Tăng Nguyễn Thiên Ân','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001065', '07YS07.4-5D', '07YS07', N'Trịnh Thành Đạt','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001088', '07YS07.4-5D', '07YS07', N'Nguyễn Thành Đạt','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001092', '07YS07.4-5D', '07YS07', N'Lưu Gia Hân','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001066', '07YS07.4-5D', '07YS07', N'Lê Nguyễn Thanh Hồng','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001103', '07YS07.4-5D', '07YS07', N'Lê Thị Như Huỳnh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001068', '07YS07.4-5D', '07YS07', N'Trần Gia Khang','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001067', '07YS07.4-5D', '07YS07', N'Phạm Tuấn Kiệt','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001076', '07YS07.4-5D', '07YS07', N'Khương Khánh Linh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001069', '07YS07.4-5D', '07YS07', N'Phạm Phúc Lộc','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001070', '07YS07.4-5D', '07YS07', N'Lương Gia Luân','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001071', '07YS07.4-5D', '07YS07', N'Phạm Tuấn Minh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001072', '07YS07.4-5D', '07YS07', N'Vũ Lê Tuyết Minh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001093', '07YS07.4-5D', '07YS07', N'Nguyễn Tuệ Minh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001102', '07YS07.4-5D', '07YS07', N'Trần Minh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001073', '07YS07.4-5D', '07YS07', N'Dương Ngọc Khánh My','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001074', '07YS07.4-5D', '07YS07', N'Trần Gia Ngân','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001099', '07YS07.4-5D', '07YS07', N'Huỳnh Nguyễn Hoàng Ngân','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001075', '07YS07.4-5D', '07YS07', N'Tam Đào Khôi Nghi','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001094', '07YS07.4-5D', '07YS07', N'Nguyễn Lê bảo Nghi','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001077', '07YS07.4-5D', '07YS07', N'Trắc Khải Nguyên','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001095', '07YS07.4-5D', '07YS07', N'Trần Ngọc An Nhiên','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001078', '07YS07.4-5D', '07YS07', N'Nguyễn Trương Trọng Phú','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001079', '07YS07.4-5D', '07YS07', N'Mai Trường Phúc','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001080', '07YS07.4-5D', '07YS07', N'Đặng Thiên Phúc','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001091', '07YS07.4-5D', '07YS07', N'Trần Vũ Thiên Phúc','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001081', '07YS07.4-5D', '07YS07', N'Đỗ Trần Anh Quân','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001082', '07YS07.4-5D', '07YS07', N'Võ Hoàng Quân','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001101', '07YS07.4-5D', '07YS07', N'Lý Quang Thắng','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001084', '07YS07.4-5D', '07YS07', N'Lê Nguyễn Minh Thư','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001096', '07YS07.4-5D', '07YS07', N'Phan Bảo Anh Thư','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001085', '07YS07.4-5D', '07YS07', N'Nguyễn Duy Thức','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001089', '07YS07.4-5D', '07YS07', N'Huỳnh Thảo Tiên','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001086', '07YS07.4-5D', '07YS07', N'Huỳnh Thiên Trí','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001098', '07YS07.4-5D', '07YS07', N'Nguyễn Hoàng Thanh Trúc','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001083', '07YS07.4-5D', '07YS07', N'Nguyễn Thị Ngọc Tú','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001087', '07YS07.4-5D', '07YS07', N'Bùi Thanh Vân','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001100', '07YS07.4-5D', '07YS07', N'Nguyễn Võ Lan Vi','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000832', '07YS07.5-6 tuoi A', '07YS07', N'Nguyễn Thị Lan Anh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000833', '07YS07.5-6 tuoi A', '07YS07', N'Đặng Huỳnh Bảo Anh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000834', '07YS07.5-6 tuoi A', '07YS07', N'Trần Thị Minh Anh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000838', '07YS07.5-6 tuoi A', '07YS07', N'Phạm Văn Băng','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000839', '07YS07.5-6 tuoi A', '07YS07', N'Thái Lê Minh Châu','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000835', '07YS07.5-6 tuoi A', '07YS07', N'Hà Nguyễn Phương Diễm','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000840', '07YS07.5-6 tuoi A', '07YS07', N'Lý Bảo Dinh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000836', '07YS07.5-6 tuoi A', '07YS07', N'Huỳnh Đăng Dương','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000841', '07YS07.5-6 tuoi A', '07YS07', N'Từ Huỳnh Đức','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000842', '07YS07.5-6 tuoi A', '07YS07', N'Cao Hương Giang','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000843', '07YS07.5-6 tuoi A', '07YS07', N'Nguyễn Ngọc Khả Hân','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000837', '07YS07.5-6 tuoi A', '07YS07', N'Âu Trọng Hiếu','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000845', '07YS07.5-6 tuoi A', '07YS07', N'Lương Lý Bá Hoàng','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000844', '07YS07.5-6 tuoi A', '07YS07', N'Trần Minh Huy','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000848', '07YS07.5-6 tuoi A', '07YS07', N'Lê Quang Hưng','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000849', '07YS07.5-6 tuoi A', '07YS07', N'Lê Duy Đăng Khoa','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000871', '07YS07.5-6 tuoi A', '07YS07', N'Nguyễn Anh Khôi','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000872', '07YS07.5-6 tuoi A', '07YS07', N'Nguyễn Huỳnh Thảo Kim','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000850', '07YS07.5-6 tuoi A', '07YS07', N'Lại Hoàng Nam','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000851', '07YS07.5-6 tuoi A', '07YS07', N'Nguyễn Lê Bảo Ngọc','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000853', '07YS07.5-6 tuoi A', '07YS07', N'Nguyễn Phước An Nguyên','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000846', '07YS07.5-6 tuoi A', '07YS07', N'Nguyễn Thành Nhân','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000852', '07YS07.5-6 tuoi A', '07YS07', N'Lý Huỳnh Khánh Nhi','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000847', '07YS07.5-6 tuoi A', '07YS07', N'Lê Ngọc Huỳnh Như','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000854', '07YS07.5-6 tuoi A', '07YS07', N'Bùi Trường Phát','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000860', '07YS07.5-6 tuoi A', '07YS07', N'Nguyễn Gia Phát','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000856', '07YS07.5-6 tuoi A', '07YS07', N'Ngô Đình Phong','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000855', '07YS07.5-6 tuoi A', '07YS07', N'Nguyễn Huỳnh Phương','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000861', '07YS07.5-6 tuoi A', '07YS07', N'Đinh Hà Phương','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000857', '07YS07.5-6 tuoi A', '07YS07', N'Trần Hoài Thanh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000862', '07YS07.5-6 tuoi A', '07YS07', N'Nguyễn Hoàng Thiên','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000858', '07YS07.5-6 tuoi A', '07YS07', N'Huỳnh Nguyễn Anh Thư','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000859', '07YS07.5-6 tuoi A', '07YS07', N'Nguyễn Ngọc Lan Thư','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000863', '07YS07.5-6 tuoi A', '07YS07', N'Thạch Hồ Anh Thư','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000864', '07YS07.5-6 tuoi A', '07YS07', N'Trần Ngọc Quỳnh Thy','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000869', '07YS07.5-6 tuoi A', '07YS07', N'Phan Duy Yến Trang','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000867', '07YS07.5-6 tuoi A', '07YS07', N'Lê Ngọc Trâm','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000868', '07YS07.5-6 tuoi A', '07YS07', N'Trần Ngọc Yến Trâm','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000865', '07YS07.5-6 tuoi A', '07YS07', N'Huỳnh Gia Vinh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000870', '07YS07.5-6 tuoi A', '07YS07', N'Trần Nguyễn Thế Vinh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000866', '07YS07.5-6 tuoi A', '07YS07', N'Trần Hoàng Tâm Yên','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001104', '07YS07.5-6 tuoi B', '07YS07', N'Vũ Trúc An','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000873', '07YS07.5-6 tuoi B', '07YS07', N'Bùi Hà Anh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000874', '07YS07.5-6 tuoi B', '07YS07', N'Nguyễn Thái Trâm Anh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000878', '07YS07.5-6 tuoi B', '07YS07', N'Phí Bảo Anh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001105', '07YS07.5-6 tuoi B', '07YS07', N'Lê Ngọc Bảo Anh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001125', '07YS07.5-6 tuoi B', '07YS07', N'Nguyễn Trần Gia Cát','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000875', '07YS07.5-6 tuoi B', '07YS07', N'Lê Ngọc Minh Châu','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001106', '07YS07.5-6 tuoi B', '07YS07', N'Huỳnh Thành Danh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001122', '07YS07.5-6 tuoi B', '07YS07', N'Lê Đoàn Bích Diệp','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001107', '07YS07.5-6 tuoi B', '07YS07', N'Nguyễn Cao Kỳ Duyên','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001108', '07YS07.5-6 tuoi B', '07YS07', N'Lê Tiến Đạt','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001109', '07YS07.5-6 tuoi B', '07YS07', N'Nguyễn Ngọc Khả Hân','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000876', '07YS07.5-6 tuoi B', '07YS07', N'Đinh Gia Huy','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000877', '07YS07.5-6 tuoi B', '07YS07', N'Bùi Gia Khang','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000882', '07YS07.5-6 tuoi B', '07YS07', N'Đào Minh Khang','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000889', '07YS07.5-6 tuoi B', '07YS07', N'Huỳnh Lộc Phúc Khang','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001110', '07YS07.5-6 tuoi B', '07YS07', N'Nguyễn Hoàng Phương Khanh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001136', '07YS07.5-6 tuoi B', '07YS07', N'Phan Huỳnh Minh Khôi','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000879', '07YS07.5-6 tuoi B', '07YS07', N'Trương Mỹ Linh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001123', '07YS07.5-6 tuoi B', '07YS07', N'Nguyễn Thùy Linh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001111', '07YS07.5-6 tuoi B', '07YS07', N'Phạm Thanh Mai','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001112', '07YS07.5-6 tuoi B', '07YS07', N'Phòng Ngọc Thanh Mai','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001113', '07YS07.5-6 tuoi B', '07YS07', N'Phạm Ngọc Thiên Mỹ','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001114', '07YS07.5-6 tuoi B', '07YS07', N'Lê Kim Ngân','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000880', '07YS07.5-6 tuoi B', '07YS07', N'Huỳnh Phương Nghi','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000881', '07YS07.5-6 tuoi B', '07YS07', N'Nguyễn Bảo Ngọc','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000883', '07YS07.5-6 tuoi B', '07YS07', N'Lữ Sỹ Nguyên','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000884', '07YS07.5-6 tuoi B', '07YS07', N'Nguyễn Hân Nhi','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000885', '07YS07.5-6 tuoi B', '07YS07', N'Nguyễn Đăng Thịnh Phát','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000890', '07YS07.5-6 tuoi B', '07YS07', N'Hà Gia Phát','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000886', '07YS07.5-6 tuoi B', '07YS07', N'Nguyễn Ngọc Nhã Phương','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001116', '07YS07.5-6 tuoi B', '07YS07', N'Lê Hoàng Diễm Quỳnh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000887', '07YS07.5-6 tuoi B', '07YS07', N'Nguyễn Tấn Sang','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001124', '07YS07.5-6 tuoi B', '07YS07', N'Trần Nhật Thiện','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001115', '07YS07.5-6 tuoi B', '07YS07', N'Nguyễn Lê Gia Thịnh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001118', '07YS07.5-6 tuoi B', '07YS07', N'Chung Gia Thịnh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000888', '07YS07.5-6 tuoi B', '07YS07', N'Nguyễn Minh Thư','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001119', '07YS07.5-6 tuoi B', '07YS07', N'Nguyễn Ngọc Anh Thư','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000892', '07YS07.5-6 tuoi B', '07YS07', N'Ngô Kỳ Thượng','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001120', '07YS07.5-6 tuoi B', '07YS07', N'Nguyễn Minh Trí','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000891', '07YS07.5-6 tuoi B', '07YS07', N'Cao Văn Trung','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001117', '07YS07.5-6 tuoi B', '07YS07', N'Phan Vạn Cát Tường','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001121', '07YS07.5-6 tuoi B', '07YS07', N'Nguyễn Ngọc Như Ý','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000895', '07YS07.5-6 tuoi C', '07YS07', N'Lưu Danh Phú An','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000893', '07YS07.5-6 tuoi C', '07YS07', N'Trương Đỗ Kim Anh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000896', '07YS07.5-6 tuoi C', '07YS07', N'Đặng Hoàng Anh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000897', '07YS07.5-6 tuoi C', '07YS07', N'Trần Ngọc Anh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000898', '07YS07.5-6 tuoi C', '07YS07', N'Trần Nguyễn Minh Anh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000899', '07YS07.5-6 tuoi C', '07YS07', N'Lê Nhật Kim Anh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000894', '07YS07.5-6 tuoi C', '07YS07', N'Nguyễn Phúc Thiên Ân','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000900', '07YS07.5-6 tuoi C', '07YS07', N'Triệu Gia Bảo','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000901', '07YS07.5-6 tuoi C', '07YS07', N'Trần Ngọc Ánh Dương','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001126', '07YS07.5-6 tuoi C', '07YS07', N'Võ Ngọc Ánh Dương','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000905', '07YS07.5-6 tuoi C', '07YS07', N'Tô Thành Đạt','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000902', '07YS07.5-6 tuoi C', '07YS07', N'Nguyễn Lương Anh Hào','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000906', '07YS07.5-6 tuoi C', '07YS07', N'Lê Gia Hưng','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000904', '07YS07.5-6 tuoi C', '07YS07', N'Nguyễn Bảo Khang','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001127', '07YS07.5-6 tuoi C', '07YS07', N'Hoàng Mỹ Nguyên Khang','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001128', '07YS07.5-6 tuoi C', '07YS07', N'Vũ Trọng Khang','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000907', '07YS07.5-6 tuoi C', '07YS07', N'Phạm Đăng Khôi','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000908', '07YS07.5-6 tuoi C', '07YS07', N'Võ Nguyễn Anh Khôi','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000903', '07YS07.5-6 tuoi C', '07YS07', N'Nguyễn Thiên Kim','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000912', '07YS07.5-6 tuoi C', '07YS07', N'Lê Công Phạm Bảo Long','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001129', '07YS07.5-6 tuoi C', '07YS07', N'Trần Kim Lộc','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001130', '07YS07.5-6 tuoi C', '07YS07', N'Nguyễn Ngọc Mai','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001131', '07YS07.5-6 tuoi C', '07YS07', N'Nguyễn Duy Bảo Nam','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001132', '07YS07.5-6 tuoi C', '07YS07', N'Huỳnh Gia Nghi','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000909', '07YS07.5-6 tuoi C', '07YS07', N'Nguyễn Xuân Nghĩa','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000910', '07YS07.5-6 tuoi C', '07YS07', N'Đặng Khánh Ngọc','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001133', '07YS07.5-6 tuoi C', '07YS07', N'Bùi Bảo Ngọc','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000911', '07YS07.5-6 tuoi C', '07YS07', N'Trần Hùng Phát','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000913', '07YS07.5-6 tuoi C', '07YS07', N'Nhan Tấn Phát','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000914', '07YS07.5-6 tuoi C', '07YS07', N'Nguyễn Huy Vĩnh Phúc','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000915', '07YS07.5-6 tuoi C', '07YS07', N'Phạm Nhã Phương','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000916', '07YS07.5-6 tuoi C', '07YS07', N'Lê Khang Thịnh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000917', '07YS07.5-6 tuoi C', '07YS07', N'Nguyễn Quốc Thịnh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000918', '07YS07.5-6 tuoi C', '07YS07', N'Nguyễn Hoa Thịnh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001134', '07YS07.5-6 tuoi C', '07YS07', N'Danh Thụy Bảo Trúc','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420001135', '07YS07.5-6 tuoi C', '07YS07', N'Trần Gia Vy','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000920', '07YS07.5-6 tuoi D', '07YS07', N'Võ Trần Khánh An','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000921', '07YS07.5-6 tuoi D', '07YS07', N'Nguyễn Lê Phúc An','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000923', '07YS07.5-6 tuoi D', '07YS07', N'Lê Tuấn Anh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000924', '07YS07.5-6 tuoi D', '07YS07', N'Nguyễn Lan Anh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000919', '07YS07.5-6 tuoi D', '07YS07', N'Lê Ngọc Thị Ánh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000925', '07YS07.5-6 tuoi D', '07YS07', N'Lý Gia Bảo','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000926', '07YS07.5-6 tuoi D', '07YS07', N'Phạm Ngọc Linh Đan','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000927', '07YS07.5-6 tuoi D', '07YS07', N'Nguyễn Quốc Hào','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000928', '07YS07.5-6 tuoi D', '07YS07', N'Võ Triệu Gia Hân','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000922', '07YS07.5-6 tuoi D', '07YS07', N'Nguyễn Gia Huy','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000929', '07YS07.5-6 tuoi D', '07YS07', N'Đinh Trọng Quốc Hưng','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000931', '07YS07.5-6 tuoi D', '07YS07', N'Nguyễn Minh Khang','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000932', '07YS07.5-6 tuoi D', '07YS07', N'Đoàn Minh Khang','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000933', '07YS07.5-6 tuoi D', '07YS07', N'Nguyễn Duy Khang','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000936', '07YS07.5-6 tuoi D', '07YS07', N'Nguyễn Hoàng Gia Khang','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000934', '07YS07.5-6 tuoi D', '07YS07', N'Huỳnh Đăng Khánh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000930', '07YS07.5-6 tuoi D', '07YS07', N'Nguyễn Phạm Tuấn Kiệt','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000937', '07YS07.5-6 tuoi D', '07YS07', N'Ngô Hoàng Thanh Lam','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000935', '07YS07.5-6 tuoi D', '07YS07', N'Nguyễn Hạ Mây','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000938', '07YS07.5-6 tuoi D', '07YS07', N'Đinh Lê Ngọc Minh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000939', '07YS07.5-6 tuoi D', '07YS07', N'Phạm Ngọc Thiên Mỹ','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000954', '07YS07.5-6 tuoi D', '07YS07', N'Phạm Thị Kim Ngân','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000940', '07YS07.5-6 tuoi D', '07YS07', N'Huỳnh Lê Bảo Ngọc','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000941', '07YS07.5-6 tuoi D', '07YS07', N'Tăng Khôi Nguyên','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000946', '07YS07.5-6 tuoi D', '07YS07', N'Võ Huỳnh Như','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000942', '07YS07.5-6 tuoi D', '07YS07', N'Vũ Xuân Phúc','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000947', '07YS07.5-6 tuoi D', '07YS07', N'Trần Nhân Tài','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000948', '07YS07.5-6 tuoi D', '07YS07', N'Lê Nhật Tân','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000949', '07YS07.5-6 tuoi D', '07YS07', N'Mai Thanh Tân','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000944', '07YS07.5-6 tuoi D', '07YS07', N'Ngô Lê Gia Thiên','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000950', '07YS07.5-6 tuoi D', '07YS07', N'Phạm Hữu Thiên','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000951', '07YS07.5-6 tuoi D', '07YS07', N'Nguyễn Hoàng Thịnh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000945', '07YS07.5-6 tuoi D', '07YS07', N'Phan Trần Bảo Thy','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000943', '07YS07.5-6 tuoi D', '07YS07', N'Đinh Văn Tình','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000955', '07YS07.5-6 tuoi D', '07YS07', N'Phạm Hoàng Trí','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000952', '07YS07.5-6 tuoi D', '07YS07', N'Vũ Minh Triết','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000953', '07YS07.5-6 tuoi D', '07YS07', N'Trương Tú Uyên','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000956', '07YS07.5-6 tuoi D', '07YS07', N'Nguyễn Tiến Vinh','','','',''
+                
+                EXEC spn_Update_Chuyen_Lop_2020 '1202015420000957', '07YS07.5-6 tuoi D', '07YS07', N'Lưu Lâm Như Ý','','','',''
+                

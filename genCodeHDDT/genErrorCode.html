@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script>
+        function genScript() {
+
+            var t = `
+
+1517#Invoice serial inactive#Dải hóa đơn không hoạt động#~
+1519#Invoice type inactive#Loại hóa đơn không hoạt động#~
+1010#Invalid email#Địa chỉ email không hợp lệ#~
+85#Invalid the distance between the two years in config#Khoảng cách giữa 2 năm không hợp lệ#~
+86#Invalid the distance between the two years of issue date input#Khoảng cách giữa 2 năm của ngày lập hóa đơn không hợp lệ#~
+95#invalid email address#Email không hợp lệ#~
+96#This invoice use payment method not allow view pdf#Hóa đơn này sử dụng phương thức thanh toán không cho phép xem pdf#~
+91#Required input param (invoiceNo or contractId or contractNo or subscriber)#Thiếu dữ liệu đầu vào (số hóa đơn hoặc số hợp đồng hoặc Id hợp đồng hoặc người đăng ký)#~
+1#Invoice no required #Số hóa đơn không được bỏ trống#~
+2#Invalid invoice no #Số hóa đơn không hợp lệ#~
+3#currency required #Không có thông tin loại tiền tệ của hóa đơn trong bản tin lập hóa đơn#~
+4#invalid currency #Không có thông tin loại tiền tệ của hóa đơn trong bản tin lập hóa đơn#~
+5#invoice type required #Loại hóa đơn không được bỏ trống#~
+6#invalid invoice type #Loại hóa đơn không hợp lệ#~
+7#customer information required #Thông tin khách hàng không được bỏ trống#~
+8#Id type required #Loại giấy tờ không được bỏ trống#~
+9#Invalid id type #Loại giấy tờ không hợp lý#~
+10#id no required #Số giấy tờ không để trống#~
+11#invalid id no #Số giấy tờ không hợp lệ#~
+12#customer name required #Tên khách hàng không được bỏ trống#~
+13#invalid customer name #Tên khách hàng không hợp lệ#~
+14#customer address required #Địa chỉ khách hàng không được bỏ trống#~
+15#invalid customer address #Địa chỉ khách hàng không hợp lệ#~
+16#list of item inforamtion required #Danh sách sản phẩm không được bỏ trống#~
+17#invalid items information #Thông tin sản phẩm không hợp lệ#~
+18#item information required #Thông tin sản phẩm không được bỏ trống#~
+19#item code required #Mã sản phẩm không được bỏ trống#~
+20#item name required #Tên sản phẩm không được bỏ trống#~
+21#item description required #Thông tin sản phẩm không được bỏ trống#~
+22#item price required #Giá sản phẩm không được bỏ trống#~
+23#invalid item price #Giá sản phẩm không hợp lệ#~
+24#item quantity required #Số lượng sản phẩm không được bỏ trống#~
+25#invalid item quantity #Số lượng sản phẩm không hợp lệ#~
+26#item total before tax required #Tổng tiền hàng trước thuế không được bỏ trống#~
+27#item tax amount required #Tiền thuế không được bỏ trống#~
+28#item discount required #Tiền giảm trừ không được bỏ trống#~
+29#item total required #Tổng tiền sản phẩm không được bỏ trống#~
+30#invalid id type invoice type #Loại hóa đơn không hợp lệ#~
+31#total price required #Giá sản phẩm không được bỏ trống#~
+1007#Invalid address#Địa chỉ không hợp lệ#~
+1001#Invalid  name#Tên không hợp lệ#~
+1002#Invalid tax code#Mã số thuế không hợp lệ#~
+1506#Invalid registration name#Tên đăng ký không hợp lệ#~
+1509#Announcement info is required#Thông tin thông báo phát hành không được bỏ tróng#~
+1513#Invalid template code#Mã mẫu hóa đơn không hợp lệ#~
+1516#Invoice serial does not exist#Dải hóa đơn không tồn tại#~
+1520#Invalid supplier tax code#Mã số thuế của chi nhánh không hợp lệ#~
+1521#Invoice number created#Số hóa đơn đã được tạo#~
+1000#Invalid registration name#Tên đăng ký không hợp lệ#~
+56#invalid page number#Số trang không hợp lệ#~
+59#invalid price type#Giá không hợp lệ#~
+1023#No max table index#Không có chỉ số lớn nhất#~
+1014#No available table index#Bảng không có chỉ số hợp lệ#~
+1021#account info is null#Thông tin tài khoản không được bỏ trống#~
+1024#enterprise mapping is null#enterprise mapping is null#~
+1015#No max table inde#No max table index#~
+1026#Max registered invoice null#Số lượng hóa đơn đăng kí lớn nhất rỗng#~
+1027#Number of invoice created lastmonth null#Số lượng hóa đơn được tạo tháng trước rỗng#~
+32#invalid total price info #Giá sản phẩm không hợp lệ#~
+33#total before tax required #Tổng tiền trước thuế không được bỏ trống#~
+34#total tax amount required #Tổng tiền thuế không được bỏ trống#~
+35#total discount required #Tổng tiền giảm trừ không được bỏ trống#~
+36#total required #Tổng tiền không được bỏ trống#~
+37#row per page required #Số bản ghi cho mỗi trang không được bỏ trống#~
+38#invalid row per page #Số bản ghi cho mỗi trang không hợp lệ#~
+39#start date required #Ngày bắt đầu không được bỏ trống#~
+40#end date required #Ngày kết thúc không được bỏ trống#~
+41#file type required #Loại file không được bỏ trống#~
+42#issue date required #Ngày phát hành hóa đơn không được bỏ trống#~
+43#invalid item total before tax #Tổng tiền hàng trước thuế không hợp lệ#~
+44#invalid item tax amount #Tiền thuế không hợp lệ#~
+45#invalid item discount #Tiền giảm trừ không hợp lệ#~
+46#invalid item total #Tổng tiền hàng không hợp lệ#~
+47#invoice no existed #Số hóa đơn đã tồn tại#~
+48#invalid total before tax #Tổng tiền trước thuế không hợp lệ#~
+49#invalid total tax amount #Tổng tiền thuế không hợp lệ#~
+50#invalid total discount #Tổng tiền giảm trừ không hợp lệ#~
+51#invalid total #Tổng tiền không hợp lệ#~
+52#item unit required #Số lượng sản phẩm không được bỏ trống#~
+53#invalid item unit #Số lượng sản phẩm không hợp lệ#~
+54#invalid file download type #Loại file không hợp lệ#~
+55#invalid state #Địa chỉ không hợp lệ#~
+57#invalid search date #Ngày tìm kiếm không hợp lệ#~
+58#price type required #Giá không được bỏ trống#~
+60#invalid issue date #Ngày phát hành không hợp lệ#~
+61#item price before tax required #Tiền hàng trước thuế không được bỏ trống#~
+62#invalid item price before tax #Tiền hàng trước thuế không hợp lệ#~
+63#item price after tax required #Tiền hàng sau thuế không được bỏ trống#~
+64#invalid item price after tax #Tiền hàng sau thuế không hợp lệ#~
+65#back office required #Thông tin hệ thống gọi không được bỏ trống#~
+66#invalid back office #Thông tin hệ thống gọi không không hợp lệ#~
+68#branch code required #Mã chi nhánh không được bỏ trống#~
+70#branch address required #Địa chỉ chi nhánh không được bỏ trống#~
+71#exception when validate data #Lỗi khi validate dữ liệu#~
+72#exception when generate invoice instance #Lỗi khi tạo thể hiện hóa đơn#~
+73#adjustment type required #Loại điều chỉnh không được bỏ trống#~
+75#invoice template required #Mẫu hóa đơn không được bỏ trống#~
+79#CREATE XSL FILE ERROR#Tạo file xsl lỗi#~
+80#create xsl fo file error #Tạo file xsl fo lỗi#~
+82#TEMP FILE NOT FOUND#Không tìm thấy file tạm#~
+84#original invoice no not existed #Hóa đơn gốc không tồn tại#~
+88#sum of total line amount without tax required #Tổng các dòng không thuế không được rỗng#~
+89#invalid sum of total line amount without tax #Tổng các dòng không thuế không hợp lệ#~
+76#CREATE BARCODE TEXT ERROR#Tạo barcode lỗi#~
+77#CREATE BARCODE PDF ERROR#Tạo barcode lỗi#~
+78#EXTRACT IMAGE ERROR#Trích xuất file ảnh lỗi #~
+81#CREATE INVOICE EXCEPTION#Có lỗi trong quá trình lập hóa đơn#~
+87#SUM TOTAL LINE AMOUNT WITHOUT TAX#Tổng tiền tổng hợp không khớp với chi tiết các dòng hóa đơn#~
+92#CREATE PDF INVOICE ERROR#Lỗi tạo file pdf#~
+74#SUPPLIER REQUIRED#Thông tin người cung cấp không hợp lệ#~
+90#invoice no not found in years #không tìm thấy số hóa đơn trong năm#~
+93#original invoice unpaid #Hóa đơn gốc chưa thanh toán#~
+94#invalid contract Id #Số hợp đồng không hợp lệ#~
+97#invoice unpaid, not allow view #Không được phép xem hóa đơn khi chưa thanh toán#~
+98#invoice detail not found #Thông tin hóa đơn không tồn tại#~
+99#original invoice issue date null #Ngày phát hành của hóa đơn gốc null#~
+100#invoice unpaid #Hóa đơn chưa thanh toán#~
+REQUEST_DENIED#request denied #request denied #~
+USERNAME_NOT_FOUND#Wrong username or password#Thông tin tài khoản không tìm thấy#~
+PASSWORD_NOT_FOUND#Wrong username or password#Tên đăng nhập hoặc mật khẩu sai#~
+INVALID_USER_PASSWORD#invalid username and/or password #Tài khoản hoặc mật khẩu không hợp lệ#~
+MAX_CONNECTION#max connection exceed #Vượt ngưỡng kết nối#~
+DONOT_HAVE_PERMISSION#do not have permission #Bạn không có quyền#~
+TEMPLATE_NOT_FOUND#invoice template not found #Không tìm thấy mẫu hóa đơn#~
+SIGNATURE_NOT_FOUND#exchange user required #Tên người chuyển đổi không được bỏ trống#~
+PAYMENT_TYPE_IS_NULL#payment type is null #Loại thanh toán không được bỏ trống#~
+EXCHANGE_USER_MAX_LENGTH#exchange user too long #Tên người thay đổi quá dài#~
+PAYMENT_TYPE_MAX_LENGTH#payment type too long #Loại thanh toán quá dài#~
+PAYMENT_TYPE_NAME_MAX_LENGTH#payment type name too long #Loại thanh toán quá dài#~
+CANNOT_EXCHANGE_INVOICE#can not exchange invoice #Không thể tạo hóa đơn chuyển đổi#~
+67#ERROR EINVOICEGW#Lỗi hệ thống#~
+101#Template code required #Mẫu hóa đơn không được bỏ trống#~
+102#Template code not match #Mẫu hóa đơn không giống nhau#~
+304#Not Modified#Chưa thay đổi#~
+403#Forbidden: The request was a legal request, but the server is refusing to respond to it (The action or the request URI is not allowed by the system)#Không có quyền truy cập#~
+429#Too Many Requests#Quá nhiều requests#~
+500#Internal Server Error#Có lỗi xảy ra với server#~
+422#Unprocessable Entity (One of the requested action has generated an error)#Dữ liệu không thể xử lý#~
+200#OK:Success#Thành công#~
+201#Created:Successful creation occurred (via either POST or PUT). Set the Location header to contain a link to the newly-created resource (on POST). Response body content may or may not be present.#Thành công#~
+204#No Content:Status when wrapped responses (e.g. JSEND) are not used and nothing is in the body (e.g. DELETE).#Thành công, không có dữ liệu#~
+400#Bad Request:The request parameters are incomplete or missing#Dữ liệu đầu vào sai#~
+404#Not Found#Không tìm thấy#~
+409#Conflict#Xung đột#~
+413#Request Entity Too Large#Dữ liệu quá lớn#~
+202#Accepted#Được chấp nhận#~
+503#Service Unavailable#Dịch vụ gián đoạn#~
+405#Issue date format error#Định dạng ngày lập hóa đơn không hợp lệ#~
+PASSWORD_NOT_CHANGED#Password not changed#Bạn chưa thay đổi mật khẩu#~
+EXCEPTION#Exception#Có lỗi xảy ra#~
+USERNAME_NULL#UserName is empty#Tên đăng nhập không tồn tại#~
+EMAIL_NULL#Email is null#Email không được để trống#~
+ERROR_GET_INFO_USER#Error get user information#Lỗi khi lấy thông tin tài khoản#~
+TEMPLATE_NOT_FOUND#Template not found#Phải chọn loại template hóa đơn#~
+EMAIL_NOT_EXIST#Invalid user or password#Tên đăng nhập hoặc mật khẩu không đúng#~
+USER_NOT_ACTIVE#User is not active#Tài khoản của bạn đang ở trạng thái không hoạt động#~
+NO_RECORD_FOUND#invoice not found#Hóa đơn không tồn tại trên hệ thống#~
+1004#Invalid contact person name#Tên người liên hệ không hợp lệ#~
+1009#Invalid fax number#Số fax không hợp lệ#~
+1005#Invalid city name#Tên thành phố không hợp lệ#~
+1006#Invalid district name#Tên huyện không hợp lệ#~
+1012#Invalid bank account#Tài khoản ngân hàng không hợp lệ#~
+1025#No ENTERPRISE_ADMIN role#Không có quyền admin của chi nhánh#~
+1018#Supplier tax code exists#Mã số thuế đã tồn tại#~
+999#Input null#Input null#~
+103#Email template not found#Không thấy thông tin email mẫu, hãy thông báo cho admin doanh nghiệp khai báo mẫu email#~
+1019#interprise info null#interprise info null#~
+1016#No database info#No database info#~
+1017#Available invoice table not found#Available invoice table not found#~
+1500#Input null#Input null#~
+1505#Invalid phone number#Invalid phone number#~
+1510#Invoice list info list null#Invoice list info list null#~
+1511#Invoice list info null#Invoice list info null#~
+1028#Max index invoice table null#Max index invoice table null#~
+1013#Invalid product code#Invalide product code#~
+1522#Number invoice announce null#Số hóa đơn phát hành rỗng#~
+1029#User email exists#Email của user đã tồn tại#~
+TENANT_NOT_FOUND#Tenant not found#Không tìm thấy doanh nghiệp#~
+TENANT_MAPPING_NOT_FOUND#Tenant mapping not found#không tìm thấy dữ liệu tennant mapping#~
+USER_NOT_FOUND#Wrong username or password#Tên đăng nhập hoặc mật khẩu sai#~
+INVALID_TAX_POLICY#Invalid tax policy#Chính sách thuế không hợp lệ#~
+VERIFY_SIGNATURE_OK#Verify signature ok#Chữ ký hợp lệ#~
+USER_PASSWORD_OK#User authentication ok#Đăng nhập thành công#~
+EMAIL_CONFIG_NOT_EXIST#Email config not exist#Cấu hình email không tồn tại#~
+LOGIN_FAIL_OVER_SHOW_CAPTCHA#Log in fail over, show captcha#Đăng nhập sai quá số lần, hiển thị captcha#~
+LOGIN_FAIL_OVER_LOCK_ACCOUNT#Log in failed over, lock account#Đăng nhập sai quá số lần, khóa tài khoản#~
+1059#Tax code not exist#Mã số thuế không tồn tại#~
+1062#User not found#Không tìm thấy người dùng#~
+1066#Tax code not active#Mã số thuế không hoạt động#~
+DISCOUNT_REQUIRED#Discount required#Chưa nhập chiết khấu#~
+INVALID_DISCOUNT#Invalid discount#Chiếu khấu không hợp lệ#~
+1042#Invalid signature type#Loại chữ ký số không hợp lệ#~
+1045#Invalid discount policy#Chính sách chiết khấu không hợp lệ#~
+1046#Invalid user admin IP#Địa chỉ IP của admin không hợp lệ#~
+LIST_DOCUMENT_RESPONSE_NULL#List document response null#Không có phản hồi tài liệu theo lô#~
+RESPONSE_CODE_NOT_FOUND#Response code not found#Không tìm thấy mã phản hồi#~
+RESPONSE_DESCRIPTION_NOT_FOUND#Response description not found#Không tìm thấy mô tả phản hồi#~
+CANNOT_SAVE_OUTPUT_FILE#Can not save output file#Ghi ra file không thành công#~
+INVOICE_UNARCHIVED#Invoice unarchived#Không lưu trữ được hóa đơn#~
+NO_SIGNATURE_GENERATED_KEY#key is not generated#Chưa sinh cặp khóa#~
+ONLY_ONE_KEY_PAIR_AT_THE_SAME_TIME#only one key pair at the same time#Chỉ có một cặp khóa tại 1 thời điểm#~
+TOO_MANY_SIGNATURE_GENERATED_KEY#too many key generated#Chỉ có một cặp khóa tại 1 thời điểm#~
+CERT_FILE_NOT_MATCH_PRIVATE_KEY#cert file not match#Chứng thư số không khớp với khóa đã sinh#~
+CERT_FILE_INVALID#cert file invalid#File không hợp lệ#~
+SUPPLIER_NOT_FOUND#supplier not found#Không tìm thấy khách hàng Hóa đơn điện tử#~
+SUCCESS#succes#Thành công#~
+INVOICE_ISSUED_DATE_OVER_CURRENT_TIME#invoice issue date over current time#Ngày lập hóa đơn không được vượt quá ngày hiện tại#~
+VERIFY_SIGNATURE_NOT_OK#Verify signature not ok#Chữ ký không hợp lệ#~
+EXCHANGE_USER_REQUIRED#Exchange user required#Chưa nhập người chuyển đổi#~
+ISSUE_DATE_FORMAT_ERROR#Issue date format error#Sai định dạng ngày lập#~
+CANNOT_GET_INVOICE#Can not get invoice#Không tìm thấy hóa đơn#~
+DATE_INVALID_ERROR#Date invalid#Ngày không hợp lệ#~
+INVOICE_NO_DUPLICATED#duplicated invoice no#Trùng số hóa đơn#~
+ARCHIVED_FILE_FAIL#failed to archive file#Lưu trữ file không thành công#~
+UPDATE_FAIL#Update invoice failed#Cập nhật hóa đơn không thành công#~
+GET_LINK_DOWNLOAD_FAIL#Get link download failed#Không lấy được link download#~
+NOT_EXIST_ARCHIVE_ON_SERVER#Not exist archive on server#Không tồn tại file lưu trữ trên server#~
+1056#Invalid invoice amount#Số lượng hóa đơn đăng ký không hợp lệ#~
+1057#Account not exist or locked#Tài khoản không tồn tại hoặc bị khóa#~
+1058#Invoice amount too large#Số lượng hóa đơn quá lớn#~
+TAX_PERCENTAGE_REQUIRED#Tax percentage required#Chưa nhập phần trăm thuế#~
+INVALID_TAX_PERCENTAGE#Invalid tax percentage#Phần trăm thuế không hợp lệ#~
+112#Total and sum not match#Tổng tiền và tính lại không khớp#~
+INVALID_ADJUSTMENT_TYPE#Invalid adjustment type#Loại hóa đơn không hợp lệ#~
+SUMMARIZE_INFO_NULL#Null summary information#Thông tin tổng tiền không hợp lệ#~
+AMOUNT_WITHOUT_TAX_NOT_MATCH#Total amount without tax not match#Tổng tiền trước thuế không khớp#~
+1061#Email required#Chưa nhập email#~
+1065#Max length email#Email quá dài#~
+1920#No database info tax code#Không tồn tại mã số thuế#~
+1921#Name too long#Tên quá dài#~
+1923#Address too long#Địa chỉ quá dài#~
+1925#Invalid invoice draft#Hóa đơn nháp không hợp lệ#~
+1922#Name required#Chưa nhập tên#~
+1924#Address required#Chưa nhập địa chỉ#~
+1060#Tax code required#Chưa nhập mã số thuế#~
+1067#Tax amount required#Chưa nhập tổng thuế#~
+1035#Invalid representative Id no#Số giấy tờ người đại diện không hợp lệ#~
+1036#Invalid prepaid money#Số tiền trả trước không hợp lệ#~
+1037#Invalid estimate invoice per month#Số hóa đơn/tháng không hợp lệ#~
+1038#Invalid number of invoice quota#Tổng số hóa đơn không hợp lệ#~
+1039#Invalid generate invoice no policy#Chính sách lập hóa đơn không hợp lệ#~
+1040#Invalid send email#EMail không hợp lệ#~
+1041#Invalid send sms#Gửi tin nhắn không hợp lệ#~
+1043#Invalid approve policy#Chính sách phê duyệt không hợp lệ#~
+1044#Invalid auto create invoice instance#Tự tạo hóa đơn không hợp lệ#~
+1047#Invalid user admin email#Email admin không hợp lệ#~
+1048#Invalid user admin phone#Số điện thoại admin không hợp lệ#~
+1049#No enterprise ws role#Không có vai trò gọi web service#~
+1050#Invalid bank account owner#Tên chủ tài khoản không hợp lệ#~
+1600#Invoice draft not found#Không tìm thấy hóa đơn nháp#~
+1601#Bad invoice draft#Hóa đơn nháp sai#~
+CANNOT_RECEIVE_RESPONSE#Can not receive response#Không nhận được phản hồi#~
+BILL_RESPONSE_NOT_FOUND#Bill response not found#Không nhận được phản hồi hóa đơn#~
+DOCUMENT_RESPONSE_NOT_FOUND#Document response not found#Không nhận được phản hồi tài liệu#~
+RESPONSE_CODE_NOT_NULL#Response code null#Mã phản hồi rỗng#~
+RESPONSE_REFERENCE_ID_NULL#Response reference id null#Id tham chiếu phản hồi rỗng#~
+SUPPLIER_TAX_CODE_NOT_FOUND#Supplier tax code not found#Không tìm thấy mã số thuế#~
+SUPPLIER_TAX_CODE_NULL#Supplier tax code null#Mã số thuế rỗng#~
+SUPPLIER_TAX_CODE_INVALID#Supplier tax code invalid#Mã số thuế không hợp lệ#~
+SAP_IDOC_NULL#Sap idoc null#Bản tin SAPrỗng#~
+SAP_IDOC_HEADER_NULL#Sap idoc header null#Tiêu đề bản tin SAP rỗng#~
+WEAK_PASSWORD#Weak password, password must be at least 8 charater, contain at least on digit, one charater, one upper character, one special character#Mật khẩu nhập vào chưa đủ mạnh, mật khẩu phải có ít nhất 8 ký tự, chứa kí tự số, ký tự hoa - thường, ký tự đặc biệt#~
+OLD_PASSWORD_NULL#Old password is empty#Chưa nhập mật khẩu cũ#~
+NEW_PASSWORD_NULL#New password is empty#Chưa nhập mật khẩu mới#~
+REPEAT_PASSWORD_NULL#Repeat password is empty#Chưa nhập nhắc lại mật khẩu#~
+CREATE_EXCHANGE_ERROR#Create exchange invoice pdf error#Lập hóa đơn chuyển đổi thất bại#~
+CHANGE_PASSWORD_NOT_OK#Change password unsuccessfully#Thay đổi mật khẩu không thành công#~
+NEW_PASSWORD_SAME_OLD_PASSWORD#New password same old password#Mật khẩu mới và mật khẩu cũ giống nhau#~
+LOGOUT_NOT_OK#Logout not ok#Đăng xuất không thành công#~
+CREATE_BARCODE_FAIL#Create barcode failed#Lập mã vạch thất bại#~
+1008#Invalid phone number#Invalid phone number#~
+INVALID_BARCODE_TYPE#Invalid barcode type#Loại mã vạch không hợp lệ#~
+INVALID_INVOICE_NO#Invalid invoice no#Số hóa đơn không hợp lệ#~
+2007#Metadata too long#Dữ liệu metadata quá dài#~
+NUM_OF_INVOICE_REMOVED_EXCEEDS_INVOICE_REMAIN#number of remove invoices exceeds remain invoices#Số hóa đơn hủy mua thêm vượt quá số hóa đơn còn lại#~
+INVOICE_SUBSTITUTED#Invoice is subtituted#Hoá đơn đã bị thay thế#~
+1011#Invalid website#Invalid website#~
+INVOICE_DELETED#Invoice is deleted#Hoá đơn đã bị xoá bỏ#~
+1020#SUCCESS#SUCCESS#~
+1022#No available table#No available table#~
+1501#Invalid address#Invalid address#~
+1502#Invalid create user#Invalid create user#~
+1503#Invalid email#Invalid email#~
+1504#Invalid name#Invalid name#~
+1507#Invalid supplier tax code#Invalid supplier tax code#~
+USER_NOT_ALLOWED#You do not have permission to access other account information#Bạn không có quyền truy cập thông tin tài khoản khác#~
+1512#Invalid serial no#Invalid serial no#~
+1515#Tenant does not exist#Tenant does not exist#~
+GEN_SYMBOLIC_FAIL#Have error when create link download#Có lỗi xẩy ra khi tạo link download báo cáo#~
+1508#Invalid supplier tax receive name#Invalid supplier tax receive name#~
+1518#Invoice type does not exist#Invoice type does not exist#~
+69#branch name required #Mã chi nhánh không hợp lệ#~
+1003#Invalid bussiness licence no#Invalid bussiness licence no#~
+1514#Invalid number of invoice announced#Invalid number of invoice announced#~
+PAYMENT_TYPE_NAME_NULL#payment type name is required#Loại thanh toán không được để trống#~
+ADJUSTMENT_TYPE_NULL#adjusment type is required#Trạng thái hóa đơn không được để trống#~
+INVOICE_NO_NULL#invoice no is required#Số hóa đơn không được để trống#~
+TOTAL_AMOUNT_WITHOUT_TAX_NULL#total amount without tax is required#Tổng tiền trước thuế không được để trống#~
+TOTAL_TAX_AMOUNT_NULL#total tax amount is required#Tổng tiền thuế không được để trống#~
+TOTAL_AMOUNT_WITH_TAX_NULL#total amount with tax is required#Tổng tiền sau thuế không được để trống#~
+ITEM_CODE_NULL#item code is required#Mã sản phẩm không được để trống#~
+ADDITIONAL_REFERENCE_DATE_NULL#minutes date is required#Ngày thỏa thuận không được để trống#~
+BUYER_LEGAL_NAME_NULL#buyer legal name is required#Tên người mua không được để trống#~
+BUYER_TAX_CODE_NULL#buyer tax code is required#Mã số thuế người mua không được để trống#~
+LINE_NUMBER_NULL#line number is required#Số dòng không được để trống#~
+ITEM_NAME_NULL#item name is required#Tên sản phẩm không được để trống#~
+INVOICE_ISSUED_DATE_NULL#invoice issue date is required#Ngày lập hóa đơn không được để trống#~
+TAX_PERCEN_TAGE_NULL#tax percentage is required#Phần trăm thuế không được để trống#~
+TAX_PERCENTAGE_NULL#tax percentage is required#Phần trăm thuế không được để trống#~
+INVOICE_TYPE_NULL#invoice type is required#Loại hóa đơn không được bỏ trống#~
+BUYER_NAME_NULL#buyer name is required#Tên người mua không được để trống#~
+ADDITIONAL_REFERENCE_DESC_NULL#minutes is required#Tên văn bản thỏa thuận không được để trống#~
+BUYER_PHONE_NUMBER_NULL#customer phone number is required#Số điện thoại người mua không được để trống#~
+BANK_NAME_NULL#bank name is required#Tên ngân hàng không được bỏ trống#~
+BANK_ACCOUNT_NAME_NULL#bank account is required#Tên tài khoản ngân hàng không được bỏ trống#~
+SUM_OF_TOTAL_LINE_AMOUNT_WITHOUT_TAX_NULL#total line amount without tax is required#Tổng tiền trước thuế không được bỏ trống#~
+TOTAL_AMOUNT_WITH_TAX_IN_WORDS_NULL#total amount in words is required#Tổng tiền sau thuế bằng chữ không được để trống#~
+INVOICE_NOTE_NULL#invoice note is required#Diễn dải hóa đơn không được để trống#~
+TEMPLATE_CODE_NULL#template code is required#Mã mẫu hóa đơn không được để trống#~
+INVOICE_SERIES_NULL#invoice series is required#Dải hóa đơn không được để trống#~
+ADJUSTMENT_INVOICE_TYPE_NULL#invoice type is required#Trạng thái điều chỉnh hóa đơn không được để trống#~
+CONTRACT_DATE_NULL#contract date is required#Ngày hợp đồng không được để trống#~
+CUSTOMER_ID_NULL#customer ID is required#Định danh khách hàng không được bỏ trống#~
+1#Invoice list is empty in report cycle#Không tồn tại dải hóa đơn ứng với chi nhánh trong kỳ báo cáo#~
+EXCEPTION#Have error#Có lỗi xẩy ra#~
+ORIGINAL_INVOICE_ID_NULL#original invoice no is required#Định danh hóa đơn gốc không được bỏ trống#~
+UNIT_PRICE_NULL#unit price is required#Đơn giá không được để trống#~
+QUANTITY_NULL#item quantity is required#Số lượng sản phẩm không được để trống#~
+ITEM_TOTAL_AMOUNT_WITHOUT_TAX_NULL#Item total amount without tax is required#Tổng tiền sản phẩm trước thuế không được để trống#~
+TAX_AMOUNT_NULL#tax amount is required#Tổng tiền thuế không được để trống#~
+DISCOUNT_AMOUNT_NULL#discount amount is required#Tổng tiền chiết khấu không được để trống#~
+CONTRACT_ID_NULL#contract no is required#Số hợp đồng không được để trống#~
+DISCOUNT_AMOUNT_INVALID#discount invalid#Tổng tiền chiết khấu không hợp lệ#~
+PAYMENT_TYPE_NAME_INVALID#payment name invalid#Tên loại thanh toán có độ dài không hợp lệ#~
+CONTRACT_ID_INVALID#contract no invalid#Số hợp đồng có độ dài không hợp lệ#~
+INVOICE_NO_INVALID#invoice no invalid#Số hóa đơn có độ dài không hợp lệ#~
+TOTAL_AMOUNT_WITHOUT_TAX_INVALID#total amount without tax invalid#Tổng tiền trước thuế không hợp lệ#~
+TOTAL_TAX_AMOUNT_INVALID#total tax amount invalid#Tổng tiền thuế không hợp lệ#~
+TOTAL_AMOUNT_WITH_TAX_INVALID#total amount with tax invalid#Tổng tiền sau thuế không hợp lệ#~
+ITEM_CODE_INVALID#item code invalid#Mã sản phẩm không hợp lệ#~
+ADDITIONAL_REFERENCE_DATE_INVALID#minutes date invalid#Ngày thỏa thuận không hợp lệ#~
+BUYER_LEGAL_NAME_INVALID#buyer legal name invalid#Tên người mua không hợp lệ#~
+BUYER_TAX_CODE_INVALID#buyer tax code invalid#Mã số thuế người mua không hợp lệ#~
+LINE_NUMBER_INVALID#line number invalid#Số dòng không hợp lệ#~
+ITEM_NAME_INVALID#item name invalid#Tên sản phẩm không hợp lệ#~
+INVOICE_ISSUED_DATE_INVALID#invoice issue date invalid#Ngày lập hóa đơn không hợp lệ#~
+TAX_PERCEN_TAGE_INVALID#tax percemtage invalid#Phần trăm thuế không hợp lệ#~
+TAX_PERCENTAGE_INVALID#tax percemtage invalid#Phần trăm thuế không hợp lệ#~
+INVOICE_TYPE_INVALID#invoice type invalid#Loại hóa đơn không hợp lệ#~
+BUYER_NAME_INVALID#buyer name invalid#Tên người mua không hợp lệ#~
+ADDITIONAL_REFERENCE_DESC_INVALID#minutes invalid#Tên văn bản thỏa thuận không hợp lệ#~
+BUYER_PHONE_NUMBER_INVALID#buyer phone number invalid#Số điện thoại người mua không hợp lệ#~
+BANK_NAME_INVALID#bank name invalid#Tên ngân hàng không hợp lệ#~
+BANK_ACCOUNT_NAME_INVALID#bank account invalid#Tên tài khoản ngân hàng không hợp lệ#~
+SUM_OF_TOTAL_LINE_AMOUNT_WITHOUT_TAX_INVALID#total line amount without tax invalid#Tổng tiền trước thuế không hợp lệ#~
+TOTAL_AMOUNT_WITH_TAX_IN_WORDS_INVALID#total amount in words invalid#Tổng tiền sau thuế bằng chữ không hợp lệ#~
+INVOICE_NOTE_INVALID#invoice note invalid#Diễn dải hóa đơn không hợp lệ#~
+TEMPLATE_CODE_INVALID#template code invalid#Mã mẫu hóa đơn không hợp lệ#~
+1053#Can not upload tenant to elastic search#Không upload được tenant lên elastic search#~
+INVOICE_SERIES_INVALID#invoice series invalid#Dải hóa đơn không hợp lệ#~
+ADJUSTMENT_INVOICE_TYPE_INVALID#invoice adjustment type invalid#Trạng thái điều chỉnh hóa đơn không hợp lệ#~
+CONTRACT_DATE_INVALID#contract date invalid#Ngày hợp đồng không hợp lệ#~
+ADJUSTMENT_TYPE_INVALID#adjustment type invalid#Trạng thái hóa đơn không hợp lệ#~
+CUSTOMER_ID_INVALID#customer ID invalid#Định danh khách hàng không hợp lệ#~
+ORIGINAL_INVOICE_ID_INVALID#original invoice no invalid#Định danh hóa đơn gốc không hợp lệ#~
+UNIT_PRICE_INVALID#unit price invalid#Đơn giá không hợp lệ#~
+QUANTITY_INVALID#quantity invalid#Số lượng sản phẩm không hợp lệ#~
+ITEM_TOTAL_AMOUNT_WITHOUT_TAX_INVALID#item total amount without tax invalid#Tổng tiền sản phẩm trước thuế không hợp lệ#~
+TAX_AMOUNT_INVALID#tax amount invalid#Tổng tiền thuế không hợp lệ#~
+EMAIL_TOO_LONG#Email length is too large#Địa chỉ email quá dài#~
+PASSWORD_NULL#Password is null or empty#Mật khẩu rỗng#~
+PASSWORD_TOO_LARGE#Password length is too large#Mật khẩu quá dài#~
+108#Invalide template code#Invalide template code#~
+109#Invoice info is required#Thông tin hóa đơn rỗng#~
+110#Invoice is invalid#Thông tin hóa đơn không hợp lệ#~
+111#Invoice file content is required#File hóa đơn rỗng#~
+INVALID_PAGE#Invalid page#Trang web khong con ton tai#~
+INVOICE_PAID#Hóa đơn đã cập nhật trạng thái thanh toán trước đây#Hóa đơn đã cập nhật trạng thái thanh toán trước đây#~
+83#Template attribute not found #Không tìm thấy thuộc tính mẫu hóa đơn#~
+ISSUE_DATE_REQUIRED#can not get invoice #Không thể lấy ra hóa đơn#~
+401#Unauthorized#Không được cấp quyền#~
+104#Date in signature invalid#Ngày tháng trong chứng thư số không hợp lệ#~
+INVOICE TEMPLATE FILES NOT FOUND#invoice template files not found#Không tìm thấy mẫu hóa đơn trên server#~
+105#Date in signature is expire#Ngày tháng trong file chứng thư số đã quá hạn so với ngày lập hóa đơn#~
+INVOICE TEMPLATE INVOICE XSL FILES NOT FOUND#invoice template invoice.xsl file not found#Không tìm thấy file invoice.xsl trên server#~
+INVOICE TEMPLATE JAVSCRIPT FILES NOT FOUND#invoice template javascript files not found#Không tìm thấy file javascripts trên server#~
+1054#Invalid adjust money policy#Chính sách điều chỉnh tiền không hợp lệ#~
+2006#Mã bí mật của hóa đơn không hợp lệ#Mã bí mật của hóa đơn không hợp lệ#~
+1055#Invalid cancel policy#Chính sách hủy hóa đơn không hợp lệ#~
+EMAIL_SUBJECT_NULL#Email subject is empty#Tiêu đề email trống#~
+EMAIL_SUBJECT_TOO_LARGE#Email subject length is too large#Tiêu đề email quá dài#~
+EMAIL_CONTENT_TOO_LARGE#Email content length is too large#Nội dung email quá dài#~
+EMAIL_CONTENT_NULL#Email content is null#Nội dung email trống#~
+INVALID_PASSWORD_OLD#Old password invalid#Mật khẩu cũ không đúng định dạng#~
+CHANGE_PASSWORD_OK#Change password successfully#Đổi mật khẩu thành công#~
+NOT_EXIST_ARCHIVE#File not exist on server#File không tồn tại trên server#~
+GET_INVOICE_FILE_FAIL#Failed to get invoice file#Lấy file hóa đơn không thành công#~
+2001#Giá trị check chỉ có thể là TRUE hoặc FALSE#Giá trị check chỉ có thể là TRUE hoặc FALSE#~
+2002#Ngày thỏa thuận không hợp lệ#Ngày thỏa thuận không hợp lệ#~
+2003#Tên văn bản thỏa thuận không hợp lệ#Tên văn bản thỏa thuận không hợp lệ#~
+2004#Ngày thỏa thuận không đúng định dạng#Ngày thỏa thuận không đúng định dạng#~
+2005#THE TRANSACTION IS FAIL#Giao dịch thất bại#~
+EXCHANGED#Hóa đơn đã được chuyển đổi trước đây#Hóa đơn đã được chuyển đổi trước đây#~
+SIGNATURE_NOT_FOUND#Chưa đăng kí chữ kí số#Chưa đăng kí chữ kí số#~
+1033#Invalid representative#Tên người đại diện không đúng định dạng#~
+INVOICENO_NOT_FOUND#Invoice no not found#Không tìm thấy số hóa đơn#~
+OUT_OF_INVOICE_NO#Out of invoice no#Hết số hóa đơn#~
+CANNOT_MAKE_INVOICE_DATA#can not make invoice data#không thể tạo dữ liệu hóa đơn#~
+CANNOT_DOWNLOAD_FILE#Can not download file#không thể tải file#~
+INVALID_TRANSACTION_UUID#Invalid transactionUuid#TransactionUuid không đúng định dạng#~
+TRANSACTIONUUID_NULL#TransactionUuid is not exist#TransactionUuid không tồn tại#~
+LENGTH_TRANSACTION_UUID#Length of TransactionUuid must be between 32 and 36 characters#Độ dài của TransactionUuid phải từ 32 đến 36 ký tự#~
+TRANSACTIONUUID_EMPTY#TransactionUuid is empty#TransactionUuid không hợp lệ#~
+0106#CUS_GET_INVOICE_RIGHT_NULL#Thiếu trường dữ liệu cusGetInvoiceRight. Mặc định giá trị true#~
+
+200#OK:Success#Request Thành công#~
+201#Created:Successful creation occurred (via either POST or PUT). Set the Location header to contain a link to the newly-created resource (on POST). Response body content may or may not be present.#Request Thành công#~
+429#Too Many Requests#Quá nhiều requests#~
+401#Unauthorized#Không được cấp quyền#~
+404#Not Found#Không tìm thấy#Sai địa chỉ IP, port, URL~
+403#Forbidden: The request was a legal request, but the server is refusing to respond to it (The action or the request URI is not allowed by the system)#Không có quyền truy cập#~
+400#Bad Request:The request parameters are incomplete or missing#Dữ liệu đầu vào sai#Dữ liệu đầu vào chưa đúng chuẩn của Viettel~
+413#Request Entity Too Large#Dữ liệu quá lớn#~
+415#Unsupported media type#Content type sai so với Method#Gửi sai content-type/accept~
+422#Unprocessable Entity (One of the requested action has generated an error)#Dữ liệu không thể xử lý#~
+503#Service Unavailable#Dịch vụ gián đoạn#~
+500#Internal Server Error#Có lỗi xảy ra với server#Sai User/pass Chưa cấu hình IP cho user~
+DONOT_HAVE_PERMISSION#do not have permission #Bạn không có quyền#Tham số SupplierTaxCode truyền vào đang không tương thích với supplierTaxCode gắn với User.~
+TEMPLATE_NOT_FOUND#invoice template not found #Không tìm thấy mẫu hóa đơn#Mẫu chưa được cấu hình hoặc không hoạt động~
+OUT_OF_INVOICE_NO#Out of invoice no#Hết số hóa đơn#Hết số hóa đơn hoặc gửi sai thông tin đầu vào~
+INVOICE_ISSUED_DATE_OVER_CURRENT_TIME#invoice issue date over current time#Ngày lập hóa đơn không được vượt quá ngày hiện tại#Ngày lập gửi quá thời gian hiện tại hoặc sai múi giờ.~
+INVOICE_ISSUED_DATE_INVALID#invoice issue date invalid#Ngày lập hóa đơn không hợp lệ#invoiceIssuedDate vi phạm vào điều kiện: Số hóa đơn tuần tự theo thời gian.~
+PAYMENT_TYPE_NAME_NULL#payment type name is required#Loại thanh toán không được để trống#Chưa gửi sang dữ liệu thanh toán~
+SUM_OF_TOTAL_LINE_AMOUNT_WITHOUT_TAX_NULL#total line amount without tax is required#Tổng tiền trước thuế không được bỏ trống#Chưa gửi sang dữ liệu tổng tiền của các dòng hàng hóa trước thuế~
+TOTAL_AMOUNT_WITH_TAX_IN_WORDS_NULL#total amount in words is required#Tổng tiền sau thuế bằng chữ không được để trống#Chưa gửi sang tổng tiền bằng chữ~
+TOTAL_AMOUNT_WITHOUT_TAX_NULL#total amount without tax is required#Tổng tiền trước thuế không được để trống#Chưa gửi sang tổng tiền không thuế~
+TOTAL_TAX_AMOUNT_NULL#total tax amount is required#Tổng tiền thuế không được để trống#Chưa gửi sang tổng tiền thuế~
+TOTAL_AMOUNT_WITH_TAX_NULL#total amount with tax is required#Tổng tiền sau thuế không được để trống#Chưa gửi sang tổng tiền sau thuế~
+ORIGINAL_INVOICE_ID_NULL#original invoice no is required#Định danh hóa đơn gốc không được bỏ trống#Chưa gửi thông tin hóa đơn gốc khi lập hóa đơn thay thế/điều chỉnh~
+00084#original invoice no not existed #Hóa đơn gốc không tồn tại#Gửi sai thông tin hóa đơn gốc~
+00099#original invoice issue date null #Ngày phát hành của hóa đơn gốc null#Chưa gửi ngày phát hành hóa đơn gốc~
+ADDITIONAL_REFERENCE_DATE_INVALID#minutes date invalid#Ngày thỏa thuận không hợp lệ#Gửi sai ngày thỏa thuận ~
+ADDITIONAL_REFERENCE_DESC_NULL#minutes is required#Tên văn bản thỏa thuận không được để trống#~
+NO_RECORD_FOUND#invoice not found#Hóa đơn không tồn tại trên hệ thống#~
+
+`;
+
+            var s = t.split("~");
+            var q = "", p = "", key = ",", w = "";
+            s.map((item, index) => {
+
+                q = item.split("#");
+
+                w = q[0] ? q[0].trim() : "";
+
+                if (!key.includes(`,${w},`)) {
+                    key += w + ",";
+
+                    p += `
+
+                        {
+                            "${q[0] ? q[0].trim() : ""}",
+                            new ErrSin
+                            {
+                                ERROR_CODE = "${q[0] ? q[0].trim() : ""}",
+                                DESCRIPTION = "${q[1] ? q[1].trim() : ""}",
+                                DESCRIPTION_VI = "${q[2] ? q[2].trim() : ""}",
+                                NGUYEN_NHAN = "${q[3] ? q[3].trim() : ""}",
+                            }
+                        },
+
+                    `;
+
+                }
+
+            });
+            
+            //console.log(p);
+            console.log(key);
+
+
+        }
+    </script>
+</head>
+
+<body>
+
+    <button onclick="genScript()">Click me</button>
+
+</body>
+
+</html>

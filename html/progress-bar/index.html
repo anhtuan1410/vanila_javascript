@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+    <script>
+
+                function scroll2(){
+                    var scrollTop = window.scrollY;
+					var docHeight = document.body.clientHeight;//chiều cao của body
+					var winHeight = window.innerHeight;
+					var scrollPercent = (scrollTop) / (docHeight - winHeight);
+                    var scrollPercentRounded = Math.round(scrollPercent*100);
+                    console.log(scrollPercentRounded);
+                    document.getElementsByClassName("process-bar")[0]
+                    .setAttribute(
+                        "style","--scroll: "+scrollPercentRounded+"%"
+                    );
+                    
+                }
+
+
+    </script>
+</head>
+<body id="bdop" onscroll="scroll2()">
+    <!-- <div id="bdop" onscroll="scrolling()"> -->
+        <div class="process-bar"></div>
+        <div class="content">        
+        </div>
+    <!-- </div> -->
+</body>
+</html>

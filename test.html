@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script>
+        function monthDiff(dateFrom, dateTo) {
+            return dateTo.getMonth() - dateFrom.getMonth() + 
+            (12 * (dateTo.getFullYear() - dateFrom.getFullYear()))
+        }
+
+        function tinhKhoangCachThang(){
+            var p1 = document.getElementById("date1").value;
+            var p2 = document.getElementById("date2").value;
+            var d1 = new Date(p1);
+            var d2 = new Date(p2);
+            var q = monthDiff(d1, d2);
+            document.getElementById("txt1").value = q;
+        }
+
+        function fetchApi()
+    {
+        let options = {
+            method: 'GET',
+            mode: 'cors',
+          };
+
+        fetch('https://api.myip.com/',{
+                
+        })
+        .then( (res) => {            
+            return res.json();
+        })
+        .then( (p) => {  
+            alert(p);
+            console.log("Api Room => ", p);
+        })
+        .catch((ex) => {
+            alert("Lỗi api: "+ex);
+        });
+       
+    }
+
+    </script>
+</head>
+<body>
+    <input type="hidden" id="import-read" />
+    <script>
+            (function(){
+                let v;
+                v = document.querySelector("input[type=hidden][id='import-read']");
+                v.value = "asdasd";
+            })();
+        </script>
+
+    <h1>Tính khoảng cách tháng giữa 2 date</h1>
+    <input type="date" id="date1" />
+    <input type="date" id="date2" />
+    <button onclick="tinhKhoangCachThang()">Calculator</button>
+    <input type="text" id="txt1" />
+
+    <button onclick="fetchApi()">Get IPAddress</button>
+
+</body>
+</html>

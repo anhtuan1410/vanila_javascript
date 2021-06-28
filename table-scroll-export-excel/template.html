@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script>
+        function export123(e) {
+            window.open('data:application/vnd.ms-excel,' + encodeURIComponent(
+                // $('div[id$=divTableDataHolder]').html()
+                document.getElementById("divTableDataHolder").innerHTML
+
+            ));
+            e.preventDefault();
+        }
+    </script>
+</head>
+
+<body>
+
+    <button id="myButtonControlID" onclick="export123(event)">Export Table data into Excel</button>
+
+    <div id="divTableDataHolder">
+        <table>
+            <thead>
+
+                <!-- HEAD 1 -->
+
+                <tr style="background-color: red">
+                    <th index="1" rowspan="5" colspan="4">
+                        <img src="https://leanature.com/wp-content/uploads/2015/09/Slide_g%C3%A9n%C3%A9rique_Groupe.jpg"
+                            width="50" height="30" alt="" />
+                    </th>
+                    <th index="5"></th>
+                    <th index="6"></th>
+                    <th index="7"></th>
+                    <th index="8"></th>
+                    <th index="9"></th>
+                    <th index="10"></th>
+                    <th index="11"></th>
+                    <th index="12" colspan="4">
+                        CÔNG TY TNHH SẢN XUẤT AVC
+                    </th>
+                </tr>
+                <tr>
+                    <th index="5"></th>
+                    <th index="6"></th>
+                    <th index="7"></th>
+                    <th index="8"></th>
+                    <th index="9"></th>
+                    <th index="10"></th>
+                    <th index="11"></th>
+                    <th index="12" colspan="4">
+                        AVC MANUFACTURING CO., LTD
+                    </th>
+                </tr>
+                <tr>
+                    <th index="5"></th>
+                    <th index="6"></th>
+                    <th index="7"></th>
+                    <th index="8"></th>
+                    <th index="9"></th>
+                    <th index="10"></th>
+                    <th index="11"></th>
+                    <th index="12" colspan="4">
+                        Điện thoại/ Tel: 1900.0054
+                    </th>
+                </tr>
+                <tr>
+                    <th index="5"></th>
+                    <th index="6"></th>
+                    <th index="7"></th>
+                    <th index="8"></th>
+                    <th index="9"></th>
+                    <th index="10"></th>
+                    <th index="11"></th>
+                    <th index="12" colspan="4">
+                        Website: auvietcorp.com
+                    </th>
+                </tr>
+                <tr>
+                    <th index="5"></th>
+                    <th index="6"></th>
+                    <th index="7"></th>
+                    <th index="8"></th>
+                    <th index="9"></th>
+                    <th index="10"></th>
+                    <th index="11"></th>
+                    <th index="12" colspan="4">
+                        Email: info@auvietcorp.com
+                    </th>
+                </tr>
+
+                <!-- END HEAD 1 -->
+
+
+                <!-- HEAD 2 - 2 ROWS NULL -->
+
+                <tr>
+                    <th index="1" rowspan="1" colspan="15"></th>
+                </tr>
+                <tr>
+                    <th index="1" rowspan="1" colspan="15"></th>
+                </tr>
+
+                <!-- END HEAD 2 - 2 ROWS NULL -->
+
+                <!-- HEAD 3 - INFO -->
+
+                <tr>
+                    <th>From:</th>
+                    <th colspan="8" rowspan="1">CÔNG TY TNHH SẢN XUẤT AVC</th>
+                    <th></th>
+                    <th></th>
+                    <th>Attn.</th>
+                    <th colspan="3" rowspan="1">KĨBA RESTAURANT</th>
+                </tr>
+                <tr>
+                    <th>Email:</th>
+                    <th colspan="8" rowspan="1">admin07@auacorp.vn</th>
+                    <th></th>
+                    <th></th>
+                    <th>Email:</th>
+                    <th colspan="3" rowspan="1">donato.diez@gmail.com</th>
+                </tr>
+                <tr>
+                    <th>Tel:</th>
+                    <th colspan="8" rowspan="1">096 1213 577</th>
+                    <th></th>
+                    <th></th>
+                    <th>Tel:</th>
+                    <th colspan="3" rowspan="1">donato.diez@gmail.com</th>
+                </tr>
+                <tr>
+                    <th>Add:</th>
+                    <th colspan="8" rowspan="1">37 Tran Quy Khoach, Tan Dinh Ward, District 1, HCMC</th>
+                    <th></th>
+                    <th></th>
+                    <th>Add:</th>
+                    <th colspan="3" rowspan="1">31 Pho Duc Chinh, Thai Binh Ward, District 1, HCM</th>
+                </tr>
+
+                <!-- end HEAD 3 -->
+
+                <!-- HEAD 4 - ROWS NULL -->
+
+                <tr>
+                    <th colspan="15"></th>
+                </tr>
+
+                <!-- END HEAD 4 -->
+
+                <!-- HEAD 4 - ROWS NULL -->
+
+                <tr>
+                    <th colspan="15">
+                        BẢNG BÁO GIÁ / QUOTATION
+                    </th>
+                </tr>
+
+                <!-- END HEAD 4 -->
+
+                <!-- HEAD 5 - ROWS NULL -->
+
+                <tr>
+                    <th colspan="15">
+                        Your Reference No. 190304/AVC-PA
+                    </th>
+                </tr>
+
+                <!-- END HEAD 5 -->
+
+                <!-- HEAD 6 - ROWS NULL -->
+
+                <tr>
+                    <th colspan="15">
+                    </th>
+                </tr>
+
+                <!-- END HEAD 6 -->
+
+                <!-- HEAD 7 -->
+
+                <tr>
+                    <th colspan="1" rowspan="2">
+                        Stt/ No.
+                    </th>
+                    <th colspan="1" rowspan="2">
+                        Mã số/ ID
+                    </th>
+                    <th colspan="1" rowspan="2">
+                        Tên sản phẩm/ Equipment Name
+                    </th>
+                    <th colspan="1" rowspan="2">
+                        Nhãn hiệu/ Brand
+                    </th>
+                    <th colspan="1" rowspan="2">
+                        Model
+                    </th>
+                    <th colspan="4" rowspan="1">
+                        Kích thước/ Dimension
+                    </th>
+                    <th colspan="1" rowspan="2">
+                        Mô tả/ Decription
+                    </th>
+                    <th colspan="1" rowspan="2">
+                        Decription
+                    </th>
+                    <th colspan="1" rowspan="2">
+                        Số lượng/ Qty
+                    </th>
+                    <th colspan="1" rowspan="2">
+                        Hình ảnh/ Picture
+                    </th>
+                    <th colspan="1" rowspan="2">
+                        Đơn giá/ Price (VNĐ)
+                    </th>
+                    <th colspan="1" rowspan="2">
+                        Thành tiền/ Value (VNĐ)
+                    </th>
+                </tr>
+
+                <tr>
+
+                    <th colspan="1" rowspan="1">
+                        W
+                    </th>
+                    <th colspan="1" rowspan="1">
+                        D
+                    </th>
+                    <th colspan="1" rowspan="1">
+                        H
+                    </th>
+                    <th colspan="1" rowspan="1">
+                        H1
+                    </th>
+                </tr>
+
+                <!-- END HEAD 7 -->
+
+            </thead>
+            <tbody>
+
+
+
+                <!-- MARK START LOOP -->
+
+                <tr>
+                    <td>
+                        #STT#
+                    </td>
+                    <td>
+                        #MaHang#
+                    </td>
+                    <td>
+                        #TenHang#
+                    </td>
+                    <td>
+                        #NhanHieu#
+                    </td>
+                    <td>
+                        #Model#
+                    </td>
+                    <td>
+                        #W#
+                    </td>
+                    <td>
+                        #D#
+                    </td>
+                    <td>
+                        #H#
+                    </td>
+                    <td>
+                        #H1#
+                    </td>
+                    <td style="padding-top: 20em">
+                        #MoTa#
+                        <br style="mso-data-placement:same-cell;" />
+                        #MoTa2#
+                        <br style="mso-data-placement:same-cell;" />
+                        #MoTa3#
+                    </td>
+                    <td>
+                        #TinhTrangHang#
+                    </td>
+                    <td>
+                        #SoLuong#
+                    </td>
+                    <td>
+                        <img src="#LinkHinhAnh#" width="30" height="30" />
+                    </td>
+                    <td>
+                        #DonGia#
+                    </td>
+                    <td>
+                        #ThanhTien#
+                    </td>
+
+                </tr>
+
+                <!-- END MARK START LOOP -->
+
+
+
+
+                <!-- TAIL 1 -->
+
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td colspan="14" rowspan="1">
+                        Ghi chú:
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="14" rowspan="1">
+                        • Vui lòng xem kỹ thông số kỹ thuật của sản phẩm trước khi xác nhận đặt hàng.
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="14" rowspan="1">
+                        • Không đổi, trả hàng khi đã xác nhận đặt hàng dưới mọi hình thức.
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="14" rowspan="1">
+                        • Khách hàng có trách nhiệm cung cấp nguồn điện nguồn cấp thoát nước đến vị trí của thiết bị.
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="14" rowspan="1">
+                        Báo giá bao gồm:
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="14" rowspan="1">
+                        • Thuế VAT 10%
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="14" rowspan="1">
+                        Báo giá KHÔNG bao gồm:
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="14" rowspan="1">
+                        • Chi phí đục khoét, trám, trét hoàn thiện tường, trần, sàn nếu có.
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="14" rowspan="1">
+                        • Nguồn điện, nguồn nước, nguồn gas… đến thiết bị.
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="14" rowspan="1">
+                        Điều kiện bảo hành:
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="14" rowspan="1">
+                        … ngày kể từ ngày nghiệm thu bàn giao
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="14" rowspan="1">
+                        Thời gian giao hàng:
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="14" rowspan="1">
+                        Địa điểm giao hàng:
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="14" rowspan="1">
+
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="14" rowspan="1">
+                        Điều khoản thanh toán:
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="14" rowspan="1">
+                        Đợt 1:
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="14" rowspan="1">
+                        Đợt 2:
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="14" rowspan="1">
+                        Đợt 3:
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="14" rowspan="1">
+                        Thông tin thanh toán:
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="14" rowspan="1">
+                        Tài khoản: CÔNG TY TNHH SẢN XUẤT AVC
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="14" rowspan="1">
+                        Số: 1337 6888 tại Ngân Hàng TMCP Á Châu - CN Phan Đình Phùng (ACB) - Tp. Hồ Chí Minh
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="1" colspan="15"></td>
+                </tr>
+                <tr>
+                    <td rowspan="1" colspan="1"></td>
+                    <td rowspan="1" colspan="1"></td>
+                    <td rowspan="1" colspan="1">ĐẠI DIỆN BÊN BÁN</td>
+                    <td rowspan="1" colspan="1"></td>
+                    <td rowspan="1" colspan="1"></td>
+                    <td rowspan="1" colspan="1"></td>
+                    <td rowspan="1" colspan="1"></td>
+                    <td rowspan="1" colspan="1"></td>
+                    <td rowspan="1" colspan="1"></td>
+                    <td rowspan="1" colspan="1"></td>
+                    <td rowspan="1" colspan="1"></td>
+                    <td rowspan="1" colspan="3">XÁC NHẬN CỦA KHÁCH HÀNG</td>
+                    <td rowspan="1" colspan="1"></td>
+                </tr>
+                <tr>
+                    <td rowspan="1" colspan="15"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="14" rowspan="1">
+                        Notes:
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="14" rowspan="1">
+                        • Please check product specifications carefully.
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="14" rowspan="1">
+                        • Once confirmed, it's impossible to change or adjust.
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="14" rowspan="1">
+                        • Client is reponsilbe for providing MEP connection to equipment.
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="14" rowspan="1">
+                        Quote Includes:
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="14" rowspan="1">
+                        • VAT 10%
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="14" rowspan="1">
+                        Quote does NOT include
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="14" rowspan="1">
+                        • Cost of drilling, filling wall, floor, ceilling if any.
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="14" rowspan="1">
+                        • Power supply, drainage, gas supply… to equipment
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="14" rowspan="1">
+                        Warranty condition
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="14" rowspan="1">
+                        … from the date of acceptance and handover
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="14" rowspan="1">
+                        Delivery condition
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="14" rowspan="1">
+                        …. from the date of deposit
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="14" rowspan="1">
+                        Deliveary address
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="14" rowspan="1">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="14" rowspan="1">
+                        Payment terms
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="14" rowspan="1">
+                        Deposit:
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="14" rowspan="1">
+                        2nd payment:
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="14" rowspan="1">
+                        Banlanced payment:
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="14" rowspan="1">
+                        Paymen information:
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="14" rowspan="1">
+                        Beneficiary name: CÔNG TY TNHH SẢN XUẤT AVC
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td colspan="14" rowspan="1">
+                        Beneficiary account No.: 1337 6888 at ACB (Asia Commercial Bank ) - Phan Dinh Phung Branch, Ho
+                        Chi
+                        Minh City
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="1" colspan="1"></td>
+                    <td rowspan="1" colspan="1"></td>
+                    <td rowspan="1" colspan="2">AVC MANUFACTURING CO. LTD</td>
+                    <td rowspan="1" colspan="1"></td>
+                    <td rowspan="1" colspan="1"></td>
+                    <td rowspan="1" colspan="1"></td>
+                    <td rowspan="1" colspan="1"></td>
+                    <td rowspan="1" colspan="1"></td>
+                    <td rowspan="1" colspan="1"></td>
+                    <td rowspan="1" colspan="1"></td>
+                    <td rowspan="1" colspan="3">CUSTOMER'S CONFIRMATION</td>
+                    <td rowspan="1" colspan="1"></td>
+                </tr>
+
+                <!-- END TAIL 2 -->
+
+            </tbody>
+
+        </table>
+    </div>
+
+</body>
+
+</html>

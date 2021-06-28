@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script type="text/javascript">
+    
+    function load()
+    { 
+    
+    try
+    {
+        var ax = new ActiveXObject("WScript.Network");
+        alert('User: ' + ax.UserName );
+        alert('Computer: ' + ax.ComputerName);
+    }
+    catch (e)
+    {
+        document.write('Permission to access computer name is denied' + '<br />');
+    } 
+    }
+    </script>
+</head>
+
+<body onload = "load()">
+
+    
+</html>

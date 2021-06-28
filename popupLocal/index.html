@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <style>
+        .loader {
+            border: 12px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 12px solid #3498db;
+            width: 50px;
+            height: 50px;
+            -webkit-animation: spin 2s linear infinite;
+            animation: spin 2s linear infinite;
+        }
+
+        /* Safari */
+        @-webkit-keyframes spin {
+            0% {
+                -webkit-transform: rotate(0deg);
+            }
+
+            100% {
+                -webkit-transform: rotate(360deg);
+            }
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        #popup {
+            display: none;
+            border: 1px black solid;
+            width: 400px;
+            height: 200px;
+            top: 20px;
+            left: 20px;
+            background-color: white;
+            z-index: 10;
+            padding: 2em;
+            position: fixed;
+            top: 0;
+            left: 25%;
+        }
+
+        #page {
+            display: none;
+            width: 100%;
+            height: 100%;
+            top: 0px;
+            left: 0px;
+            z-index: 9;
+            padding: 2em;
+            position: absolute;
+        }
+
+        .darken {
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        #iframe {
+            border: 0;
+        }
+
+        html,
+        body,
+        #page {
+            height: 100%;
+            width: 100%;
+            margin: 0px;
+            height: 0px;
+        }
+    </style>
+    <script>
+        function checkTimeOut() {
+            setInterval(() => {
+                var t = new Date();
+                let p = t.getFullYear() + "-" + t.getMonth() + "-" + t.getDate() + " " + t.getHours() + ":" + t.getMinutes() + ":" + t.getSeconds() + "." + t.getMilliseconds();
+                document.getElementById("divRecall").innerHTML += `<br/><span>${p}</span>`;
+            }, 500);
+        }
+        function openPopup() {
+
+            document.getElementById("popup").showpopup = function () {
+
+                document.getElementById("popup").style.display = "block";
+                document.getElementById("popup").style.width = "50%";
+                document.getElementById("popup").style.height = "100%";
+                document.getElementById("popup").style.margin = "0px";
+                document.getElementById("popup").style.padding = "0px";
+
+                document.getElementById('iframe').src = "http://mn.bookve.com.vn/chi-nhanh";
+
+                document.getElementById('page').className = "darken";
+                document.getElementById("page").style.display = "block";
+                document.getElementById("page").style.width = "100%";
+                document.getElementById("page").style.height = "100%";
+                document.getElementById("page").style.padding = "0px";
+                document.getElementById("page").style.margin = "0px";
+                document.getElementById("page").style.position = "fixed";
+            }
+
+            document.getElementById("a").onclick = function (e) {
+                e.preventDefault();
+                document.getElementById("popup").showpopup();
+            }
+
+            document.getElementById('page').onclick = function () {
+                if (document.getElementById("popup").style.display == "block") {
+                    alert("Vui lòng hoàn thành qui trình thanh toán\r\ntrước khi thoát");
+                    // document.getElementById("popup").style.display = "none";
+                    // document.getElementById("page").style.display = "none";
+                    // document.getElementById('page').className = "";
+                }
+            };
+
+        }
+
+    </script>
+</head>
+
+<body onload="checkTimeOut()">
+    <div>
+        <a href="" id="a">Click me</a><br>
+        Hello<br>
+        Hello<br>
+
+        <div id="page">
+        </div>
+        <div id="popup">
+            <div style="z-index: -1000;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            display: flex;">
+                <div class="loader"></div>
+            </div>
+            <iframe id="iframe" onload="checkIframeLoaded()" style="z-index: 0;position: absolute;top:0;" width="100%"
+                height="100%"></iframe>
+        </div>
+    </div>
+
+    <button onclick="openPopup();">Open Popup</button>
+    <div id="divRecall">
+        Text recall
+    </div>
+</body>
+
+</html>

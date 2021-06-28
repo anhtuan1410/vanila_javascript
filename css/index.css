@@ -1,0 +1,137 @@
+:root{
+    --triangle-width:50px;
+}
+
+/* CSS for flexbox */
+.grid{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    flex-flow:row wrap;
+}
+
+.col:nth-child(1)
+{
+    background-color: rgb(42, 128, 185);
+}
+
+.col:nth-child(1) > p::before{
+    content: '1';
+}
+
+.col:nth-child(2)
+{
+    background-color: rgb(143, 68, 173);
+}
+
+.col:nth-child(2) > p::before{
+    content: '2';
+}
+
+.col:nth-child(3)
+{
+    background-color: rgb(22, 160, 134);
+}
+
+.col:nth-child(3) > p::before{
+    content: '3';
+}
+
+.col:nth-child(4)
+{
+    background-color: rgb(241, 196, 15);
+}
+
+.col:nth-child(4) > p::before{
+    content: '4';
+}
+
+.col:nth-child(5)
+{
+    background-color: rgb(231, 126, 35);
+}
+
+.col:nth-child(5) > p::before{
+    content: '5';
+}
+
+.col{
+    padding: 20px;
+    flex-wrap: wrap;
+    /* flex-flow: wrap;
+    flex-direction: column; */
+    
+}
+
+.col > p{
+    padding: 55px;
+    font-size: 20px;
+    border-radius: 50%;
+    background-color: white;
+
+    /* tính font size responsive bằng màn hình */
+    font-size: calc(2vw + 2vh + 1vmin);
+}
+
+.flex-container{
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: calc(2vh + 2vw + 1vmin);
+}
+
+.flex-item{
+    flex-grow: 1;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 5px;
+    font-size: calc(1vh + 2vw + 0.5vmin);
+}
+
+.col-img{
+    position: relative;
+}
+
+.green{
+    
+}
+
+.col-img img{
+    mix-blend-mode: lighten;
+    filter: grayscale(100%) contrast(1);
+    -webkit-filter: grayscale(100%) contrast(1.2);
+    transition: all ease-in-out .5s;
+}
+
+.green::after{
+    background-color: mediumaquamarine;
+    mix-blend-mode: lighten;
+}
+
+
+
+.triangle{
+    width:0px;
+    height:0px;
+    border: 50px solid transparent;
+}
+
+.triangle-top{
+    border-top-color: red;
+}
+
+.triangle-right{
+    border-right-color: green;
+}
+
+.triangle-bottom{
+    border-bottom-color: purple;
+}
+
+.triangle-left{
+    border-left-color: dodgerblue;
+}

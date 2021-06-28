@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="aes.js"></script>
+    <script>
+
+
+        {
+
+        function genScript() {
+            var t = document.getElementById("txtInp").value;
+            var r = btoa(t);
+            document.getElementById("txtOup").value = r;
+            enscrypt_AES();
+
+            SubmitsEncry();
+        }
+
+        function enscrypt_AES() {
+
+            //             var CryptoJS = (function(){for(var q=CryptoJS,x=q.lib.BlockCipher,r=q.algo,j=[],y=[],z=[],A=[],B=[],C=[],s=[],u=[],v=[],w=[],g=[],k=0;256>k;k++)g[k]=128>k?k<<1:k<<1^283;for(var n=0,l=0,k=0;256>k;k++){var f=l^l<<1^l<<2^l<<3^l<<4,f=f>>>8^f&255^99;j[n]=f;y[f]=n;var t=g[n],D=g[t],E=g[D],b=257*g[f]^16843008*f;z[n]=b<<24|b>>>8;A[n]=b<<16|b>>>16;B[n]=b<<8|b>>>24;C[n]=b;b=16843009*E^65537*D^257*t^16843008*n;s[f]=b<<24|b>>>8;u[f]=b<<16|b>>>16;v[f]=b<<8|b>>>24;w[f]=b;n?(n=t^g[g[g[E^t]]],l^=g[g[l]]):n=l=1}var F=[0,1,2,4,8,
+            // 16,32,64,128,27,54],r=r.AES=x.extend({_doReset:function(){for(var c=this._key,e=c.words,a=c.sigBytes/4,c=4*((this._nRounds=a+6)+1),b=this._keySchedule=[],h=0;h<c;h++)if(h<a)b[h]=e[h];else{var d=b[h-1];h%a?6<a&&4==h%a&&(d=j[d>>>24]<<24|j[d>>>16&255]<<16|j[d>>>8&255]<<8|j[d&255]):(d=d<<8|d>>>24,d=j[d>>>24]<<24|j[d>>>16&255]<<16|j[d>>>8&255]<<8|j[d&255],d^=F[h/a|0]<<24);b[h]=b[h-a]^d}e=this._invKeySchedule=[];for(a=0;a<c;a++)h=c-a,d=a%4?b[h]:b[h-4],e[a]=4>a||4>=h?d:s[j[d>>>24]]^u[j[d>>>16&255]]^v[j[d>>>
+            // 8&255]]^w[j[d&255]]},encryptBlock:function(c,e){this._doCryptBlock(c,e,this._keySchedule,z,A,B,C,j)},decryptBlock:function(c,e){var a=c[e+1];c[e+1]=c[e+3];c[e+3]=a;this._doCryptBlock(c,e,this._invKeySchedule,s,u,v,w,y);a=c[e+1];c[e+1]=c[e+3];c[e+3]=a},_doCryptBlock:function(c,e,a,b,h,d,j,m){for(var n=this._nRounds,f=c[e]^a[0],g=c[e+1]^a[1],k=c[e+2]^a[2],p=c[e+3]^a[3],l=4,t=1;t<n;t++)var q=b[f>>>24]^h[g>>>16&255]^d[k>>>8&255]^j[p&255]^a[l++],r=b[g>>>24]^h[k>>>16&255]^d[p>>>8&255]^j[f&255]^a[l++],s=
+            // b[k>>>24]^h[p>>>16&255]^d[f>>>8&255]^j[g&255]^a[l++],p=b[p>>>24]^h[f>>>16&255]^d[g>>>8&255]^j[k&255]^a[l++],f=q,g=r,k=s;q=(m[f>>>24]<<24|m[g>>>16&255]<<16|m[k>>>8&255]<<8|m[p&255])^a[l++];r=(m[g>>>24]<<24|m[k>>>16&255]<<16|m[p>>>8&255]<<8|m[f&255])^a[l++];s=(m[k>>>24]<<24|m[p>>>16&255]<<16|m[f>>>8&255]<<8|m[g&255])^a[l++];p=(m[p>>>24]<<24|m[f>>>16&255]<<16|m[g>>>8&255]<<8|m[k&255])^a[l++];c[e]=q;c[e+1]=r;c[e+2]=s;c[e+3]=p},keySize:8});q.AES=x._createHelper(r)})();
+
+            var _obj = {
+                TokenAccess: "123123-123123-12313",
+                TimeStamp: 234234234
+            };
+
+            var _obj2 = {
+                TokenAccess: "xin chào việt nam nguyễn",
+                TimeStamp: 123123123123
+            };
+
+            var r = JSON.stringify(_obj);
+
+            var key = "b14ca5898a4e4133bbce2ea2315a1916"; //"My Secret Passphrase"
+            // key = "My Secret Passphrase";
+
+            var encryptedAES = CryptoJS.AES.encrypt(r, key);
+            var _strEnscrypt = enscrypt_AES.toString();
+            console.log(enscrypt_AES.toString());
+            var decryptedBytes = CryptoJS.AES.decrypt(encryptedAES, key);
+            var plaintext = decryptedBytes.toString(CryptoJS.enc.Utf8);
+        }
+
+        function SubmitsEncry() {
+
+            var _obj = {
+                TokenAccess: "123123-123123-123123",
+                TimeStamp: 123123123123
+            };
+
+            document.getElementById("inp1").value = JSON.stringify(_obj);
+
+            var txtUserName = document.getElementById("inp1").value.trim();
+            var txtpassword = document.getElementById("inp2").value.trim();
+
+            // if (txtUserName == "") {
+            //     alert('Please enter UserName');
+            //     return false;
+            // }
+            // else if (txtpassword == "") {
+            //     alert('Please enter Password');
+            //     return false;
+            // }
+            // else 
+
+            var keyEncrypt = "b14ca5898a4e4133";
+            keyEncrypt="pPoVXG}S!WW/0:$#";
+            {
+                var key = CryptoJS.enc.Utf8.parse(keyEncrypt);
+                var iv = CryptoJS.enc.Utf8.parse(keyEncrypt);
+
+                var encryptedlogin = CryptoJS.AES.encrypt(
+                    CryptoJS.enc.Utf8.parse(txtUserName), key,
+                    {
+                        keySize: 128 / 8,
+                        iv: iv,
+                        mode: CryptoJS.mode.CBC,
+                        padding: CryptoJS.pad.Pkcs7
+                    });
+
+                document.getElementById("inp3").value = encryptedlogin;
+
+                //mã hóa
+                var encryptedpassword = CryptoJS.AES.encrypt(CryptoJS.enc.Utf8.parse(txtpassword), key,
+                    {
+                        keySize: 128 / 8,
+                        iv: iv,
+                        mode: CryptoJS.mode.CBC,
+                        padding: CryptoJS.pad.Pkcs7
+                    });
+
+                document.getElementById("inp4").value = encryptedpassword;
+
+                alert('encrypted login :' + encryptedlogin);
+                alert('encrypted password :' + encryptedpassword);
+
+                //giải mã
+                var _enid = CryptoJS.AES.decrypt(encryptedlogin, key,
+                {
+                    keySize: 128 / 8,
+                    iv: iv,
+                    mode: CryptoJS.mode.CBC,
+                    padding: CryptoJS.pad.Pkcs7
+                }).toString(CryptoJS.enc.Utf8);
+
+                var t = 0;    
+            }
+        }
+
+        function genData_Encode(){
+            var _date = (new Date()).getTime();
+            var _p = document.getElementById("tokenAcc").value;
+            var _obj = {
+                TokenAccess: _p,
+                TimeStamp: _date
+            };
+
+            var _token = JSON.stringify(_obj);
+
+            _token = "{aaaddd:111222,bbbb:55555}";
+
+            document.getElementById("_enscryptData").value = Encrypt_Data_AES(_token);
+            document.getElementById("_warning").value = _date;           
+
+        }
+
+        function genData_Decode(){
+            var _date = (new Date()).getTime();
+            var _p = document.getElementById("_enscryptData").value;     
+
+            document.getElementById("_decryptData").value = Decrypt_Data_AES(_p);
+        }
+
+
+    }
+
+
+        var keyEncrypt_Public = "pPoVXG}S!WW/0:$#";
+
+        function Encrypt_Data_AES(plaintext){
+
+            var key = CryptoJS.enc.Utf8.parse(keyEncrypt_Public);
+            var iv = CryptoJS.enc.Utf8.parse(keyEncrypt_Public);
+
+            //mã hóa
+            var encryptedpassword = CryptoJS.AES.encrypt(CryptoJS.enc.Utf8.parse(plaintext), key,
+                    {
+                        keySize: 128 / 8,
+                        iv: iv,
+                        mode: CryptoJS.mode.CBC,
+                        padding: CryptoJS.pad.Pkcs7
+                    });
+            return encryptedpassword;
+        }
+
+        function Decrypt_Data_AES(plaintext_Encrypted){
+
+            var key = CryptoJS.enc.Utf8.parse(keyEncrypt_Public);
+            var iv = CryptoJS.enc.Utf8.parse(keyEncrypt_Public);
+
+            //giải mã
+            var _enid = CryptoJS.AES.decrypt(plaintext_Encrypted, key,
+                {
+                    keySize: 128 / 8,
+                    iv: iv,
+                    mode: CryptoJS.mode.CBC,
+                    padding: CryptoJS.pad.Pkcs7
+                }).toString(CryptoJS.enc.Utf8);
+            return _enid;
+        }
+
+    </script>
+</head>
+
+<body>
+    <div style="display: ;">
+    <input type="text" id="txtInp" />
+    <button onclick="genScript()"> Click me </button>
+    <textarea id="txtOup">
+    </textarea>
+
+    <input type="text" id="inp1" />
+    <input type="text" id="inp2" />
+    <input type="text" id="inp3" />
+    <input type="text" id="inp4" />
+</div>
+    <hr></hr>
+    <hr></hr>
+    <hr></hr>
+    <hr></hr>
+
+    <h1>MÃ HÓA DATA</h1><br />
+    <label>TokenAccess</label><input id="tokenAcc" type="text" />
+    <br />
+    <button onclick="genData_Encode()">Gen Data Enscrypt</button>
+    <br />
+    <label>Enscrypt Data</label><textarea id="_enscryptData"></textarea>
+    <br />
+    <label>Warning</label><textarea id="_warning"></textarea>
+
+    <button onclick="genData_Decode()">Gen Data Decrypt</button>
+    <br />
+    <label>Decrypt Data</label><textarea id="_decryptData"></textarea>
+    <br />
+
+</body>
+
+</html>

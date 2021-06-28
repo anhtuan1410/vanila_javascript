@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script>
+        function aaaa(){
+            var t = `{"id",p.id}|{"iduser",p.iduser}|{"dauky",p.ngaydauky}|{"cuoiky",p.ngaycuoiky}|{"ts0",p.DK_TongSo}|{"ts1",p.CK_TongSo}|{"tsnu0",p.DK_TrongDoNu}|{"tsnu1",p.CK_TrongDoNu}|{"td1",p.DK_TD_CongNhanKyThuatKhongBang}|{"td11",p.CK_TD_CongNhanKyThuatKhongBang}|{"td2",p.DK_TD_ChungChiNgheNganHanDuoi3Thang}|{"td22",p.CK_TD_ChungChiNgheNganHanDuoi3Thang}|{"td3",p.DK_TD_SoCapTu3Den12Thang}|{"td33",p.CK_TD_SoCapTu3Den12Thang}|{"td4",p.DK_TD_TrungCap}|{"td44",p.CK_TD_TrungCap}|{"td5",p.DK_TD_CaoDang}|{"td55",p.CK_TD_CaoDang}|{"td6",p.DK_TD_DaiHocTroLen}|{"td66",p.CK_TD_DaiHocTroLen}|{"hd1",p.DK_LHD_KhongXacDinhThoiHan}|{"hd11",p.CK_LHD_KhongXacDinhThoiHan}|{"hd2",p.DK_LHD_TuDu12DenDuoi36Thang}|{"hd22",p.CK_LHD_TuDu12DenDuoi36Thang}|{"hd3",p.DK_LHD_TuDu3DenDuoi12Thang}|{"hd33",p.CK_LHD_TuDu3DenDuoi12Thang}|{"hd4",p.DK_LHD_Duoi3Thang}|{"hd44",p.CK_LHD_Duoi3Thang}|{"bhtn0",p.DK_TongSoNguoiThamGiaBHTN}|{"bhtn1",p.CK_TongSoNguoiThamGiaBHTN}|{"duyet",0}|{"t2",p.SoTang_TongSo}|{"t3",p.SoTang_TrongDoNu}|{"t4",p.SoTang_TD_CongNhanKyThuatKhongBang}|{"t5",p.SoTang_TD_ChungChiNgheNganHanDuoi3Thang}|{"t6",p.SoTang_TD_SoCapTu3Den12Thang}|{"t7",p.SoTang_TD_TrungCap}|{"t8",p.SoTang_TD_CaoDang}|{"t9",p.SoTang_TD_DaiHocTroLen}|{"t10",p.SoTang_LHD_KhongXacDinhThoiHan}|{"t11",p.SoTang_LHD_TuDu12DenDuoi36Thang}|{"t12",p.SoTang_LHD_TuDu3DenDuoi12Thang}|{"t13",p.SoTang_LHD_Duoi3Thang}|{"t14",p.SoTang_TongSoNguoiThamGiaBHTN}|{"g2",p.SoGiam_TongSo}|{"g3",p.SoGiam_TrongDoNu}|{"g4",p.SoGiam_TD_CongNhanKyThuatKhongBang}|{"g5",p.SoGiam_TD_ChungChiNgheNganHanDuoi3Thang}|{"g6",p.SoGiam_TD_SoCapTu3Den12Thang}|{"g7",p.SoGiam_TD_TrungCap}|{"g8",p.SoGiam_TD_CaoDang}|{"g9",p.SoGiam_TD_DaiHocTroLen}|{"g10",p.SoGiam_LHD_KhongXacDinhThoiHan}|{"g11",p.SoGiam_LHD_TuDu12DenDuoi36Thang}|{"g12",p.SoGiam_LHD_TuDu3DenDuoi12Thang}|{"g13",p.SoGiam_LHD_Duoi3Thang}|{"g14",p.SoGiam_TongSoNguoiThamGiaBHTN}|{"IsDel",0}|{"UserCreated",loginData.Id}`;
+
+            var p = t.replace("},{","}|{");
+            var _d = p.split('|');
+            var _result = "";
+            _d.map((_it, _ind) => {
+                var _b = _it.replace("{","").replace("}","")
+                .replace(`"`,``).replace("p.","").split(",");
+
+                var _k1 = _b[0].trim();
+                var _k2 = _b[1].trim();
+
+                _result += _k2 +` = k["`+_k1+`"] ,`
+
+            });
+
+            console.log(_result);
+
+        }
+    </script>
+</head>
+<body>
+    <button onclick="aaaa()">CLICK</button>
+</body>
+</html>
