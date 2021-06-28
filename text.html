@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        table tr td {
+            border: 1px solid black;
+        }
+
+    </style>
+    <script>
+        var _countAll = 1;
+
+        function calculate(p)
+        {
+            return function calculate2(k){
+                return p * k;
+            }
+        }
+
+        function validValue(_input) {
+
+            if (_countAll === 3)
+            {
+                return "Too many wrong entries. Your account is now locked.";
+            }
+
+            if (('' + _input) === "1234")
+                console.log("PIN accepted. You can access your account now.");
+            else {
+                if (_countAll < 3) {
+                    console.log("Incorrect PIN. Please try again.");
+                    _countAll++;
+                }
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+
+    <!-- function GetReverseNumbers() {
+        var p = [8, 9, 3, 1, 404, 200, 201, 304, 502];
+        var _start = 0, _index = 0;
+        while (_start < p.length) {
+            if (p[_index + 1] < p[_index]) {
+                var _tmp = p[_index];
+                p[_index] = p[_index + 1];
+                p[_index + 1] = _tmp;
+            }
+            _index++;
+            _start++;
+        }
+        console.log(p);
+    } -->
+
+
+    <button onclick="aaaa()"></button>
+    <table cellspacing="10" cellpadding="10">
+        <tbody>
+            <tr>
+                <td rowspan="3">Day</td>
+                <td colspan="3">Semilar</td>
+            </tr>
+            <tr>
+                <td colspan="2">Schedule</td>
+                <td rowspan="2">Topic</td>
+            </tr>
+            <tr>
+                <td>Begin</td>
+                <td>End</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Monday</td>
+                <td rowspan="2">8:00 a.m</td>
+                <td rowspan="2">5:00 p.m</td>
+                <td>Intro A</td>
+            </tr>
+            <tr>
+                <td>Intro B</td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+
+</html>
