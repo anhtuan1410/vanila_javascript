@@ -1,2 +1,3 @@
 vanila js
 edit pull new machine
+ignore folder API-HDDT and API-HDDT-V2
